@@ -1,6 +1,7 @@
 # Future iOS
 
 [![Join the chat at https://gitter.im/alexsosn/iOS_ML](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexsosn/iOS_ML?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Curated List of 
 - Machine Learning, 
 - Artificial Intelligence,
@@ -46,7 +47,10 @@ SHARK provides libraries for the design of adaptive systems, including methods f
 * https://cloud.google.com/prediction/docs
 * https://code.google.com/p/google-api-objectivec-client/wiki/Introduction
 
-## Game AI
+## AI
+* https://github.com/saniul/Mendel - Genetic alghorithms
+
+### Game AI
 * [introduction-to-ai-programming-for-games](http://www.raywenderlich.com/24824/introduction-to-ai-programming-for-games)
 
 * [dlib](http://dlib.net/) is a library which has many useful tools including machine learning.
@@ -138,10 +142,13 @@ http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
 
 
 ## Data Visualization
-https://github.com/danielgindi/ios-charts
-https://github.com/core-plot/core-plot
-https://github.com/sxyx2008/awesome-ios-chart
-https://github.com/kubatru/JTChartView
+* https://github.com/danielgindi/ios-charts
+* https://github.com/core-plot/core-plot
+* https://github.com/sxyx2008/awesome-ios-chart
+* https://github.com/kubatru/JTChartView
+
+* http://www.vtk.org/gallery/
+* http://www.vtk.org/vtk-in-action/
 
 <!-- /MarkdownTOC -->
 
