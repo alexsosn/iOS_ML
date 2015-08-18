@@ -9,29 +9,32 @@ Curated List of
 - Computer Vision, 
 - GPGPU, 
 - Data Visualization
-resources for iOS. 
+resources for iOS developers. 
 
 Most of the de-facto standard tools from listed above domains are written in Python/Java/R so find something appropriate for your iOS application may be a difficult task.
-The list consists mostly of native libraries written in Objective-C, Swift and ports of C, C++, JavaScript libraries or libs which can be easily ported for iOS. Also links to some relevant web APIs, blog posts, videos and learning materials included.
+This list consists mostly of native libraries written in Objective-C, Swift and ports of C, C++, JavaScript libraries or libs which can be easily ported for iOS. Also links to some relevant web APIs, blog posts, videos and learning materials included.
 
-## Where to learn about machine learning and other interesting staff
-* http://neuralnetworksanddeeplearning.com/ - Interactive book
-* http://www.nltk.org/book/
+## Where to learn about machine learning and other related staff
+* [Courserra course](https://www.coursera.org/learn/machine-learning/home/info) on machine learning from [Andrew Ng](https://twitter.com/AndrewYNg)
+* [Machine learning playlist on Youtube](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA)
+* Free online interactive book ["Neural Networks and Deep Learning"](http://neuralnetworksanddeeplearning.com/)
+* ["Natural Language Processing with Python"](http://www.nltk.org/book/) - free online book
+* [Heterogeneous Parallel Programming](https://www.coursera.org/course/hetero) course
 
 ## General-Purpose Machine Learning
-* https://github.com/lemire/lbimproved - DTW + kNN
-* https://github.com/nikolaypavlov/MLPNeuralNet - Fast multilayer perceptron neural network library for iOS and Mac OS X 
-* https://github.com/devongovett/SNNeuralNet
 
-* iOS & OS X framework for Shark: C++ Machine Learning Library
-SHARK provides libraries for the design of adaptive systems, including methods for linear and nonlinear optimization (e.g., evolutionary and gradient-based algorithms), kernel-based algorithms and neural networks, and other machine learning techniques.
-* https://cocoapods.org/pods/Shark-SDK
-* http://sourceforge.net/projects/shark-project/
+* [MLPNeuralNet](https://github.com/nikolaypavlov/MLPNeuralNet) - Fast multilayer perceptron neural network library for iOS and Mac OS X. MLPNeuralNet predicts new examples by trained neural network. It is built on top of the Apple's Accelerate Framework, using vectorized operations and hardware acceleration if available.
+* [MAChineLearning](https://github.com/gianlucabertani/MAChineLearning) - An Objective-C multilayer perceptron library, with full support for training through backpropagation. Implemented using vDSP and vecLib, it's 20 times faster than its Java equivalent. Includes sample code for use from Swift.
+* [BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - It implemented 3 layers neural network ( Input Layer, Hidden Layer and Output Layer ) and it named Back Propagation Neural Network (BPN). This network can be used in products recommendation, user behavior analysis, data mining and data analysis.
+* [Multi-Perceptron-NeuralNetwork](https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork) - it implemented multi-perceptrons neural network based on Back Propagation Neural Network (BPN) and designed unlimited-hidden-layers.
+* [KRHebbian-Algorithm](https://github.com/Kalvar/ios-KRHebbian-Algorithm) - It is a non-supervisor and self-learning algorithm (adjust the weights) in neural network of Machine Learning.
+* [KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - It implemented K-Means the clustering and classification algorithm. It could be used in data mining and image compression.
+* [KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - It implemented Fuzzy C-Means (FCM) the fuzzy clustering / classification algorithm on Machine Learning. It could be used in data mining and image compression.
+* [FANN](https://cocoapods.org/pods/FANN)
+* [lbimproved](https://github.com/lemire/lbimproved) - DTW + kNN
+* [SNNeuralNet](https://github.com/devongovett/SNNeuralNet) - A neural network library for Objective-C based on brain.js, for iOS and Mac OS X.
+* **Shark** - provides libraries for the design of adaptive systems, including methods for linear and nonlinear optimization (e.g., evolutionary and gradient-based algorithms), kernel-based algorithms and neural networks, and other machine learning techniques. [CocoaPods](https://cocoapods.org/pods/Shark-SDK). [Official site](http://sourceforge.net/projects/shark-project/)
 
-* https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork
-* https://cocoapods.org/pods/KRBPN
-* https://github.com/Kalvar/ios-BPN-NeuralNetwork
-* https://cocoapods.org/pods/FANN
 
 * https://www.ibmdw.net/watson/
 * https://github.com/jetpacapp/DeepBeliefSDK
@@ -277,20 +280,6 @@ http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
 * [regression-js](https://github.com/Tom-Alexander/regression-js) - A javascript library containing a collection of least squares fitting methods for finding a trend in a set of data.
 * [Lyric](https://github.com/flurry/Lyric) - Linear Regression library.
 * [GreatCircle](https://github.com/mwgg/GreatCircle) - Library for calculating great circle distance.
-
-<a name="objectivec">
-## Objective C
-
-<a name="objectivec-general-purpose">
-### General-Purpose Machine Learning
-
-* [MLPNeuralNet](https://github.com/nikolaypavlov/MLPNeuralNet) - Fast multilayer perceptron neural network library for iOS and Mac OS X. MLPNeuralNet predicts new examples by trained neural network. It is built on top of the Apple's Accelerate Framework, using vectorized operations and hardware acceleration if available.
-* [MAChineLearning](https://github.com/gianlucabertani/MAChineLearning) - An Objective-C multilayer perceptron library, with full support for training through backpropagation. Implemented using vDSP and vecLib, it's 20 times faster than its Java equivalent. Includes sample code for use from Swift.
-* [BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - It implemented 3 layers neural network ( Input Layer, Hidden Layer and Output Layer ) and it named Back Propagation Neural Network (BPN). This network can be used in products recommendation, user behavior analysis, data mining and data analysis.
-* [Multi-Perceptron-NeuralNetwork](https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork) - it implemented multi-perceptrons neural network (ニューラルネットワーク) based on Back Propagation Neural Network (BPN) and designed unlimited-hidden-layers.
-* [KRHebbian-Algorithm](https://github.com/Kalvar/ios-KRHebbian-Algorithm) - It is a non-supervisor and self-learning algorithm (adjust the weights) in neural network of Machine Learning.
-* [KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - It implemented K-Means the clustering and classification algorithm. It could be used in data mining and image compression.
-* [KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - It implemented Fuzzy C-Means (FCM) the fuzzy clustering / classification algorithm on Machine Learning. It could be used in data mining and image compression.
 
 ## Data Visualization
 *Data visualization tools for the web.*
