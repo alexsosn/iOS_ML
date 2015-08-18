@@ -12,42 +12,46 @@ resources for iOS.
 The list consists mostly of native libraries written in Objective-C, Swift and ports of C, C++, JavaScript libraries or libs which can be easily ported for iOS. Also links to some relevant web APIs and blog posts included.
 
 ## General-Purpose Machine Learning
-https://github.com/lemire/lbimproved - DTW + kNN
-https://github.com/nikolaypavlov/MLPNeuralNet - Fast multilayer perceptron neural network library for iOS and Mac OS X 
-https://github.com/devongovett/SNNeuralNet
+* https://github.com/lemire/lbimproved - DTW + kNN
+* https://github.com/nikolaypavlov/MLPNeuralNet - Fast multilayer perceptron neural network library for iOS and Mac OS X 
+* https://github.com/devongovett/SNNeuralNet
 
-iOS & OS X framework for Shark: C++ Machine Learning Library
+* iOS & OS X framework for Shark: C++ Machine Learning Library
 SHARK provides libraries for the design of adaptive systems, including methods for linear and nonlinear optimization (e.g., evolutionary and gradient-based algorithms), kernel-based algorithms and neural networks, and other machine learning techniques.
-https://cocoapods.org/pods/Shark-SDK
-http://sourceforge.net/projects/shark-project/
+* https://cocoapods.org/pods/Shark-SDK
+* http://sourceforge.net/projects/shark-project/
 
-https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork
-https://cocoapods.org/pods/KRBPN
-https://github.com/Kalvar/ios-BPN-NeuralNetwork
-https://cocoapods.org/pods/FANN
+* https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork
+* https://cocoapods.org/pods/KRBPN
+* https://github.com/Kalvar/ios-BPN-NeuralNetwork
+* https://cocoapods.org/pods/FANN
 
-https://www.ibmdw.net/watson/
-https://github.com/jetpacapp/DeepBeliefSDK
-https://github.com/scottsievert/swix
-https://github.com/karpathy/convnetjs
-https://github.com/harthur/brain
+* https://www.ibmdw.net/watson/
+* https://github.com/jetpacapp/DeepBeliefSDK
+* https://github.com/scottsievert/swix
+* https://github.com/karpathy/convnetjs
+* https://github.com/harthur/brain
 
 ## Game AI
-http://www.raywenderlich.com/24824/introduction-to-ai-programming-for-games
+* [introduction-to-ai-programming-for-games](http://www.raywenderlich.com/24824/introduction-to-ai-programming-for-games)
+
+* [dlib](http://dlib.net/) is a library which has many useful tools including machine learning.
+* [MicroPather](http://www.grinninglizard.com/MicroPather/) is a path finder and A* solver (astar or a-star) written in platform independent C++ that can be easily integrated into existing code.
+* Here is a [list](http://www.ogre3d.org/tikiwiki/List+Of+Libraries#Artificial_intelligence) of some AI libraries suggested on OGRE3D website. Seems they are mostly written in C++ and at least most of them are not depended on OGRE engine itself.
 
 ## Math
 https://github.com/mattt/Surge
 
 ## Natural Language Processing
+* https://wit.ai/
+* https://github.com/ayanonagon/Parsimmon
+* NSLinguistic​Tagger
 
-https://github.com/ayanonagon/Parsimmon
-NSLinguistic​Tagger
+* http://nshipster.com/nslinguistictagger/
 
-http://nshipster.com/nslinguistictagger/
+* http://www.alchemyapi.com/
 
-http://www.alchemyapi.com/
-
-Twitter text
+* Twitter text
 
 The library includes methods for extracting user names, mentions headers, hashtags, and more – all the tweet specific language syntax you could ever want.
 
@@ -55,16 +59,17 @@ https://github.com/twitter/twitter-text-objc
 
 An Objective-C implementation of Twitter's text processing library
 
-https://code.google.com/p/word2vec/ - Original C implementation of Word2Vec Deep Learning algorithm. Works on iPhone like a charm.
+* https://code.google.com/p/word2vec/ - Original C implementation of Word2Vec Deep Learning algorithm. Works on iPhone like a charm.
 
 ## Speech Recognition and Generation
-
-https://github.com/tryolabs/TLSphinx
-https://github.com/vimalmurugan89/MVSpeechSynthesizer
-https://tech.yandex.com/speechkit/mobilesdk/
+* http://blog.tryolabs.com/2015/06/15/tlsphinx-automatic-speech-recognition-asr-in-swift/
+* https://github.com/tryolabs/TLSphinx
+* https://github.com/vimalmurugan89/MVSpeechSynthesizer
+* https://tech.yandex.com/speechkit/mobilesdk/
 
 ## Computer Vision
-http://maniacdev.com/2011/07/tutorial-using-and-building-opencv-open-computer-vision-on-ios-devices
+* https://developer.vuforia.com/downloads/sdk
+* http://maniacdev.com/2011/07/tutorial-using-and-building-opencv-open-computer-vision-on-ios-devices
 https://github.com/gali8/Tesseract-OCR-iOS
 Tesseract
 
@@ -87,7 +92,7 @@ https://github.com/linusyang/opencl-test-ios
 http://ciechanowski.me/blog/2014/01/05/exploring_gpgpu_on_ios/
 
 Exploring GPGPU on iOS
-
+https://realm.io/news/altconf-simon-gladman-ios-gpu-programming-with-swift-metal/
 https://github.com/Ciechan/Exploring-GPGPU-on-iOS
 
 https://github.com/BradLarson/GPUImage
@@ -98,6 +103,11 @@ http://www.sunsetlakesoftware.com/2010/10/22/gpu-accelerated-video-processing-ma
 https://developer.apple.com/library/ios/documentation/3ddrawing/conceptual/opengles_programmingguide/ConcurrencyandOpenGLES/ConcurrencyandOpenGLES.html
 
 http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
+
+* http://flexmonkey.blogspot.com/
+* https://github.com/FlexMonkey/MetalReactionDiffusion
+* https://github.com/FlexMonkey/ParticleLab
+
 
 ## Data Visualization
 https://github.com/danielgindi/ios-charts
