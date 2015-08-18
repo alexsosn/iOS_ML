@@ -30,7 +30,7 @@ This list consists mostly of native libraries written in Objective-C, Swift and 
 * [KRHebbian-Algorithm](https://github.com/Kalvar/ios-KRHebbian-Algorithm) - It is a non-supervisor and self-learning algorithm (adjust the weights) in neural network of Machine Learning.
 * [KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - It implemented K-Means the clustering and classification algorithm. It could be used in data mining and image compression.
 * [KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - It implemented Fuzzy C-Means (FCM) the fuzzy clustering / classification algorithm on Machine Learning. It could be used in data mining and image compression.
-* [FANN](https://cocoapods.org/pods/FANN)
+* [FANN](https://cocoapods.org/pods/FANN) - Fast Artifical Neural Network library; an implementation of neural networks.
 * [lbimproved](https://github.com/lemire/lbimproved) - DTW + kNN
 * [SNNeuralNet](https://github.com/devongovett/SNNeuralNet) - A neural network library for Objective-C based on brain.js, for iOS and Mac OS X.
 * **Shark** - provides libraries for the design of adaptive systems, including methods for linear and nonlinear optimization (e.g., evolutionary and gradient-based algorithms), kernel-based algorithms and neural networks, and other machine learning techniques. [CocoaPods](https://cocoapods.org/pods/Shark-SDK). [Official site](http://sourceforge.net/projects/shark-project/)
@@ -153,8 +153,16 @@ http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
 * http://www.vtk.org/gallery/
 * http://www.vtk.org/vtk-in-action/
 
-<!-- /MarkdownTOC -->
+# Other Lists
+* [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
+* [Machine Learning Courses](https://github.com/prakhar1989/awesome-courses#machine-learning)
+* [Awesome Data Science](https://github.com/okulbilisim/awesome-datascience)
+* [Awesome Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision)
+* [Speech and language processing](https://github.com/edobashira/speech-language-processing)
 
+<!-- /MarkdownTOC -->
+# Unsorted links from some other lists:
+//TODO: sort it out :)
 <a name="c" />
 ## C
 
@@ -322,3 +330,72 @@ http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
 
 There're also some great commercial libraries, like [amchart](http://www.amcharts.com/), [plotly](https://www.plot.ly/), and [highchart](http://www.highcharts.com/).
 
+## Numerical - C
+<li><a href="https://github.com/b-k/apophenia" rel="nofollow">apophenia</a> - A library for statistical and scientific computing. <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" rel="nofollow">GNU GPL2.1</a> with some <a href="https://github.com/b-k/apophenia/blob/master/install/COPYING2" rel="nofollow">exceptions</a>.<br></li>
+<li><a href="http://math-atlas.sourceforge.net/" rel="nofollow">ATLAS</a> - Automatically Tuned Linear Algebra Software. <a href="http://directory.fsf.org/wiki/License:BSD_3Clause" rel="nofollow">3-clause BSD</a>.<br></li>
+<li><a href="http://www.netlib.org/blas/" rel="nofollow">BLAS</a> - Basic Linear Algebra Subprograms; a set of routines that provide vector and matrix operations. <a href="http://www.netlib.org/blas/#_licensing" rel="nofollow">BLAS license</a><br></li>
+<li><a href="http://lipforge.ens-lyon.fr/www/crlibm/index.html" rel="nofollow">CRlibm</a> - Correctly Rounded mathematical library; a modern implementation of a range of numeric routines. <a href="http://www.gnu.org/licenses/lgpl.html" rel="nofollow">GN LGPL3</a>.<br></li>
+<li><a href="http://www.feynarts.de/cuba/" rel="nofollow">Cuba</a> - A library for multidimensional numerical integration. <a href="http://www.gnu.org/licenses/lgpl.html" rel="nofollow">GNU LGPL3</a>.<br></li>
+<li><a href="http://www.fftw.org/" rel="nofollow">FFTW</a> - The Fastest Fourier Transform in the West; a highly-optimized fast Fourier transform routine. <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" rel="nofollow">GNU GPL2.1</a>.<br></li>
+<li><a href="http://flintlib.org/" rel="nofollow">FLINT</a> - Fast Library for Number Theory; a library supporting arithmetic with numbers, polynomials, power series and matrices, among others. <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" rel="nofollow">GNU GPL2.1</a>.<br></li>
+<li><a href="https://gnu.org/software/glpk/" rel="nofollow">GLPK</a> - GNU Linear Programming Kit; a package designed for solving large-scale linear programming, mixed integer programming and other related problems. <a href="http://www.gnu.org/licenses/gpl.html" rel="nofollow">GNU GPL3</a>.<br></li>
+<li><a href="https://gmplib.org/" rel="nofollow">GMP</a> - GNU Multple Precision Arithmetic Library; a library for arbitrary-precision arithmetic. <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" rel="nofollow">GNU GPL2.1</a> and <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html" rel="nofollow">GNU LGPL2.1</a>.<br></li>
+<li><a href="http://www.multiprecision.org/index.php?prog=mpc&amp;page=home" rel="nofollow">GNU MPC</a> - A library for complex number arithmetic. <a href="http://www.gnu.org/licenses/lgpl.html" rel="nofollow">GNU LGPL3</a>.<br></li>
+<li><a href="http://mpfr.loria.fr/index.html" rel="nofollow">GNU MPFR</a> - A library for arbitrary-precision floating-point arithmetic. <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html" rel="nofollow">GNU LGPL2.1</a>.<br></li>
+<li><a href="https://gnu.org/software/mpria/" rel="nofollow">GNU MPRIA</a> - A portable mathematics library for multi-precision rational interval arithmetic. <a href="http://www.gnu.org/licenses/gpl.html" rel="nofollow">GNU GPL3</a>.<br></li>
+<li><a href="http://www.gnu.org/software/gsl/" rel="nofollow">GSL</a> - The GNU Scientific Library; a sophisticated numerical library. <a href="http://www.gnu.org/licenses/gpl.html" rel="nofollow">GNU GPL3</a>.<br></li>
+<li><a href="http://sourceforge.net/projects/kissfft/" rel="nofollow">KISS FFT</a> - A very simple fast Fourier transform library. <a href="http://directory.fsf.org/wiki/License:BSD_3Clause" rel="nofollow">3-clause BSD</a>.<br></li>
+<li><a href="http://www.netlib.org/lapack/lapacke.html" rel="nofollow">LAPACKE</a> - A C interface to <a href="http://www.netlib.org/lapack/" rel="nofollow">LAPACK</a>. <a href="http://directory.fsf.org/wiki/License:BSD_3Clause" rel="nofollow">3-clause BSD</a>.<br></li>
+<li><a href="http://pari.math.u-bordeaux.fr/" rel="nofollow">PARI/GP</a> - A computer algebra system for number theory; includes a compiler to C. <a href="http://www.gnu.org/licenses/gpl.html" rel="nofollow">GNU GPL3</a>.<br></li>
+<li><a href="http://www.mcs.anl.gov/petsc/" rel="nofollow">PETSc</a> - A suite of data structures and routines for scalable parallel solution of scientific applications modelled by partial differential equations. <a href="http://directory.fsf.org/wiki?title=License:FreeBSD" rel="nofollow">FreeBSD</a>.<br></li>
+<li><a href="http://slepc.upv.es/" rel="nofollow">SLEPc</a> - A software library for the solution of large, sparse eigenvalue problems on parallel computers. <a href="http://www.gnu.org/licenses/lgpl.html" rel="nofollow">GNU LGPL3</a>.<br></li>
+<li><a href="http://www.yeppp.info/" rel="nofollow">Yeppp!</a> - Very fast, SIMD-optimized mathematical library. <a href="http://directory.fsf.org/wiki/License:BSD_3Clause" rel="nofollow">3-clause BSD</a>.<br></li>
+
+# C++
+## Artificial Intelligence
+
+* [btsk](https://github.com/aigamedev/btsk) - Game Behavior Tree Starter Kit. [zlib]
+* [Evolving Objects](http://eodev.sourceforge.net/) - A template-based, ANSI-C++ evolutionary computation library which helps you to write your own stochastic optimization algorithms insanely fast. [LGPL]
+* [Neu](https://github.com/andrometa/neu) - A C++ 11 framework, collection of programming languages, and multipurpose software system designed for: the creation of artificial intelligence applications. [BSD]
+
+## Biology
+*Bioinformatics, Genomics, Biotech*
+
+* [libsequence](http://molpopgen.github.io/libsequence/) - A C++ library for representing and analyzing population genetics data. [GPL]
+* [SeqAn](http://www.seqan.de/) - Algorithms and data structures for the analysis of sequences with the focus on biological data. [BSD/3-clause]
+* [Vcflib](https://github.com/ekg/vcflib) - A C++ library for parsing and manipulating VCF files. [MIT]
+* [Wham](https://github.com/jewmanchue/wham) - Structural variants (SVs) in Genomes by directly applying association tests to BAM files. [MIT]
+
+## Machine Learning
+
+* [Caffe](https://github.com/BVLC/caffe) - A fast framework for neural networks. [BSD]
+* [CCV](https://github.com/liuliu/ccv) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library. [BSD]
+* [MeTA](https://github.com/meta-toolkit/meta) - A modern C++ data sciences toolkit. [MIT] [website](https://meta-toolkit.org/)
+* [Minerva](https://github.com/minerva-developers/minerva) - A fast and flexible system for deep learning. [Apache2]
+* [mlpack](http://www.mlpack.org/) - A scalable c++ machine learning library. [LGPLv3]
+* [OpenCV](https://github.com/Itseez/opencv) :zap: - Open Source Computer Vision Library. [BSD] [website](http://opencv.org/)
+* [Recommender](https://github.com/GHamrouni/Recommender) - C library for product recommendations/suggestions using collaborative filtering (CF). [BSD]
+* [SHOGUN](https://github.com/shogun-toolbox/shogun) - The Shogun Machine Learning Toolbox. [GPLv3]
+* [sofia-ml](https://code.google.com/p/sofia-ml/) - The suite of fast incremental algorithms for machine learning. [Apache2]
+
+## Math
+
+* [Apophenia](https://github.com/b-k/apophenia) - A C library for statistical and scientific computing [GPL2]
+* [Armadillo](http://arma.sourceforge.net/) - A high quality C++ linear algebra library, aiming towards a good balance between speed and ease of use. The syntax (API) is deliberately similar to Matlab. [MPL2]
+* [blaze](https://code.google.com/p/blaze-lib/) - high-performance C++ math library for dense and sparse arithmetic. [BSD]
+* [Boost.Multiprecision](http://www.boost.org/doc/libs/master/libs/multiprecision/doc/html/index.html) - provides higher-range/precision integer, rational and floating-point types in C++, header-only or with GMP/MPFR/LibTomMath backends. [Boost]
+* [ceres-solver](http://ceres-solver.org/) - C++ library for modeling and solving large complicated nonlinear least squares problems from google. [BSD]
+* [CGal](http://www.cgal.org/) - Collection of efficient and reliable geometric algorithms. [LGPL&GPL]
+* [cml](http://cmldev.net/) - free C++ math library for games and graphics. [Boost]
+* [Eigen](http://eigen.tuxfamily.org/) - A high-level C++ library of template headers for linear algebra, matrix and vector operations, numerical solvers and related algorithms. [MPL2]
+* [GLM](https://github.com/g-truc/glm) - Header-only C++ math library that matches and inter-operates with OpenGL's GLSL math. [MIT]
+* [GMTL](http://ggt.sourceforge.net/) - Graphics Math Template Library is a collection of tools implementing Graphics primitives in generalized ways. [GPL2]
+* [GMP](https://gmplib.org/) - A C/C++ library for arbitrary precision arithmetic, operating on signed integers, rational numbers, and floating-point numbers. [LGPL3 & GPL2]
+* [MIRACL](https://github.com/CertiVox/MIRACL) - A Multiprecision Integer and Rational Arithmetic Cryptographic Library. [AGPL]
+* [LibTomMath](https://github.com/libtom/libtommath) - A free open source portable number theoretic multiple-precision integer library written entirely in C. [PublicDomain & WTFPL] [website](http://www.libtom.net/)
+* [QuantLib](https://github.com/lballabio/quantlib) - A free/open-source library for quantitative finance. [Modified BSD] [website](http://quantlib.org/)
+
+## Scientific Computing
+
+* [FFTW](http://www.fftw.org/) - A C library for computing the DFT in one or more dimensions. [GPL]
+* [GSL](http://www.gnu.org/software/gsl/) - GNU scientific library. [GPL]
