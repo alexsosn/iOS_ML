@@ -1,18 +1,17 @@
-# Future iOS
+# Future iOS - tools and resources to create really smart iOS applications.
 
 [![Join the chat at https://gitter.im/alexsosn/iOS_ML](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexsosn/iOS_ML?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Curated List of 
+Curated List of resources for iOS developers in following topics: 
 - Machine Learning, 
 - Artificial Intelligence,
 - Natural Language Processing (NLP), 
 - Computer Vision, 
 - GPGPU, 
 - Data Visualization
-resources for iOS developers. 
 
-Most of the de-facto standard tools from listed above domains are written in Python/Java/R so find something appropriate for your iOS application may be a difficult task.
-This list consists mostly of native libraries written in Objective-C, Swift and ports of C, C++, JavaScript libraries or libs which can be easily ported for iOS. Also links to some relevant web APIs, blog posts, videos and learning materials included.
+Most of the de-facto standard tools from domains listed above are written in iOS-unfiendly languages (Python/Java/R/Matlab) so find something appropriate for your iOS application may be a difficult task.
+This list consists mainly of native libraries written in Objective-C, Swift and ports of C, C++, JavaScript libraries or libs which can be easily ported to iOS. Also links to some relevant web APIs, blog posts, videos and learning materials included.
 
 ## Where to learn about machine learning and other related staff
 * [Courserra course](https://www.coursera.org/learn/machine-learning/home/info) on machine learning from [Andrew Ng](https://twitter.com/AndrewYNg)
@@ -25,15 +24,17 @@ This list consists mostly of native libraries written in Objective-C, Swift and 
 
 * [MLPNeuralNet](https://github.com/nikolaypavlov/MLPNeuralNet) - Fast multilayer perceptron neural network library for iOS and Mac OS X. MLPNeuralNet predicts new examples by trained neural network. It is built on top of the Apple's Accelerate Framework, using vectorized operations and hardware acceleration if available.
 * [MAChineLearning](https://github.com/gianlucabertani/MAChineLearning) - An Objective-C multilayer perceptron library, with full support for training through backpropagation. Implemented using vDSP and vecLib, it's 20 times faster than its Java equivalent. Includes sample code for use from Swift.
+* [FANN](https://cocoapods.org/pods/FANN) - Fast Artifical Neural Network library; an implementation of neural networks.
+* [lbimproved](https://github.com/lemire/lbimproved) - DTW + kNN in C
+* [Recommender](https://github.com/GHamrouni/Recommender) - A C library for product recommendations/suggestions using collaborative filtering (CF).
+* [SNNeuralNet](https://github.com/devongovett/SNNeuralNet) - A neural network library for Objective-C based on brain.js, for iOS and Mac OS X.
+* **Shark** - provides libraries for the design of adaptive systems, including methods for linear and nonlinear optimization (e.g., evolutionary and gradient-based algorithms), kernel-based algorithms and neural networks, and other machine learning techniques. [CocoaPods](https://cocoapods.org/pods/Shark-SDK). [Official site](http://image.diku.dk/shark/sphinx_pages/build/html/index.html)
 * [BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - It implemented 3 layers neural network ( Input Layer, Hidden Layer and Output Layer ) and it named Back Propagation Neural Network (BPN). This network can be used in products recommendation, user behavior analysis, data mining and data analysis.
 * [Multi-Perceptron-NeuralNetwork](https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork) - it implemented multi-perceptrons neural network based on Back Propagation Neural Network (BPN) and designed unlimited-hidden-layers.
 * [KRHebbian-Algorithm](https://github.com/Kalvar/ios-KRHebbian-Algorithm) - It is a non-supervisor and self-learning algorithm (adjust the weights) in neural network of Machine Learning.
 * [KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - It implemented K-Means the clustering and classification algorithm. It could be used in data mining and image compression.
 * [KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - It implemented Fuzzy C-Means (FCM) the fuzzy clustering / classification algorithm on Machine Learning. It could be used in data mining and image compression.
-* [FANN](https://cocoapods.org/pods/FANN) - Fast Artifical Neural Network library; an implementation of neural networks.
-* [lbimproved](https://github.com/lemire/lbimproved) - DTW + kNN
-* [SNNeuralNet](https://github.com/devongovett/SNNeuralNet) - A neural network library for Objective-C based on brain.js, for iOS and Mac OS X.
-* **Shark** - provides libraries for the design of adaptive systems, including methods for linear and nonlinear optimization (e.g., evolutionary and gradient-based algorithms), kernel-based algorithms and neural networks, and other machine learning techniques. [CocoaPods](https://cocoapods.org/pods/Shark-SDK). [Official site](http://sourceforge.net/projects/shark-project/)
+
 
 
 * https://www.ibmdw.net/watson/
@@ -86,37 +87,31 @@ An Objective-C implementation of Twitter's text processing library
 ### Translation
 * https://cloud.google.com/translate/docs
 
-### Speech Recognition and Generation
-* http://blog.tryolabs.com/2015/06/15/tlsphinx-automatic-speech-recognition-asr-in-swift/
-* https://github.com/tryolabs/TLSphinx
-* https://github.com/vimalmurugan89/MVSpeechSynthesizer
-* https://tech.yandex.com/speechkit/mobilesdk/
+### Speech Recognition (TTS) and Generation (STT)
+* [TLSphinx](https://github.com/tryolabs/TLSphinx), [Tutorial](http://blog.tryolabs.com/2015/06/15/tlsphinx-automatic-speech-recognition-asr-in-swift/)
+* [MVSpeechSynthesizer](https://github.com/vimalmurugan89/MVSpeechSynthesizer)
+* [Yandex SpeechKit for Russian language](https://tech.yandex.com/speechkit/mobilesdk/)
+* [OpenEars™: free speech recognition and speech synthesis for the iPhone](http://www.politepix.com/openears/) - OpenEars™ makes it simple for you to add offline speech recognition and synthesized speech/TTS to your iPhone app quickly and easily. It lets everyone get the great results of using advanced speech UI concepts like statistical language models and finite state grammars in their app, but with no more effort than creating an NSArray or NSDictionary. [Tutorial (Russian)](http://habrahabr.ru/post/237589/)
 
 ## Computer Vision
 * https://developer.vuforia.com/downloads/sdk
 * http://habrahabr.ru/company/dataart/blog/256385/
 
-* http://maniacdev.com/2011/07/tutorial-using-and-building-opencv-open-computer-vision-on-ios-devices
-* http://opencv.org/
+* [OpenCV](http://opencv.org)
 * https://github.com/foundry/OpenCVSwiftStitch
-
+* http://maniacdev.com/2011/07/tutorial-using-and-building-opencv-open-computer-vision-on-ios-devices
 
 * http://trackingjs.com/ - Object tracking in JS
 
 ### Text recognition (OCR)
-* Tesseract
+* **Tesseract**
+- http://lois.di-qual.net/blog/install-and-use-tesseract-on-ios-with-tesseract-ios/
+- https://github.com/ldiqual/tesseract-ios-lib
+- https://github.com/ldiqual/tesseract-ios
+- https://github.com/gali8/Tesseract-OCR-iOS
+- https://github.com/robmathews/OCR-iOS-Example
 
-http://lois.di-qual.net/blog/install-and-use-tesseract-on-ios-with-tesseract-ios/
-
-https://github.com/ldiqual/tesseract-ios-lib
-
-https://github.com/ldiqual/tesseract-ios
-
-https://github.com/gali8/Tesseract-OCR-iOS
-
-https://github.com/robmathews/OCR-iOS-Example
-
-http://www.abbyy.com/mobile-ocr/iphone-ocr/
+* [Abbyy OCR SDK](http://www.abbyy.com/mobile-ocr/iphone-ocr/)
 
 * https://github.com/antimatter15/ocrad.js - JS OCR
 
@@ -166,11 +161,6 @@ http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
 <a name="c" />
 ## C
 
-<a name="c-general-purpose" />
-#### General-Purpose Machine Learning
-* [Recommender](https://github.com/GHamrouni/Recommender) - A C library for product recommendations/suggestions using collaborative filtering (CF).
-
-
 <a name="c-cv" />
 #### Computer Vision
 
@@ -183,7 +173,6 @@ http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
 <a name="cpp-cv" />
 #### Computer Vision
 
-* [OpenCV](http://opencv.org) - OpenCV has C++, C, Python, Java and MATLAB interfaces and supports Windows, Linux, Android and Mac OS.
 * [DLib](http://dlib.net/imaging.html) - DLib has C++ and Python interfaces for face detection and training general object detectors.
 * [EBLearn](http://eblearn.sourceforge.net/) - Eblearn is an object-oriented C++ library that implements various machine learning models
 * [VIGRA](https://github.com/ukoethe/vigra) - VIGRA is a generic cross-platform C++ computer vision and machine learning library for volumes of arbitrary dimensionality with Python bindings.
@@ -194,14 +183,12 @@ http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
 * [MLPack](http://www.mlpack.org/) - A scalable C++ machine learning library
 * [DLib](http://dlib.net/ml.html) - A suite of ML tools designed to be easy to imbed in other applications
 * [encog-cpp](https://code.google.com/p/encog-cpp/)
-* [shark](http://image.diku.dk/shark/sphinx_pages/build/html/index.html)
 * [Vowpal Wabbit (VW)](https://github.com/JohnLangford/vowpal_wabbit/wiki) - A fast out-of-core learning system.
 * [sofia-ml](https://code.google.com/p/sofia-ml/) - Suite of fast incremental algorithms.
 * [Shogun](https://github.com/shogun-toolbox/shogun) - The Shogun Machine Learning Toolbox
 * [Caffe](http://caffe.berkeleyvision.org)  - A deep learning framework developed with cleanliness, readability, and speed in mind. [DEEP LEARNING]
 * [CXXNET](https://github.com/antinucleon/cxxnet) - Yet another deep learning framework with less than 1000 lines core code [DEEP LEARNING]
 * [XGBoost](https://github.com/tqchen/xgboost) - A parallelized optimized general purpose gradient boosting library.
-* [CUDA](https://code.google.com/p/cuda-convnet/) - This is a fast C++/CUDA implementation of convolutional [DEEP LEARNING]
 * [Stan](http://mc-stan.org/) - A probabilistic programming language implementing full Bayesian statistical inference with Hamiltonian Monte Carlo sampling
 * [BanditLib](https://github.com/jkomiyama/banditlib) - A simple Multi-armed Bandit library.
 * [Timbl](http://ilk.uvt.nl/timbl) - A software package/C++ library implementing several memory-based learning algorithms, among which IB1-IG, an implementation of k-nearest neighbor classification, and IGTree, a decision-tree approximation of IB1-IG. Commonly used for NLP.
