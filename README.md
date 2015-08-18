@@ -1,7 +1,18 @@
 # Future iOS
-Curated List of Machine Learning, AI, NLP, Computer Vision, GPGPU, Data Visualization and Functional Programming solutions for iOS.
+Curated List of 
+- Machine Learning, 
+- Artificial Intelligence,
+- Natural Language Processing (NLP), 
+- Computer Vision, 
+- GPGPU, 
+- Data Visualization and 
+- Functional Programming 
+resources for iOS. 
+
+The list consists mostly of native libraries written in Objective-C, Swift and ports of C, C++, JavaScript libraries or libs which can be easily ported for iOS. Also links to some relevant web APIs and blog posts included.
 
 ## General-Purpose Machine Learning
+https://github.com/lemire/lbimproved - DTW + kNN
 https://github.com/nikolaypavlov/MLPNeuralNet - Fast multilayer perceptron neural network library for iOS and Mac OS X 
 https://github.com/devongovett/SNNeuralNet
 
@@ -20,6 +31,9 @@ https://github.com/jetpacapp/DeepBeliefSDK
 https://github.com/scottsievert/swix
 https://github.com/karpathy/convnetjs
 https://github.com/harthur/brain
+
+## Game AI
+http://www.raywenderlich.com/24824/introduction-to-ai-programming-for-games
 
 ## Math
 https://github.com/mattt/Surge
@@ -40,6 +54,8 @@ The library includes methods for extracting user names, mentions headers, hashta
 https://github.com/twitter/twitter-text-objc
 
 An Objective-C implementation of Twitter's text processing library
+
+https://code.google.com/p/word2vec/ - Original C implementation of Word2Vec Deep Learning algorithm. Works on iPhone like a charm.
 
 ## Speech Recognition and Generation
 
@@ -93,6 +109,8 @@ https://github.com/kubatru/JTChartView
 https://github.com/typelift/Swiftz
 https://github.com/typelift/SwiftCheck - QuickCheck for Swift 
 https://github.com/mxcl/PromiseKit
+https://github.com/oisdk/SwiftSequence
+https://github.com/ReactiveCocoa/ReactiveCocoa
 
 ## Databases
 
