@@ -100,6 +100,23 @@ An Objective-C implementation of Twitter's text processing library
 * [OpenCV](http://opencv.org)
 * https://github.com/foundry/OpenCVSwiftStitch
 * http://maniacdev.com/2011/07/tutorial-using-and-building-opencv-open-computer-vision-on-ios-devices
+* ML:
+ * Normal Bayes Classifier
+ * K-Nearest Neighbour Classifier  
+ * Support Vector Machines  
+ * Expectation - Maximization     
+ * Decision Tree 
+ * Random Trees Classifier 
+ * Extremely randomized trees Classifier  
+ * Boosted tree classifier
+ * Gradient Boosted Trees     
+ * Multi-Layer Perceptrons
+* CV:
+ * Haar-like Object Detection  
+ * Latent SVM Object Detection 
+ * HOG (Histogram-of-Oriented-Gradients) Descriptor and Object Detector
+ * [Data Matrix detection](https://en.wikipedia.org/wiki/Data_Matrix) 
+ * LINE template matching algorithm
 
 * http://trackingjs.com/ - Object tracking in JS
 
