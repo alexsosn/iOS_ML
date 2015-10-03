@@ -3,22 +3,29 @@
 [![Join the chat at https://gitter.im/alexsosn/iOS_ML](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexsosn/iOS_ML?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Curated List of resources for iOS developers in following topics: 
+
 - Machine Learning, 
 - Artificial Intelligence,
 - Natural Language Processing (NLP), 
 - Computer Vision, 
-- GPGPU, 
-- Data Visualization
+- General-Purpose GPU Computing (GPGPU), 
+- Data Visualization,
+- Bioinformatics
 
 Most of the de-facto standard tools from domains listed above are written in iOS-unfiendly languages (Python/Java/R/Matlab) so find something appropriate for your iOS application may be a difficult task.
 This list consists mainly of native libraries written in Objective-C, Swift and ports of C, C++, JavaScript libraries or libs which can be easily ported to iOS. Also links to some relevant web APIs, blog posts, videos and learning materials included.
 
-## Where to learn about machine learning and other related staff
-* [Courserra course](https://www.coursera.org/learn/machine-learning/home/info) on machine learning from [Andrew Ng](https://twitter.com/AndrewYNg)
-* [Machine learning playlist on Youtube](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA)
-* Free online interactive book ["Neural Networks and Deep Learning"](http://neuralnetworksanddeeplearning.com/)
-* ["Natural Language Processing with Python"](http://www.nltk.org/book/) - free online book
-* [Heterogeneous Parallel Programming](https://www.coursera.org/course/hetero) course
+## Where to learn about machine learning and other related staff in general
+* [Courserra course](https://www.coursera.org/learn/machine-learning/home/info) on machine learning from [Andrew Ng](https://twitter.com/AndrewYNg).
+* [Machine learning playlist on Youtube](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA).
+* Free online interactive book ["Neural Networks and Deep Learning"](http://neuralnetworksanddeeplearning.com/).
+* ["Natural Language Processing with Python"](http://www.nltk.org/book/) - free online book.
+* [Heterogeneous Parallel Programming](https://www.coursera.org/course/hetero) course.
+* Immersive Linear Algebra [interactive book](http://immersivemath.com/ila/index.html) by J. Ström, K. Åström, and T. Akenine-Möller.
+* [Videos](http://videolectures.net/deeplearning2015_montreal/) from Deep Learning Summer School, Montreal 2015.
+* [Deep Learning for Perception](https://computing.ece.vt.edu/~f15ece6504/) by Virginia Tech, Electrical and Computer Engineering, Fall 2015: ECE 6504
+* [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) - An intro to Bayesian methods and probabilistic programming from a computation/understanding-first, mathematics-second point of view. 
+* [CAP 5415 - Computer Vision](http://crcv.ucf.edu/courses/CAP5415/Fall2014/index.php) by UCF
 
 ## General-Purpose Machine Learning
 
@@ -34,136 +41,133 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * [KRHebbian-Algorithm](https://github.com/Kalvar/ios-KRHebbian-Algorithm) - It is a non-supervisor and self-learning algorithm (adjust the weights) in neural network of Machine Learning.
 * [KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - It implemented K-Means the clustering and classification algorithm. It could be used in data mining and image compression.
 * [KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - It implemented Fuzzy C-Means (FCM) the fuzzy clustering / classification algorithm on Machine Learning. It could be used in data mining and image compression.
-
-
-
-* https://www.ibmdw.net/watson/
-* https://github.com/jetpacapp/DeepBeliefSDK
-* https://github.com/scottsievert/swix
-* https://github.com/karpathy/convnetjs
-* https://github.com/harthur/brain
-
-* https://prediction.io/
-* https://github.com/minhtule/PredictionIO-Swift-SDK
-* https://github.com/minhtule/Tapster-iOS-Demo - This demo demonstrates how to use the PredictionIO Swift SDK to integrate an iOS app with a PredictionIO engine to make your mobile app more interesting.
-* https://github.com/minhtule/Tapster-iOS-Demo/blob/master/TUTORIAL.md - Tutorial on using Swift with PredictionIO
-
-* https://cloud.google.com/prediction/docs
-* https://code.google.com/p/google-api-objectivec-client/wiki/Introduction
+* [Torch-iOS](https://github.com/clementfarabet/torch-ios) - [Torch](http://torch.ch/) port for iOS. Torch is a scientific computing framework with wide support for machine learning algorithms. One of the most popular deep learning frameworks.
+* [Caffe](http://caffe.berkeleyvision.org) - A deep learning framework developed with cleanliness, readability, and speed in mind.
+[GitHub](https://github.com/BVLC/caffe). [BSD]
+	* C++ examples: [Classifying ImageNet](http://caffe.berkeleyvision.org/gathered/examples/cpp_classification.html), [Extracting Features](http://caffe.berkeleyvision.org/gathered/examples/feature_extraction.html)
+* [IBM Watson](https://www.ibmdw.net/watson/)
+* [Deep Belief SDK](https://github.com/jetpacapp/DeepBeliefSDK)
+* [Swix](https://github.com/scottsievert/swix) - Swift implementation of NumPy.
+* [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models. [GitHub](https://github.com/karpathy/convnetjs)
+* [Brain](https://github.com/harthur/brain) - Neural networks in JavaScript
+* [PredictionIO](https://prediction.io/)
+	* [Swift SDK](https://github.com/minhtule/PredictionIO-Swift-SDK)
+	* [Tapster iOS Demo](https://github.com/minhtule/Tapster-iOS-Demo) - This demo demonstrates how to use the PredictionIO Swift SDK to integrate an iOS app with a PredictionIO engine to make your mobile app more interesting.
+	* [Tutorial](https://github.com/minhtule/Tapster-iOS-Demo/blob/master/TUTORIAL.md) on using Swift with PredictionIO.
+* [Google Prediction engine](https://cloud.google.com/prediction/docs)
+	* [Objective-C API](https://code.google.com/p/google-api-objectivec-client/wiki/Introduction)
 
 ## AI
-* https://github.com/saniul/Mendel - Genetic alghorithms
+* [Mendel](https://github.com/saniul/Mendel) - Genetic algorithms in Swift.
 
 ### Game AI
-* [introduction-to-ai-programming-for-games](http://www.raywenderlich.com/24824/introduction-to-ai-programming-for-games)
-
+* [Introduction to AI Programming for Games](http://www.raywenderlich.com/24824/introduction-to-ai-programming-for-games)
 * [dlib](http://dlib.net/) is a library which has many useful tools including machine learning.
 * [MicroPather](http://www.grinninglizard.com/MicroPather/) is a path finder and A* solver (astar or a-star) written in platform independent C++ that can be easily integrated into existing code.
 * Here is a [list](http://www.ogre3d.org/tikiwiki/List+Of+Libraries#Artificial_intelligence) of some AI libraries suggested on OGRE3D website. Seems they are mostly written in C++ and at least most of them are not depended on OGRE engine itself.
 * [GameplayKit Programming Guide](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/GameplayKit_Guide/Minmax.html#//apple_ref/doc/uid/TP40015172-CH2-SW1)
 
 ## Math
-https://github.com/mattt/Surge
+* [Surge](https://github.com/mattt/Surge) from Mattt
 
 ## Natural Language Processing
-* https://wit.ai/
-* https://github.com/ayanonagon/Parsimmon
-* NSLinguistic​Tagger
+* [Wit.AI](https://wit.ai/)
+* [Parsimmon](https://github.com/ayanonagon/Parsimmon)
+* [NSLinguisticTagger](http://nshipster.com/nslinguistictagger/)
+* [AlchemyAPI](http://www.alchemyapi.com/)
 
-* http://nshipster.com/nslinguistictagger/
+###Computational Semantics
+* [Word2Vec](https://code.google.com/p/word2vec/) - Original C implementation of Word2Vec Deep Learning algorithm. Works on iPhone like a charm.
 
-* http://www.alchemyapi.com/
-
-* Twitter text
-
-The library includes methods for extracting user names, mentions headers, hashtags, and more – all the tweet specific language syntax you could ever want.
-
-https://github.com/twitter/twitter-text-objc
-
-An Objective-C implementation of Twitter's text processing library
-
-* https://code.google.com/p/word2vec/ - Original C implementation of Word2Vec Deep Learning algorithm. Works on iPhone like a charm.
+### Text Mining
+* [Twitter text](https://github.com/twitter/twitter-text-objc) - 
+An Objective-C implementation of Twitter's text processing library. The library includes methods for extracting user names, mentions headers, hashtags, and more – all the tweet specific language syntax you could ever want.
 
 ### Translation
-* https://cloud.google.com/translate/docs
+* [Google Translate API](https://cloud.google.com/translate/docs)
 
 ### Speech Recognition (TTS) and Generation (STT)
 * [TLSphinx](https://github.com/tryolabs/TLSphinx), [Tutorial](http://blog.tryolabs.com/2015/06/15/tlsphinx-automatic-speech-recognition-asr-in-swift/)
 * [MVSpeechSynthesizer](https://github.com/vimalmurugan89/MVSpeechSynthesizer)
-* [Yandex SpeechKit for Russian language](https://tech.yandex.com/speechkit/mobilesdk/)
+* [Yandex SpeechKit](https://tech.yandex.com/speechkit/mobilesdk/) for Russian language
 * [OpenEars™: free speech recognition and speech synthesis for the iPhone](http://www.politepix.com/openears/) - OpenEars™ makes it simple for you to add offline speech recognition and synthesized speech/TTS to your iPhone app quickly and easily. It lets everyone get the great results of using advanced speech UI concepts like statistical language models and finite state grammars in their app, but with no more effort than creating an NSArray or NSDictionary. [Tutorial (Russian)](http://habrahabr.ru/post/237589/)
 
 ## Computer Vision
-* https://developer.vuforia.com/downloads/sdk
-* http://habrahabr.ru/company/dataart/blog/256385/
+* [**Vuforia** Framework](https://developer.vuforia.com/downloads/sdk)
+	* [Object detection with Vuforia tutorial.](http://habrahabr.ru/company/dataart/blog/256385/) \(Russian\)
 
-* [OpenCV](http://opencv.org)
-* https://github.com/foundry/OpenCVSwiftStitch
-* http://maniacdev.com/2011/07/tutorial-using-and-building-opencv-open-computer-vision-on-ios-devices
-* ML:
- * Normal Bayes Classifier
- * K-Nearest Neighbour Classifier  
- * Support Vector Machines  
- * Expectation - Maximization     
- * Decision Tree 
- * Random Trees Classifier 
- * Extremely randomized trees Classifier  
- * Boosted tree classifier
- * Gradient Boosted Trees     
- * Multi-Layer Perceptrons
-* CV:
- * Haar-like Object Detection  
- * Latent SVM Object Detection 
- * HOG (Histogram-of-Oriented-Gradients) Descriptor and Object Detector
- * [Data Matrix detection](https://en.wikipedia.org/wiki/Data_Matrix) 
- * LINE template matching algorithm
+* **[OpenCV](http://opencv.org)** - Open Source Computer Vision Library. [BSD]
+	* [OpenCV crash course](http://www.pyimagesearch.com/free-opencv-crash-course/
+) 
+	* https://github.com/foundry/OpenCVSwiftStitch
+	* http://maniacdev.com/2011/07/tutorial-using-and-building-opencv-open-computer-vision-on-ios-devices
+	* ML:
+	 * Normal Bayes Classifier
+	 * K-Nearest Neighbour Classifier  
+	 * Support Vector Machines  
+	 * Expectation - Maximisation     
+	 * Decision Tree 
+	 * Random Trees Classifier 
+	 * Extremely randomised trees Classifier  
+	 * Boosted tree classifier
+	 * Gradient Boosted Trees     
+	 * Multi-Layer Perceptrons
+	* CV:
+	 * Haar-like Object Detection  
+	 * Latent SVM Object Detection 
+	 * HOG (Histogram-of-Oriented-Gradients) Descriptor and Object Detector
+	 * [Data Matrix detection](https://en.wikipedia.org/wiki/Data_Matrix) 
+	 * LINE template matching algorithm
 
-* http://trackingjs.com/ - Object tracking in JS
+* [trackingjs](http://trackingjs.com/) - Object tracking in JS
 
-### Text recognition (OCR)
+### Text Recognition (OCR)
 * **Tesseract**
-- http://lois.di-qual.net/blog/install-and-use-tesseract-on-ios-with-tesseract-ios/
-- https://github.com/ldiqual/tesseract-ios-lib
-- https://github.com/ldiqual/tesseract-ios
-- https://github.com/gali8/Tesseract-OCR-iOS
-- https://github.com/robmathews/OCR-iOS-Example
+	* http://lois.di-qual.net/blog/install-and-use-tesseract-on-ios-with-tesseract-ios/
+	* https://github.com/ldiqual/tesseract-ios-lib
+	* https://github.com/ldiqual/tesseract-ios
+	* https://github.com/gali8/Tesseract-OCR-iOS
+	* https://github.com/robmathews/OCR-iOS-Example
 
-* [Abbyy OCR SDK](http://www.abbyy.com/mobile-ocr/iphone-ocr/)
-
-* https://github.com/antimatter15/ocrad.js - JS OCR
+* [**Abbyy OCR** SDK](http://www.abbyy.com/mobile-ocr/iphone-ocr/)
+* [ocrad.js](https://github.com/antimatter15/ocrad.js) - JS OCR
 
 
 
 ## GPGPU
-https://github.com/linusyang/opencl-test-ios
+### Articles
+* [OpenCL for iOS](https://github.com/linusyang/opencl-test-ios) - just a test.
+* Exploring GPGPU on iOS. 
+	* [Article](http://ciechanowski.me/blog/2014/01/05/exploring_gpgpu_on_ios/) 
+	* [Code](https://github.com/Ciechan/Exploring-GPGPU-on-iOS
+)
+* [GPUImage](https://github.com/BradLarson/GPUImage) is a GPU-accelerated image processing library.
 
-http://ciechanowski.me/blog/2014/01/05/exploring_gpgpu_on_ios/
+* GPU-accelerated video processing for Mac and iOS. [Article](http://www.sunsetlakesoftware.com/2010/10/22/gpu-accelerated-video-processing-mac-and-ios0).
 
-Exploring GPGPU on iOS
-https://realm.io/news/altconf-simon-gladman-ios-gpu-programming-with-swift-metal/
-https://github.com/Ciechan/Exploring-GPGPU-on-iOS
+* https://developer.apple.com/library/ios/documentation/3ddrawing/conceptual/opengles_programmingguide/ConcurrencyandOpenGLES/ConcurrencyandOpenGLES.html
 
-https://github.com/BradLarson/GPUImage
+* http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
 
-http://www.sunsetlakesoftware.com/2010/10/22/gpu-accelerated-video-processing-mac-and-ios
-
-https://developer.apple.com/library/ios/documentation/3ddrawing/conceptual/opengles_programmingguide/ConcurrencyandOpenGLES/ConcurrencyandOpenGLES.html
-
-http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
-
-* http://flexmonkey.blogspot.com/
-* https://github.com/FlexMonkey/MetalReactionDiffusion
-* https://github.com/FlexMonkey/ParticleLab
+#### Metal
+* Simon's Gladman \(aka flexmonkey\) [blog](http://flexmonkey.blogspot.com/)
+	* [talk on iOS GPU programming](https://realm.io/news/altconf-simon-gladman-ios-gpu-programming-with-swift-metal/) with Swift and Metal at Realm Altconf.
+	* https://github.com/FlexMonkey/MetalReactionDiffusion
+	* https://github.com/FlexMonkey/ParticleLab
 
 
 ## Data Visualization
-* https://github.com/danielgindi/ios-charts
-* https://github.com/core-plot/core-plot
-* https://github.com/sxyx2008/awesome-ios-chart
-* https://github.com/kubatru/JTChartView
+* [iOS-Charts](https://github.com/danielgindi/ios-charts)
+* [Core Plot](https://github.com/core-plot/core-plot)
+* [Awesome iOS charts](https://github.com/sxyx2008/awesome-ios-chart)
+* [JTChartView](https://github.com/kubatru/JTChartView)
+* [VTK](http://www.vtk.org/gallery/)
+	* [VTK in action](http://www.vtk.org/vtk-in-action/)
 
-* http://www.vtk.org/gallery/
-* http://www.vtk.org/vtk-in-action/
+## Bioinformatics
+* [BioJS](http://biojs.net/) - a set of tools for bioinformatics in the browser. BioJS builds a infrastructure, guidelines and tools to avoid the reinvention of the wheel in life sciences. Community builds modules than can be reused by anyone.
+* [BioCocoa](http://www.bioinformatics.org/biococoa/wiki/pmwiki.php) - BioCocoa is an open source OpenStep (GNUstep/Cocoa) framework for bioinformatics written in Objective-C. [Dead project].
+
 
 # Other Lists
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
@@ -174,7 +178,7 @@ http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
 
 <!-- /MarkdownTOC -->
 # Unsorted links from some other lists:
-//TODO: sort it out :)
+// TODO: Figure out which of libraries are iOS compatible.
 <a name="c" />
 ## C
 
@@ -203,7 +207,6 @@ http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
 * [Vowpal Wabbit (VW)](https://github.com/JohnLangford/vowpal_wabbit/wiki) - A fast out-of-core learning system.
 * [sofia-ml](https://code.google.com/p/sofia-ml/) - Suite of fast incremental algorithms.
 * [Shogun](https://github.com/shogun-toolbox/shogun) - The Shogun Machine Learning Toolbox
-* [Caffe](http://caffe.berkeleyvision.org)  - A deep learning framework developed with cleanliness, readability, and speed in mind. [DEEP LEARNING]
 * [CXXNET](https://github.com/antinucleon/cxxnet) - Yet another deep learning framework with less than 1000 lines core code [DEEP LEARNING]
 * [XGBoost](https://github.com/tqchen/xgboost) - A parallelized optimized general purpose gradient boosting library.
 * [Stan](http://mc-stan.org/) - A probabilistic programming language implementing full Bayesian statistical inference with Hamiltonian Monte Carlo sampling
@@ -259,12 +262,11 @@ http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
 * [Z3d](https://github.com/NathanEpstein/Z3d) - Easily make interactive 3d plots built on Three.js
 * [Sigma.js](http://sigmajs.org/) - JavaScript library dedicated to graph drawing.
 * [C3.js](http://c3js.org/)- customizable library based on D3.js for easy chart drawing. 
-
+* [BioJS]()
 
 <a name="javascript-general-purpose" />
 #### General-Purpose Machine Learning
 
-* [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models[DEEP LEARNING]
 * [Clusterfck](http://harthur.github.io/clusterfck/) - Agglomerative hierarchical clustering implemented in Javascript for Node.js and the browser
 * [Clustering.js](https://github.com/tixz/clustering.js) - Clustering algorithms implemented in Javascript for Node.js and the browser
 * [Decision Trees](https://github.com/serendipious/nodejs-decision-tree-id3) - NodeJS Implementation of Decision Tree using ID3 Algorithm
@@ -276,7 +278,6 @@ http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
 * [Machine Learning](http://joonku.com/project/machine_learning) - Machine learning library for Node.js
 * [mil-tokyo](https://github.com/mil-tokyo) - List of several machine learning libraries
 * [Node-SVM](https://github.com/nicolaspanel/node-svm) - Support Vector Machine for nodejs
-* [Brain](https://github.com/harthur/brain) - Neural networks in JavaScript
 * [Bayesian-Bandit](https://github.com/omphalos/bayesian-bandit.js) - Bayesian bandit implementation for Node and the browser.
 * [Synaptic](https://github.com/cazala/synaptic) - Architecture-free neural network library for node.js and the browser
 * [kNear](https://github.com/NathanEpstein/kNear) - JavaScript implementation of the k nearest neighbors algorithm for supervised learning
@@ -372,12 +373,10 @@ There're also some great commercial libraries, like [amchart](http://www.amchart
 
 ## Machine Learning
 
-* [Caffe](https://github.com/BVLC/caffe) - A fast framework for neural networks. [BSD]
 * [CCV](https://github.com/liuliu/ccv) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library. [BSD]
 * [MeTA](https://github.com/meta-toolkit/meta) - A modern C++ data sciences toolkit. [MIT] [website](https://meta-toolkit.org/)
 * [Minerva](https://github.com/minerva-developers/minerva) - A fast and flexible system for deep learning. [Apache2]
 * [mlpack](http://www.mlpack.org/) - A scalable c++ machine learning library. [LGPLv3]
-* [OpenCV](https://github.com/Itseez/opencv) :zap: - Open Source Computer Vision Library. [BSD] [website](http://opencv.org/)
 * [Recommender](https://github.com/GHamrouni/Recommender) - C library for product recommendations/suggestions using collaborative filtering (CF). [BSD]
 * [SHOGUN](https://github.com/shogun-toolbox/shogun) - The Shogun Machine Learning Toolbox. [GPLv3]
 * [sofia-ml](https://code.google.com/p/sofia-ml/) - The suite of fast incremental algorithms for machine learning. [Apache2]
