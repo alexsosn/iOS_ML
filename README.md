@@ -26,6 +26,10 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * [Deep Learning for Perception](https://computing.ece.vt.edu/~f15ece6504/) by Virginia Tech, Electrical and Computer Engineering, Fall 2015: ECE 6504
 * [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) - An intro to Bayesian methods and probabilistic programming from a computation/understanding-first, mathematics-second point of view. 
 * [CAP 5415 - Computer Vision](http://crcv.ucf.edu/courses/CAP5415/Fall2014/index.php) by UCF
+* [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/syllabus.html) by Stanford
+* [Machine Learning: 2014-2015 Course materials](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/) by Oxford
+* [Stanford CS class CS231n: Convolutional Neural Networks for Visual Recognition.](http://cs231n.stanford.edu/)
+* [Deep Learning for Natural Language Processing \(without Magic\)](http://nlp.stanford.edu/courses/NAACL2013/)
 
 ## General-Purpose Machine Learning
 
@@ -48,7 +52,7 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * [IBM Watson](https://www.ibmdw.net/watson/)
 * [Deep Belief SDK](https://github.com/jetpacapp/DeepBeliefSDK)
 * [Swix](https://github.com/scottsievert/swix) - Swift implementation of NumPy.
-* [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models. [GitHub](https://github.com/karpathy/convnetjs)
+* [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models by [Andrej Karpathy](https://twitter.com/karpathy). [GitHub](https://github.com/karpathy/convnetjs)
 * [Brain](https://github.com/harthur/brain) - Neural networks in JavaScript
 * [PredictionIO](https://prediction.io/)
 	* [Swift SDK](https://github.com/minhtule/PredictionIO-Swift-SDK)
@@ -262,7 +266,6 @@ An Objective-C implementation of Twitter's text processing library. The library 
 * [Z3d](https://github.com/NathanEpstein/Z3d) - Easily make interactive 3d plots built on Three.js
 * [Sigma.js](http://sigmajs.org/) - JavaScript library dedicated to graph drawing.
 * [C3.js](http://c3js.org/)- customizable library based on D3.js for easy chart drawing. 
-* [BioJS]()
 
 <a name="javascript-general-purpose" />
 #### General-Purpose Machine Learning
