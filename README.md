@@ -49,17 +49,23 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * [Caffe](http://caffe.berkeleyvision.org) - A deep learning framework developed with cleanliness, readability, and speed in mind.
 [GitHub](https://github.com/BVLC/caffe). [BSD]
 	* C++ examples: [Classifying ImageNet](http://caffe.berkeleyvision.org/gathered/examples/cpp_classification.html), [Extracting Features](http://caffe.berkeleyvision.org/gathered/examples/feature_extraction.html)
-* [IBM Watson](https://www.ibmdw.net/watson/)
+	* [Caffe iOS sample](https://github.com/noradaiko/caffe-ios-sample)
 * [Deep Belief SDK](https://github.com/jetpacapp/DeepBeliefSDK)
 * [Swix](https://github.com/scottsievert/swix) - Swift implementation of NumPy.
 * [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models by [Andrej Karpathy](https://twitter.com/karpathy). [GitHub](https://github.com/karpathy/convnetjs)
 * [Brain](https://github.com/harthur/brain) - Neural networks in JavaScript
+
+### APIs
+
+* [IBM Watson](https://www.ibmdw.net/watson/)
+* [Microsoft Project Oxford](https://www.projectoxford.ai/)
 * [PredictionIO](https://prediction.io/)
 	* [Swift SDK](https://github.com/minhtule/PredictionIO-Swift-SDK)
 	* [Tapster iOS Demo](https://github.com/minhtule/Tapster-iOS-Demo) - This demo demonstrates how to use the PredictionIO Swift SDK to integrate an iOS app with a PredictionIO engine to make your mobile app more interesting.
 	* [Tutorial](https://github.com/minhtule/Tapster-iOS-Demo/blob/master/TUTORIAL.md) on using Swift with PredictionIO.
 * [Google Prediction engine](https://cloud.google.com/prediction/docs)
 	* [Objective-C API](https://code.google.com/p/google-api-objectivec-client/wiki/Introduction)
+
 
 ## AI
 * [Mendel](https://github.com/saniul/Mendel) - Genetic algorithms in Swift.
