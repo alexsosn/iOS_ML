@@ -149,20 +149,23 @@ An Objective-C implementation of Twitter's text processing library. The library 
 	* [Article](http://ciechanowski.me/blog/2014/01/05/exploring_gpgpu_on_ios/) 
 	* [Code](https://github.com/Ciechan/Exploring-GPGPU-on-iOS
 )
-* [GPUImage](https://github.com/BradLarson/GPUImage) is a GPU-accelerated image processing library.
 
 * GPU-accelerated video processing for Mac and iOS. [Article](http://www.sunsetlakesoftware.com/2010/10/22/gpu-accelerated-video-processing-mac-and-ios0).
 
-* https://developer.apple.com/library/ios/documentation/3ddrawing/conceptual/opengles_programmingguide/ConcurrencyandOpenGLES/ConcurrencyandOpenGLES.html
+* [Concurrency and OpenGL ES](https://developer.apple.com/library/ios/documentation/3ddrawing/conceptual/opengles_programmingguide/ConcurrencyandOpenGLES/ConcurrencyandOpenGLES.html) - Apple programming guide.
 
-* http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage
+* [OpenCV on iOS GPU usage](http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage) - SO discussion.
 
 #### Metal
 * Simon's Gladman \(aka flexmonkey\) [blog](http://flexmonkey.blogspot.com/)
 	* [talk on iOS GPU programming](https://realm.io/news/altconf-simon-gladman-ios-gpu-programming-with-swift-metal/) with Swift and Metal at Realm Altconf.
 	* https://github.com/FlexMonkey/MetalReactionDiffusion
 	* https://github.com/FlexMonkey/ParticleLab
+* [Memkite blog](http://memkite.com/) - startup intended to create deep learning library for iOS.
+	* [Swift and Metal example for General Purpose GPU Processing on Apple TVOS 9.0](https://github.com/memkite/MetalForTVOS)
 
+### GPU-accelerated libraries
+* [GPUImage](https://github.com/BradLarson/GPUImage) is a GPU-accelerated image processing library.
 
 ## Data Visualization
 * [iOS-Charts](https://github.com/danielgindi/ios-charts)
