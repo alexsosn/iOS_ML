@@ -72,7 +72,8 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * [Swix](https://github.com/scottsievert/swix) - Swift implementation of NumPy.
 * [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models by [Andrej Karpathy](https://twitter.com/karpathy). [GitHub](https://github.com/karpathy/convnetjs)
 * [Brain](https://github.com/harthur/brain) - Neural networks in JavaScript
-
+* [April-ANN](https://github.com/pakozm/april-ann) -  APRIL-ANN toolkit (A Pattern Recognizer In Lua with ANNs). This toolkit incorporates ANN algorithms (as dropout, stacked denoising auto-encoders, convolutional NNs), with other pattern recognition methods as HMMs among others. Additionally, in experimental stage, it is possible to perform automatic differentiation, for advanced ML research. Potentially can be ported for iOS. 
+	* [Official Site](http://pakozm.github.com/april-ann/). 
 
 ## AI
 * [Mendel](https://github.com/saniul/Mendel) - Genetic algorithms in Swift.
@@ -101,7 +102,8 @@ An Objective-C implementation of Twitter's text processing library. The library 
 ### Speech Recognition (TTS) and Generation (STT)
 * [TLSphinx](https://github.com/tryolabs/TLSphinx), [Tutorial](http://blog.tryolabs.com/2015/06/15/tlsphinx-automatic-speech-recognition-asr-in-swift/)
 * [MVSpeechSynthesizer](https://github.com/vimalmurugan89/MVSpeechSynthesizer)
-* [OpenEars™: free speech recognition and speech synthesis for the iPhone](http://www.politepix.com/openears/) - OpenEars™ makes it simple for you to add offline speech recognition and synthesized speech/TTS to your iPhone app quickly and easily. It lets everyone get the great results of using advanced speech UI concepts like statistical language models and finite state grammars in their app, but with no more effort than creating an NSArray or NSDictionary. [Tutorial (Russian)](http://habrahabr.ru/post/237589/)
+* [OpenEars™: free speech recognition and speech synthesis for the iPhone](http://www.politepix.com/openears/) - OpenEars™ makes it simple for you to add offline speech recognition and synthesized speech/TTS to your iPhone app quickly and easily. It lets everyone get the great results of using advanced speech UI concepts like statistical language models and finite state grammars in their app, but with no more effort than creating an NSArray or NSDictionary. 
+	* [Tutorial (Russian)](http://habrahabr.ru/post/237589/)
 
 ## Computer Vision
 * [**Vuforia** Framework](https://developer.vuforia.com/downloads/sdk)
@@ -158,11 +160,17 @@ An Objective-C implementation of Twitter's text processing library. The library 
 
 #### Metal
 * Simon's Gladman \(aka flexmonkey\) [blog](http://flexmonkey.blogspot.com/)
-	* [talk on iOS GPU programming](https://realm.io/news/altconf-simon-gladman-ios-gpu-programming-with-swift-metal/) with Swift and Metal at Realm Altconf.
+	* [Talk on iOS GPU programming](https://realm.io/news/altconf-simon-gladman-ios-gpu-programming-with-swift-metal/) with Swift and Metal at Realm Altconf.
+	* [The Supercomputer In Your Pocket:
+Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a video from the Swift Summit Conference 2015
 	* https://github.com/FlexMonkey/MetalReactionDiffusion
 	* https://github.com/FlexMonkey/ParticleLab
 * [Memkite blog](http://memkite.com/) - startup intended to create deep learning library for iOS.
 	* [Swift and Metal example for General Purpose GPU Processing on Apple TVOS 9.0](https://github.com/memkite/MetalForTVOS)
+	* [Data Parallel Processing with Swift and Metal on GPU for iOS8](https://github.com/memkite/SwiftMetalGPUParallelProcessing)
+	* [Example of Sharing Memory between GPU and CPU with Swift and Metal for iOS8](http://memkite.com/blog/2014/12/30/example-of-sharing-memory-between-gpu-and-cpu-with-swift-and-metal-for-ios8/)
+* [Metal by Example blog](http://metalbyexample.com/)
+* [objc-io article on Metal](https://www.objc.io/issues/18-games/metal/)
 
 ### GPU-accelerated libraries
 * [GPUImage](https://github.com/BradLarson/GPUImage) is a GPU-accelerated image processing library.
