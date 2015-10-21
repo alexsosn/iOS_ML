@@ -1,4 +1,5 @@
-# Future iOS - tools and resources to create really smart iOS applications.
+# Machine Learning for iOS 
+## tools and resources to create really smart iOS applications.
 
 [![Join the chat at https://gitter.im/alexsosn/iOS_ML](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexsosn/iOS_ML?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -15,7 +16,7 @@ Curated List of resources for iOS developers in following topics:
 Most of the de-facto standard tools from domains listed above are written in iOS-unfiendly languages (Python/Java/R/Matlab) so find something appropriate for your iOS application may be a difficult task.
 This list consists mainly of native libraries written in Objective-C, Swift and ports of C, C++, JavaScript libraries or libs which can be easily ported to iOS. Also links to some relevant web APIs, blog posts, videos and learning materials included.
 
-## Where to learn about machine learning and other related staff in general
+## Where to learn about machine learning and related topics in general
 * [Courserra course](https://www.coursera.org/learn/machine-learning/home/info) on machine learning from [Andrew Ng](https://twitter.com/AndrewYNg).
 * [Machine learning playlist on Youtube](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA).
 * Free online interactive book ["Neural Networks and Deep Learning"](http://neuralnetworksanddeeplearning.com/).
@@ -39,7 +40,9 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * [**Google** Prediction engine](https://cloud.google.com/prediction/docs)
 	* [Objective-C API](https://code.google.com/p/google-api-objectivec-client/wiki/Introduction)
 * [Google Translate API](https://cloud.google.com/translate/docs)
-* [**Amazon** Machine Learning](http://aws.amazon.com/documentation/machine-learning/) - Amazon ML is a cloud-based service for developers. It provides visualization tools to create machine learning models. Obtain predictions for application using APIs. [iOS developer guide](https://docs.aws.amazon.com/mobile/sdkforios/developerguide/getting-started-machine-learning.html).
+* [**Amazon** Machine Learning](http://aws.amazon.com/documentation/machine-learning/) - Amazon ML is a cloud-based service for developers. It provides visualization tools to create machine learning models. Obtain predictions for application using APIs. 
+	* [iOS developer guide](https://docs.aws.amazon.com/mobile/sdkforios/developerguide/getting-started-machine-learning.html).
+	* [iOS SDK](https://github.com/aws/aws-sdk-ios)
 * [**PredictionIO**](https://prediction.io/) - opensource machine learning server for developers and ML engineers. Built on Apache Spark, HBase and Spray.
 	* [Swift SDK](https://github.com/minhtule/PredictionIO-Swift-SDK)
 	* [Tapster iOS Demo](https://github.com/minhtule/Tapster-iOS-Demo) - This demo demonstrates how to use the PredictionIO Swift SDK to integrate an iOS app with a PredictionIO engine to make your mobile app more interesting.
@@ -59,7 +62,7 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * [SNNeuralNet](https://github.com/devongovett/SNNeuralNet) - A neural network library for Objective-C based on brain.js, for iOS and Mac OS X.
 * **Shark** - provides libraries for the design of adaptive systems, including methods for linear and nonlinear optimization (e.g., evolutionary and gradient-based algorithms), kernel-based algorithms and neural networks, and other machine learning techniques. [CocoaPods](https://cocoapods.org/pods/Shark-SDK). [Official site](http://image.diku.dk/shark/sphinx_pages/build/html/index.html)
 * [BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - It implemented 3 layers neural network ( Input Layer, Hidden Layer and Output Layer ) and it named Back Propagation Neural Network (BPN). This network can be used in products recommendation, user behavior analysis, data mining and data analysis.
-* [Multi-Perceptron-NeuralNetwork](https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork) - it implemented multi-perceptrons neural network based on Back Propagation Neural Network (BPN) and designed unlimited-hidden-layers.
+* [KRANN](https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork) - Multi-perceptrons neural network based on Back Propagation Neural Network (BPN).
 * [KRHebbian-Algorithm](https://github.com/Kalvar/ios-KRHebbian-Algorithm) - It is a non-supervisor and self-learning algorithm (adjust the weights) in neural network of Machine Learning.
 * [KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - It implemented K-Means the clustering and classification algorithm. It could be used in data mining and image compression.
 * [KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - It implemented Fuzzy C-Means (FCM) the fuzzy clustering / classification algorithm on Machine Learning. It could be used in data mining and image compression.
@@ -71,9 +74,13 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * [Deep Belief SDK](https://github.com/jetpacapp/DeepBeliefSDK)
 * [Swix](https://github.com/scottsievert/swix) - Swift implementation of NumPy.
 * [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models by [Andrej Karpathy](https://twitter.com/karpathy). [GitHub](https://github.com/karpathy/convnetjs)
-* [Brain](https://github.com/harthur/brain) - Neural networks in JavaScript
+* [Brain](https://github.com/harthur/brain) - Neural networks in JavaScript. Unmaintained.
 * [April-ANN](https://github.com/pakozm/april-ann) -  APRIL-ANN toolkit (A Pattern Recognizer In Lua with ANNs). This toolkit incorporates ANN algorithms (as dropout, stacked denoising auto-encoders, convolutional NNs), with other pattern recognition methods as HMMs among others. Additionally, in experimental stage, it is possible to perform automatic differentiation, for advanced ML research. Potentially can be ported for iOS. 
 	* [Official Site](http://pakozm.github.com/april-ann/). 
+* [YCML](http://yconst.com/software/ycml/) - A Machine Learning framework for Objective-C and Swift (OS X / iOS). 
+The following algorithms are currently available: Gradient Descent Backpropagation, Resilient Backpropagation (RProp), Extreme Learning Machines (ELM), Forward Selection using Orthogonal Least Squares (for RBF Net), also with the PRESS statistic, Binary Restricted Boltzmann Machines (CD & PCD, Untested!). YCML also contains some optimization algorithms as support for deriving predictive models, although they can be used for any kind of problem: Gradient Descent (Single-Objective, Unconstrained), RProp Gradient Descent (Single-Objective, Unconstrained), NSGA-II (Multi-Objective, Constrained).
+	* [Github](https://github.com/yconst/ycml/). 
+
 
 ## AI
 * [Mendel](https://github.com/saniul/Mendel) - Genetic algorithms in Swift.
@@ -82,11 +89,12 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * [Introduction to AI Programming for Games](http://www.raywenderlich.com/24824/introduction-to-ai-programming-for-games)
 * [dlib](http://dlib.net/) is a library which has many useful tools including machine learning.
 * [MicroPather](http://www.grinninglizard.com/MicroPather/) is a path finder and A* solver (astar or a-star) written in platform independent C++ that can be easily integrated into existing code.
-* Here is a [list](http://www.ogre3d.org/tikiwiki/List+Of+Libraries#Artificial_intelligence) of some AI libraries suggested on OGRE3D website. Seems they are mostly written in C++ and at least most of them are not depended on OGRE engine itself.
+* Here is a [list](http://www.ogre3d.org/tikiwiki/List+Of+Libraries#Artificial_intelligence) of some AI libraries suggested on OGRE3D website. Seems they are mostly written in C++.
 * [GameplayKit Programming Guide](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/GameplayKit_Guide/Minmax.html#//apple_ref/doc/uid/TP40015172-CH2-SW1)
 
 ## Math
 * [Surge](https://github.com/mattt/Surge) from Mattt
+* [YCMatrix](https://github.com/yconst/YCMatrix) - A flexible Matrix library for Objective-C and Swift (OS X / iOS)
 
 ## Natural Language Processing
 * [Parsimmon](https://github.com/ayanonagon/Parsimmon)
@@ -194,3 +202,14 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [Awesome Data Science](https://github.com/okulbilisim/awesome-datascience)
 * [Awesome Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision)
 * [Speech and language processing](https://github.com/edobashira/speech-language-processing)
+
+# People to follow in iOS machine learning and related topics
+\(In alphabet order\).
+
+* **Simon Gladman** - Swift and Metal enthusiast and blogger. [Blog](http://flexmonkey.blogspot.com/). [@flexmonkey](https://twitter.com/flexmonkey).
+* **Andrej Karpathy** - PhD student at Stanford. ConvNetJS author. [Blog](http://karpathy.github.io/). [@karpathy](https://twitter.com/karpathy)
+* **Kalvar Lin** - wrote a set of small machine learning libraries for iOS. [@ilovekalvar](https://twitter.com/ilovekalvar).
+* **Memkite team** - Memkite is a Deep Learning framework for iOS that can be used to support Artificial Intelligence (AI) in apps. [@memkite](https://twitter.com/memkite).
+	* **Torbjørn Morland** [@torbmorland](https://twitter.com/torbmorland).
+	* **Amund Tveit** [@atveit](https://twitter.com/atveit)
+
