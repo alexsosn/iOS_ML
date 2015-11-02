@@ -1,5 +1,5 @@
 # Machine Learning for iOS 
-## tools and resources to create really smart iOS applications.
+## Tools and resources to create really smart iOS applications.
 
 [![Join the chat at https://gitter.im/alexsosn/iOS_ML](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexsosn/iOS_ML?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -50,6 +50,8 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * [**Wit.AI**](https://wit.ai/) - NLP API
 * [**Yandex** SpeechKit](https://tech.yandex.com/speechkit/mobilesdk/) Text-to-speech and speech-to-text for Russian language. iOS SDK available.
 * [**Abbyy** OCR SDK](http://www.abbyy.com/mobile-ocr/iphone-ocr/)
+* [**Clarifai**](http://www.clarifai.com/#) - deep learning web api for image captioning. [iOS starter project](https://github.com/Clarifai/clarifai-ios-starter)
+* [**MetaMind**](https://www.metamind.io/) - deep learning web api for image captioning.
 
 
 ## General-Purpose Machine Learning Libraries
@@ -122,7 +124,7 @@ An Objective-C implementation of Twitter's text processing library. The library 
 ) 
 	* https://github.com/foundry/OpenCVSwiftStitch
 	* http://maniacdev.com/2011/07/tutorial-using-and-building-opencv-open-computer-vision-on-ios-devices
-	* ML:
+	* ML algorithms:
 	 * Normal Bayes Classifier
 	 * K-Nearest Neighbour Classifier  
 	 * Support Vector Machines  
