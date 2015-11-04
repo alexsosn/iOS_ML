@@ -1,6 +1,7 @@
 <!-- /MarkdownTOC -->
-# Unsorted links from some other lists:
-// TODO: Figure out which of libraries are iOS compatible.
+# Other libraries (unsorted and non-validated)
+This is an unsorted list of presumably iOS-compatible libraries. The list is composed by copy-pasting from some other awesome-lists found somewhere on github.
+
 <a name="c" />
 ## C
 
@@ -211,7 +212,6 @@ There're also some great commercial libraries, like [amchart](http://www.amchart
 * [ceres-solver](http://ceres-solver.org/) - C++ library for modeling and solving large complicated nonlinear least squares problems from google. [BSD]
 * [CGal](http://www.cgal.org/) - Collection of efficient and reliable geometric algorithms. [LGPL&GPL]
 * [cml](http://cmldev.net/) - free C++ math library for games and graphics. [Boost]
-* [Eigen](http://eigen.tuxfamily.org/) - A high-level C++ library of template headers for linear algebra, matrix and vector operations, numerical solvers and related algorithms. [MPL2]
 * [GLM](https://github.com/g-truc/glm) - Header-only C++ math library that matches and inter-operates with OpenGL's GLSL math. [MIT]
 * [GMTL](http://ggt.sourceforge.net/) - Graphics Math Template Library is a collection of tools implementing Graphics primitives in generalized ways. [GPL2]
 * [GMP](https://gmplib.org/) - A C/C++ library for arbitrary precision arithmetic, operating on signed integers, rational numbers, and floating-point numbers. [LGPL3 & GPL2]

@@ -3,7 +3,7 @@
 
 [![Join the chat at https://gitter.im/alexsosn/iOS_ML](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexsosn/iOS_ML?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Curated List of resources for iOS developers in following topics: 
+Curated list of resources for iOS developers in following topics: 
 
 - Machine Learning, 
 - Artificial Intelligence,
@@ -15,6 +15,8 @@ Curated List of resources for iOS developers in following topics:
 
 Most of the de-facto standard tools from domains listed above are written in iOS-unfiendly languages (Python/Java/R/Matlab) so find something appropriate for your iOS application may be a difficult task.
 This list consists mainly of native libraries written in Objective-C, Swift and ports of C, C++, JavaScript libraries or libs which can be easily ported to iOS. Also links to some relevant web APIs, blog posts, videos and learning materials included.
+
+**Pull-requests are welcome!**
 
 ## Where to learn about machine learning and related topics in general
 * [Courserra course](https://www.coursera.org/learn/machine-learning/home/info) on machine learning from [Andrew Ng](https://twitter.com/AndrewYNg).
@@ -56,32 +58,40 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 
 ## General-Purpose Machine Learning Libraries
 
-* [MLPNeuralNet](https://github.com/nikolaypavlov/MLPNeuralNet) - Fast multilayer perceptron neural network library for iOS and Mac OS X. MLPNeuralNet predicts new examples by trained neural network. It is built on top of the Apple's Accelerate Framework, using vectorized operations and hardware acceleration if available.
-* [MAChineLearning](https://github.com/gianlucabertani/MAChineLearning) - An Objective-C multilayer perceptron library, with full support for training through backpropagation. Implemented using vDSP and vecLib, it's 20 times faster than its Java equivalent. Includes sample code for use from Swift.
 * [FANN](https://cocoapods.org/pods/FANN) - Fast Artifical Neural Network library; an implementation of neural networks.
 * [lbimproved](https://github.com/lemire/lbimproved) - DTW + kNN in C
+* **Shark** - provides libraries for the design of adaptive systems, including methods for linear and nonlinear optimization (e.g., evolutionary and gradient-based algorithms), kernel-based algorithms and neural networks, and other machine learning techniques. [CocoaPods](https://cocoapods.org/pods/Shark-SDK). [Official site](http://image.diku.dk/shark/sphinx_pages/build/html/index.html)
+* [YCML](http://yconst.com/software/ycml/) - A Machine Learning framework for Objective-C and Swift (OS X / iOS). 
+The following algorithms are currently available: Gradient Descent Backpropagation, Resilient Backpropagation (RProp), Extreme Learning Machines (ELM), Forward Selection using Orthogonal Least Squares (for RBF Net), also with the PRESS statistic, Binary Restricted Boltzmann Machines (CD & PCD, Untested!). YCML also contains some optimization algorithms as support for deriving predictive models, although they can be used for any kind of problem: Gradient Descent (Single-Objective, Unconstrained), RProp Gradient Descent (Single-Objective, Unconstrained), NSGA-II (Multi-Objective, Constrained).
+	* [Github](https://github.com/yconst/ycml/). 
+* [Swix](https://github.com/scottsievert/swix) - Swift implementation of NumPy.
+* [Brain](https://github.com/harthur/brain) - Neural networks in JavaScript. Unmaintained.
+* [April-ANN](https://github.com/pakozm/april-ann) - APRIL-ANN toolkit (A Pattern Recognizer In Lua with ANNs). This toolkit incorporates ANN algorithms (as dropout, stacked denoising auto-encoders, convolutional NNs), with other pattern recognition methods as HMMs among others. Additionally, in experimental stage, it is possible to perform automatic differentiation, for advanced ML research. Potentially can be ported for iOS. 
+	* [Official Site](http://pakozm.github.com/april-ann/). 
 * [Recommender](https://github.com/GHamrouni/Recommender) - A C library for product recommendations/suggestions using collaborative filtering (CF).
 * [SNNeuralNet](https://github.com/devongovett/SNNeuralNet) - A neural network library for Objective-C based on brain.js, for iOS and Mac OS X.
-* **Shark** - provides libraries for the design of adaptive systems, including methods for linear and nonlinear optimization (e.g., evolutionary and gradient-based algorithms), kernel-based algorithms and neural networks, and other machine learning techniques. [CocoaPods](https://cocoapods.org/pods/Shark-SDK). [Official site](http://image.diku.dk/shark/sphinx_pages/build/html/index.html)
-* [BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - It implemented 3 layers neural network ( Input Layer, Hidden Layer and Output Layer ) and it named Back Propagation Neural Network (BPN). This network can be used in products recommendation, user behavior analysis, data mining and data analysis.
-* [KRANN](https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork) - Multi-perceptrons neural network based on Back Propagation Neural Network (BPN).
-* [KRHebbian-Algorithm](https://github.com/Kalvar/ios-KRHebbian-Algorithm) - It is a non-supervisor and self-learning algorithm (adjust the weights) in neural network of Machine Learning.
-* [KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - It implemented K-Means the clustering and classification algorithm. It could be used in data mining and image compression.
-* [KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - It implemented Fuzzy C-Means (FCM) the fuzzy clustering / classification algorithm on Machine Learning. It could be used in data mining and image compression.
+* [MLPNeuralNet](https://github.com/nikolaypavlov/MLPNeuralNet) - Fast multilayer perceptron neural network library for iOS and Mac OS X. MLPNeuralNet predicts new examples by trained neural network. It is built on top of the Apple's Accelerate Framework, using vectorized operations and hardware acceleration if available.
+* [MAChineLearning](https://github.com/gianlucabertani/MAChineLearning) - An Objective-C multilayer perceptron library, with full support for training through backpropagation. Implemented using vDSP and vecLib, it's 20 times faster than its Java equivalent. Includes sample code for use from Swift.
+
+* **Kalvar Lin's libraries**
+	* [ios-BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - 3 layers NN + Back Propagation.
+	* [ios-Multi-Perceptron-NeuralNetwork / KRANN](https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork) - Multi-perceptrons neural NN based on Back Propagation NN.
+	* [ios-KRHebbian-Algorithm](https://github.com/Kalvar/ios-KRHebbian-Algorithm)
+	* [ios-KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - K-Means clustering and classification.
+	* [ios-KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - Fuzzy C-Means fuzzy clustering / classification algorithm.
+	* [ios-KRGreyTheory](https://github.com/Kalvar/ios-KRGreyTheory) - Grey Theory implementation \([this one?](http://researchinformation.co.uk/grey/IntroGreySysTheory.pdf)\).
+	* [ios-KRKNN](https://github.com/Kalvar/ios-KRKNN) - kNN implementation.
+	* [ios-ML-Recommendation-System](https://github.com/Kalvar/ios-ML-Recommendation-System)
+
+
+### Deep Learning
 * [Torch-iOS](https://github.com/clementfarabet/torch-ios) - [Torch](http://torch.ch/) port for iOS. Torch is a scientific computing framework with wide support for machine learning algorithms. One of the most popular deep learning frameworks.
 * [Caffe](http://caffe.berkeleyvision.org) - A deep learning framework developed with cleanliness, readability, and speed in mind.
 [GitHub](https://github.com/BVLC/caffe). [BSD]
 	* C++ examples: [Classifying ImageNet](http://caffe.berkeleyvision.org/gathered/examples/cpp_classification.html), [Extracting Features](http://caffe.berkeleyvision.org/gathered/examples/feature_extraction.html)
 	* [Caffe iOS sample](https://github.com/noradaiko/caffe-ios-sample)
 * [Deep Belief SDK](https://github.com/jetpacapp/DeepBeliefSDK)
-* [Swix](https://github.com/scottsievert/swix) - Swift implementation of NumPy.
 * [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models by [Andrej Karpathy](https://twitter.com/karpathy). [GitHub](https://github.com/karpathy/convnetjs)
-* [Brain](https://github.com/harthur/brain) - Neural networks in JavaScript. Unmaintained.
-* [April-ANN](https://github.com/pakozm/april-ann) -  APRIL-ANN toolkit (A Pattern Recognizer In Lua with ANNs). This toolkit incorporates ANN algorithms (as dropout, stacked denoising auto-encoders, convolutional NNs), with other pattern recognition methods as HMMs among others. Additionally, in experimental stage, it is possible to perform automatic differentiation, for advanced ML research. Potentially can be ported for iOS. 
-	* [Official Site](http://pakozm.github.com/april-ann/). 
-* [YCML](http://yconst.com/software/ycml/) - A Machine Learning framework for Objective-C and Swift (OS X / iOS). 
-The following algorithms are currently available: Gradient Descent Backpropagation, Resilient Backpropagation (RProp), Extreme Learning Machines (ELM), Forward Selection using Orthogonal Least Squares (for RBF Net), also with the PRESS statistic, Binary Restricted Boltzmann Machines (CD & PCD, Untested!). YCML also contains some optimization algorithms as support for deriving predictive models, although they can be used for any kind of problem: Gradient Descent (Single-Objective, Unconstrained), RProp Gradient Descent (Single-Objective, Unconstrained), NSGA-II (Multi-Objective, Constrained).
-	* [Github](https://github.com/yconst/ycml/). 
 
 
 ## AI
@@ -94,9 +104,6 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 * Here is a [list](http://www.ogre3d.org/tikiwiki/List+Of+Libraries#Artificial_intelligence) of some AI libraries suggested on OGRE3D website. Seems they are mostly written in C++.
 * [GameplayKit Programming Guide](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/GameplayKit_Guide/Minmax.html#//apple_ref/doc/uid/TP40015172-CH2-SW1)
 
-## Math
-* [Surge](https://github.com/mattt/Surge) from Mattt
-* [YCMatrix](https://github.com/yconst/YCMatrix) - A flexible Matrix library for Objective-C and Swift (OS X / iOS)
 
 ## Natural Language Processing
 * [Parsimmon](https://github.com/ayanonagon/Parsimmon)
@@ -122,8 +129,8 @@ An Objective-C implementation of Twitter's text processing library. The library 
 * **[OpenCV](http://opencv.org)** - Open Source Computer Vision Library. [BSD]
 	* [OpenCV crash course](http://www.pyimagesearch.com/free-opencv-crash-course/
 ) 
-	* https://github.com/foundry/OpenCVSwiftStitch
-	* http://maniacdev.com/2011/07/tutorial-using-and-building-opencv-open-computer-vision-on-ios-devices
+	* [OpenCVSwiftStitch](https://github.com/foundry/OpenCVSwiftStitch)
+	* [Tutorial: using and building openCV on iOS devices](http://maniacdev.com/2011/07/tutorial-using-and-building-opencv-open-computer-vision-on-ios-devices)
 	* ML algorithms:
 	 * Normal Bayes Classifier
 	 * K-Nearest Neighbour Classifier  
@@ -146,13 +153,17 @@ An Objective-C implementation of Twitter's text processing library. The library 
 
 ### Text Recognition (OCR)
 * **Tesseract**
-	* http://lois.di-qual.net/blog/install-and-use-tesseract-on-ios-with-tesseract-ios/
-	* https://github.com/ldiqual/tesseract-ios-lib
-	* https://github.com/ldiqual/tesseract-ios
-	* https://github.com/gali8/Tesseract-OCR-iOS
-	* https://github.com/robmathews/OCR-iOS-Example
+	* [Install and Use Tesseract on iOS](http://lois.di-qual.net/blog/install-and-use-tesseract-on-ios-with-tesseract-ios/)
+	* [tesseract-ios-lib](https://github.com/ldiqual/tesseract-ios-lib)
+	* [tesseract-ios](https://github.com/ldiqual/tesseract-ios)
+	* [Tesseract-OCR-iOS](https://github.com/gali8/Tesseract-OCR-iOS)
+	* [OCR-iOS-Example](https://github.com/robmathews/OCR-iOS-Example)
 * [ocrad.js](https://github.com/antimatter15/ocrad.js) - JS OCR
 
+## General Math
+* [Surge](https://github.com/mattt/Surge) from Mattt
+* [YCMatrix](https://github.com/yconst/YCMatrix) - A flexible Matrix library for Objective-C and Swift (OS X / iOS)
+* [Eigen](http://eigen.tuxfamily.org/) - A high-level C++ library of template headers for linear algebra, matrix and vector operations, numerical solvers and related algorithms. [MPL2]
 
 ## GPGPU
 ### Articles
@@ -196,6 +207,7 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 ## Bioinformatics
 * [BioJS](http://biojs.net/) - a set of tools for bioinformatics in the browser. BioJS builds a infrastructure, guidelines and tools to avoid the reinvention of the wheel in life sciences. Community builds modules than can be reused by anyone.
 * [BioCocoa](http://www.bioinformatics.org/biococoa/wiki/pmwiki.php) - BioCocoa is an open source OpenStep (GNUstep/Cocoa) framework for bioinformatics written in Objective-C. [Dead project].
+* [iBio](https://github.com/Lizhen0909/iBio) - A Bioinformatics App for iPhone.
 
 
 # Other Lists
