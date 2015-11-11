@@ -16,7 +16,7 @@ Curated list of resources for iOS developers in following topics:
 Most of the de-facto standard tools from domains listed above are written in iOS-unfiendly languages (Python/Java/R/Matlab) so find something appropriate for your iOS application may be a difficult task.
 This list consists mainly of native libraries written in Objective-C, Swift and ports of C, C++, JavaScript libraries or libs which can be easily ported to iOS. Also links to some relevant web APIs, blog posts, videos and learning materials included.
 
-**Pull-requests are welcome!**
+**Pull-requests are welcome [here](https://github.com/alexsosn/iOS_ML)!**
 
 ## Where to learn about machine learning and related topics in general
 * [Courserra course](https://www.coursera.org/learn/machine-learning/home/info) on machine learning from [Andrew Ng](https://twitter.com/AndrewYNg).
@@ -72,6 +72,7 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 * [SNNeuralNet](https://github.com/devongovett/SNNeuralNet) - A neural network library for Objective-C based on brain.js, for iOS and Mac OS X.
 * [MLPNeuralNet](https://github.com/nikolaypavlov/MLPNeuralNet) - Fast multilayer perceptron neural network library for iOS and Mac OS X. MLPNeuralNet predicts new examples by trained neural network. It is built on top of the Apple's Accelerate Framework, using vectorized operations and hardware acceleration if available.
 * [MAChineLearning](https://github.com/gianlucabertani/MAChineLearning) - An Objective-C multilayer perceptron library, with full support for training through backpropagation. Implemented using vDSP and vecLib, it's 20 times faster than its Java equivalent. Includes sample code for use from Swift.
+* [BrainCore](https://github.com/aleph7/BrainCore)
 
 * **Kalvar Lin's libraries**
 	* [ios-BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - 3 layers NN + Back Propagation.
@@ -85,14 +86,17 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 
 
 ### Deep Learning
-* [TensorFlow](http://www.tensorflow.org/) - an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.
 * [Torch-iOS](https://github.com/clementfarabet/torch-ios) - [Torch](http://torch.ch/) port for iOS. Torch is a scientific computing framework with wide support for machine learning algorithms. One of the most popular deep learning frameworks.
 * [Caffe](http://caffe.berkeleyvision.org) - A deep learning framework developed with cleanliness, readability, and speed in mind.
 [GitHub](https://github.com/BVLC/caffe). [BSD]
+	* [iOS port](https://github.com/aleph7/caffe)
 	* C++ examples: [Classifying ImageNet](http://caffe.berkeleyvision.org/gathered/examples/cpp_classification.html), [Extracting Features](http://caffe.berkeleyvision.org/gathered/examples/feature_extraction.html)
 	* [Caffe iOS sample](https://github.com/noradaiko/caffe-ios-sample)
-* [Deep Belief SDK](https://github.com/jetpacapp/DeepBeliefSDK)
+* [Deep Belief SDK](https://github.com/jetpacapp/DeepBeliefSDK) -  The SDK for Jetpac's iOS Deep Belief image recognition framework
 * [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models by [Andrej Karpathy](https://twitter.com/karpathy). [GitHub](https://github.com/karpathy/convnetjs)
+* [mxnet](http://mxnet.readthedocs.org/en/latest/) - MXNet is a deep learning framework designed for both efficiency and flexibility.
+	* [Deploying mxnet to smartphone](https://mxnet.readthedocs.org/en/latest/tutorial/smart_device.html)
+* [TensorFlow](http://www.tensorflow.org/) - an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API. TensorFlow Will have iOS support in the future.
 
 
 ## AI
@@ -167,6 +171,7 @@ An Objective-C implementation of Twitter's text processing library. The library 
 * [Eigen](http://eigen.tuxfamily.org/) - A high-level C++ library of template headers for linear algebra, matrix and vector operations, numerical solvers and related algorithms. [MPL2]
 
 ## GPGPU
+
 ### Articles
 * [OpenCL for iOS](https://github.com/linusyang/opencl-test-ios) - just a test.
 * Exploring GPGPU on iOS. 
@@ -211,6 +216,9 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [iBio](https://github.com/Lizhen0909/iBio) - A Bioinformatics App for iPhone.
 
 
+## Big Data
+* [HDF5Kit](https://github.com/aleph7/HDF5Kit) - This is a Swift wrapper for the HDF5 file format. HDF5 is used in the scientific comunity for managing large volumes of data. The objective is to make it easy to read and write HDF5 files from Swift, including playgrounds.
+
 # Other Lists
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
 * [Machine Learning Courses](https://github.com/prakhar1989/awesome-courses#machine-learning)
@@ -221,6 +229,7 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 # People to follow in iOS machine learning and related topics
 \(In alphabet order\).
 
+* **Alejandro** - BrainCore and Caffe for iOS author. [Blog](http://a-coding.com). [@aleph7](https://twitter.com/aleph7).
 * **Simon Gladman** - Swift and Metal enthusiast and blogger. [Blog](http://flexmonkey.blogspot.com/). [@flexmonkey](https://twitter.com/flexmonkey).
 * **Andrej Karpathy** - PhD student at Stanford. ConvNetJS author. [Blog](http://karpathy.github.io/). [@karpathy](https://twitter.com/karpathy)
 * **Kalvar Lin** - wrote a set of small machine learning libraries for iOS. [@ilovekalvar](https://twitter.com/ilovekalvar).
