@@ -1,5 +1,8 @@
 # Machine Learning for iOS 
+
 ## Tools and resources to create really smart iOS applications.
+
+**Last Update: Dec 28, 2015.**
 
 [![Join the chat at https://gitter.im/alexsosn/iOS_ML](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexsosn/iOS_ML?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -37,11 +40,13 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 ## Web APIs
 
 * [**IBM** Watson](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/) - Enable Cognitive Computing Features In Your App Using IBM Watson's Language, Vision, Speech and Data APIs.
+	* [Introducing the (beta) IBM Watson iOS SDK](https://developer.ibm.com/swift/2015/12/18/introducing-the-new-watson-sdk-for-ios-beta/)
 * [AlchemyAPI](http://www.alchemyapi.com/) - Semantic Text Analysis APIs Using Natural Language Processing. Now part of IBM Watson.
 * [**Microsoft** Project Oxford](https://www.projectoxford.ai/)
 * [**Google** Prediction engine](https://cloud.google.com/prediction/docs)
 	* [Objective-C API](https://code.google.com/p/google-api-objectivec-client/wiki/Introduction)
 * [Google Translate API](https://cloud.google.com/translate/docs)
+* [Google Cloud Vision API](https://cloud.google.com/vision/)
 * [**Amazon** Machine Learning](http://aws.amazon.com/documentation/machine-learning/) - Amazon ML is a cloud-based service for developers. It provides visualization tools to create machine learning models. Obtain predictions for application using APIs. 
 	* [iOS developer guide](https://docs.aws.amazon.com/mobile/sdkforios/developerguide/getting-started-machine-learning.html).
 	* [iOS SDK](https://github.com/aws/aws-sdk-ios)
@@ -54,6 +59,8 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * [**Abbyy** OCR SDK](http://www.abbyy.com/mobile-ocr/iphone-ocr/)
 * [**Clarifai**](http://www.clarifai.com/#) - deep learning web api for image captioning. [iOS starter project](https://github.com/Clarifai/clarifai-ios-starter)
 * [**MetaMind**](https://www.metamind.io/) - deep learning web api for image captioning.
+* [Api.AI](https://api.ai/) - Build intelligent speech interfaces
+for apps, devices, and web
 
 
 ## General-Purpose Machine Learning Libraries
@@ -72,7 +79,9 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 * [SNNeuralNet](https://github.com/devongovett/SNNeuralNet) - A neural network library for Objective-C based on brain.js, for iOS and Mac OS X.
 * [MLPNeuralNet](https://github.com/nikolaypavlov/MLPNeuralNet) - Fast multilayer perceptron neural network library for iOS and Mac OS X. MLPNeuralNet predicts new examples by trained neural network. It is built on top of the Apple's Accelerate Framework, using vectorized operations and hardware acceleration if available.
 * [MAChineLearning](https://github.com/gianlucabertani/MAChineLearning) - An Objective-C multilayer perceptron library, with full support for training through backpropagation. Implemented using vDSP and vecLib, it's 20 times faster than its Java equivalent. Includes sample code for use from Swift.
-* [BrainCore](https://github.com/aleph7/BrainCore)
+* [BrainCore](https://github.com/aleph7/BrainCore) - simple but fast neural network framework written in Swift. It uses Upsurge and the underlying Accelerate framework to be as fast as possible.
+* [Swift-AI](https://github.com/collinhundley/Swift-AI) - 3-layer NN.
+* [EERegression](https://github.com/erkekin/EERegression/) -  General purpose multivaritate and quadratic Regression library for Swift 2.1 
 
 * **Kalvar Lin's libraries**
 	* [ios-BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - 3 layers NN + Back Propagation.
@@ -94,9 +103,11 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [Caffe iOS sample](https://github.com/noradaiko/caffe-ios-sample)
 * [Deep Belief SDK](https://github.com/jetpacapp/DeepBeliefSDK) -  The SDK for Jetpac's iOS Deep Belief image recognition framework
 * [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models by [Andrej Karpathy](https://twitter.com/karpathy). [GitHub](https://github.com/karpathy/convnetjs)
+	* [ConvNetSwift](https://github.com/alexsosn/ConvNetSwift) - Swift port [work in progress].
 * [mxnet](http://mxnet.readthedocs.org/en/latest/) - MXNet is a deep learning framework designed for both efficiency and flexibility.
 	* [Deploying mxnet to smartphone](https://mxnet.readthedocs.org/en/latest/tutorial/smart_device.html)
 * [TensorFlow](http://www.tensorflow.org/) - an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API. TensorFlow Will have iOS support in the future.
+* [DeepLearningKit](http://deeplearningkit.org/) - Open Source Deep Learning Framework from Memkite for Apple's tvOS, iOS and OS X.
 
 
 ## AI
@@ -219,12 +230,17 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 ## Big Data
 * [HDF5Kit](https://github.com/aleph7/HDF5Kit) - This is a Swift wrapper for the HDF5 file format. HDF5 is used in the scientific comunity for managing large volumes of data. The objective is to make it easy to read and write HDF5 files from Swift, including playgrounds.
 
+# Opensource Applications
+* [DeepDreamer](https://github.com/johndpope/deepdreamer) - Deep Dream application
+* [DeepDreamApp](https://github.com/johndpope/DeepDreamApp) - Deep Dream Cordova app.
+
 # Other Lists
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
 * [Machine Learning Courses](https://github.com/prakhar1989/awesome-courses#machine-learning)
 * [Awesome Data Science](https://github.com/okulbilisim/awesome-datascience)
 * [Awesome Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision)
 * [Speech and language processing](https://github.com/edobashira/speech-language-processing)
+* [The Rise of Chat Bots:](https://stanfy.com/blog/the-rise-of-chat-bots-useful-links-articles-libraries-and-platforms/)  Useful Links, Articles, Libraries and Platforms by Pavlo Bashmakov.
 
 # People to follow in iOS machine learning and related topics
 \(In alphabet order\).
