@@ -2,9 +2,7 @@
 
 ## Tools and resources to create really smart iOS applications.
 
-**Last Update: Dec 28, 2015.**
-
-[![Join the chat at https://gitter.im/alexsosn/iOS_ML](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexsosn/iOS_ML?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+**Last Update: September 14, 2016.**
 
 Curated list of resources for iOS developers in following topics: 
 
@@ -82,6 +80,7 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 * [BrainCore](https://github.com/aleph7/BrainCore) - simple but fast neural network framework written in Swift. It uses Upsurge and the underlying Accelerate framework to be as fast as possible.
 * [Swift-AI](https://github.com/collinhundley/Swift-AI) - 3-layer NN.
 * [EERegression](https://github.com/erkekin/EERegression/) -  General purpose multivaritate and quadratic Regression library for Swift 2.1 
+* [SwiftSimpleNeuralNetwork](https://github.com/davecom/SwiftSimpleNeuralNetwork) - Feed forward and back propagation.
 
 * **Kalvar Lin's libraries**
 	* [ios-BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - 3 layers NN + Back Propagation.
@@ -108,6 +107,8 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [Deploying mxnet to smartphone](https://mxnet.readthedocs.org/en/latest/tutorial/smart_device.html)
 * [TensorFlow](http://www.tensorflow.org/) - an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API. TensorFlow Will have iOS support in the future.
 * [DeepLearningKit](http://deeplearningkit.org/) - Open Source Deep Learning Framework from Memkite for Apple's tvOS, iOS and OS X.
+* [BNNS](https://developer.apple.com/reference/accelerate/1912851-bnns) - Apple Basic neural network subroutines (BNNS) is a collection of functions that you use to implement and run neural networks, using previously obtained training data.
+	* [BNNS usage examples]https://github.com/shu223/iOS-10-Sampler) in iOS 10 sampler.
 
 
 ## AI
@@ -245,11 +246,11 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 # People to follow in iOS machine learning and related topics
 \(In alphabet order\).
 
-* **Alejandro** - BrainCore and Caffe for iOS author. [Blog](http://a-coding.com). [@aleph7](https://twitter.com/aleph7).
-* **Simon Gladman** - Swift and Metal enthusiast and blogger. [Blog](http://flexmonkey.blogspot.com/). [@flexmonkey](https://twitter.com/flexmonkey).
-* **Andrej Karpathy** - PhD student at Stanford. ConvNetJS author. [Blog](http://karpathy.github.io/). [@karpathy](https://twitter.com/karpathy)
-* **Kalvar Lin** - wrote a set of small machine learning libraries for iOS. [@ilovekalvar](https://twitter.com/ilovekalvar).
-* **Memkite team** - Memkite is a Deep Learning framework for iOS that can be used to support Artificial Intelligence (AI) in apps. [@memkite](https://twitter.com/memkite).
-	* **Torbjørn Morland** [@torbmorland](https://twitter.com/torbmorland).
-	* **Amund Tveit** [@atveit](https://twitter.com/atveit)
+* **Alejandro** - BrainCore and Caffe for iOS author. [Blog](http://a-coding.com). {% include icon-twitter.html username="aleph7" %}.
+* **Simon Gladman** - Swift and Metal enthusiast and blogger. [Blog](http://flexmonkey.blogspot.com/). {% include icon-twitter.html username="flexmonkey" %}.
+* **Andrej Karpathy** - PhD student at Stanford. ConvNetJS author. [Blog](http://karpathy.github.io/). {% include icon-twitter.html username="karpathy" %}.
+* **Kalvar Lin** - wrote a set of small machine learning libraries for iOS. {% include icon-twitter.html username="ilovekalvar" %}.
+* **Memkite team** - Memkite is a Deep Learning framework for iOS that can be used to support Artificial Intelligence (AI) in apps. {% include icon-twitter.html username="memkite" %}.
+	* **Torbjørn Morland** {% include icon-twitter.html username="torbmorland" %}.
+	* **Amund Tveit** {% include icon-twitter.html username="atveit" %}.
 
