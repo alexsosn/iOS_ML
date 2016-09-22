@@ -2,7 +2,7 @@
 
 ## Tools and resources to create really smart iOS applications.
 
-**Last Update: September 14, 2016.**
+**Last Update: September 22, 2016.**
 
 Curated list of resources for iOS developers in following topics: 
 
@@ -138,6 +138,9 @@ An Objective-C implementation of Twitter's text processing library. The library 
 * [MVSpeechSynthesizer](https://github.com/vimalmurugan89/MVSpeechSynthesizer)
 * [OpenEars™: free speech recognition and speech synthesis for the iPhone](http://www.politepix.com/openears/) - OpenEars™ makes it simple for you to add offline speech recognition and synthesized speech/TTS to your iPhone app quickly and easily. It lets everyone get the great results of using advanced speech UI concepts like statistical language models and finite state grammars in their app, but with no more effort than creating an NSArray or NSDictionary. 
 	* [Tutorial (Russian)](http://habrahabr.ru/post/237589/)
+* [Kaldi-iOS framework](http://keenresearch.com/) - on-device speech recognition using deep learning.
+	* [Proof of concept app](https://github.com/keenresearch/kaldi-ios-poc)
+
 
 ## Computer Vision
 * [**Vuforia** Framework](https://developer.vuforia.com/downloads/sdk)
@@ -148,23 +151,6 @@ An Objective-C implementation of Twitter's text processing library. The library 
 ) 
 	* [OpenCVSwiftStitch](https://github.com/foundry/OpenCVSwiftStitch)
 	* [Tutorial: using and building openCV on iOS devices](http://maniacdev.com/2011/07/tutorial-using-and-building-opencv-open-computer-vision-on-ios-devices)
-	* ML algorithms:
-	 * Normal Bayes Classifier
-	 * K-Nearest Neighbour Classifier  
-	 * Support Vector Machines  
-	 * Expectation - Maximisation     
-	 * Decision Tree 
-	 * Random Trees Classifier 
-	 * Extremely randomised trees Classifier  
-	 * Boosted tree classifier
-	 * Gradient Boosted Trees     
-	 * Multi-Layer Perceptrons
-	* CV:
-	 * Haar-like Object Detection  
-	 * Latent SVM Object Detection 
-	 * HOG (Histogram-of-Oriented-Gradients) Descriptor and Object Detector
-	 * [Data Matrix detection](https://en.wikipedia.org/wiki/Data_Matrix) 
-	 * LINE template matching algorithm
 
 * [trackingjs](http://trackingjs.com/) - Object tracking in JS
 
@@ -253,4 +239,3 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * **Memkite team** - Memkite is a Deep Learning framework for iOS that can be used to support Artificial Intelligence (AI) in apps. {% include icon-twitter.html username="memkite" %}.
 	* **Torbjørn Morland** {% include icon-twitter.html username="torbmorland" %}.
 	* **Amund Tveit** {% include icon-twitter.html username="atveit" %}.
-
