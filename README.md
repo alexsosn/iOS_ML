@@ -2,7 +2,7 @@
 
 ## Tools and resources to create really smart iOS applications.
 
-**Last Update: November 29, 2016.**
+**Last Update: December 1, 2016.**
 
 [Link to a blog post](http://alexsosn.github.io/ml/2015/11/05/iOS-ML.html)
 
@@ -85,18 +85,18 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 * [SwiftSimpleNeuralNetwork](https://github.com/davecom/SwiftSimpleNeuralNetwork) - Feed forward and back propagation.
 
 * **Kalvar Lin's libraries**
-	* [ios-BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - 3 layers NN + Back Propagation.
-	* [ios-Multi-Perceptron-NeuralNetwork](https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork) - Multi-perceptrons neural NN based on Back Propagation NN.
+	* [ios-BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - 3-layer neural network + back propagation.
+	* [ios-Multi-Perceptron-NeuralNetwork](https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork) - Multi-perceptron neural network based on back propagation NN.
 	* [ios-KRDelta](https://github.com/Kalvar/ios-KRDelta) - [Delta Learning method](https://en.wikipedia.org/wiki/Delta_rule)
 	* [ios-KRHebbian-Algorithm](https://github.com/Kalvar/ios-KRHebbian-Algorithm) - [Hebbian Theory](https://en.wikipedia.org/wiki/Hebbian_theory)
-	* [ios-KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - [K-Means](https://en.wikipedia.org/wiki/K-means_clustering) that is a clustering method.
-	* [ios-KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - [Fuzzy C-Means](https://en.wikipedia.org/wiki/Fuzzy_clustering) the fuzzy clustering algorithm.
+	* [ios-KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - [K-Means](https://en.wikipedia.org/wiki/K-means_clustering) clustering method.
+	* [ios-KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - [Fuzzy C-Means](https://en.wikipedia.org/wiki/Fuzzy_clustering), the fuzzy clustering algorithm.
 	* [ios-KRGreyTheory](https://github.com/Kalvar/ios-KRGreyTheory) - [Grey Theory](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.678.3477&rep=rep1&type=pdf) / [Grey system theory-based models in time series prediction](http://www.mecha.ee.boun.edu.tr/Prof.%20Dr.%20Okyay%20Kaynak%20Publications/c%20Journal%20Papers(appearing%20in%20SCI%20or%20SCIE%20or%20CompuMath)/62.pdf)
 	* [ios-KRSVM](https://github.com/Kalvar/ios-KRSVM) - Support Vector Machine and SMO.
 	* [ios-KRKNN](https://github.com/Kalvar/ios-KRKNN) - kNN implementation.
 	* [ios-KRRBFNN](https://github.com/Kalvar/ios-KRRBFNN) - Radial basis function neural network and OLS.
 	* [ios-KRPerceptron](https://github.com/Kalvar/ios-KRPerceptron) - Perceptron method.
-	* [ios-ML-Recommendation-System](https://github.com/Kalvar/ios-ML-Recommendation-System) - Used ios-BPN-NeuralNetwork to build a demo of books-recommendation system. 
+	* [ios-ML-Recommendation-System](https://github.com/Kalvar/ios-ML-Recommendation-System) - demo of a book recommendation system, built using ios-BPN-NeuralNetwork. 
 
 ### Deep Learning
 * [Torch-iOS](https://github.com/clementfarabet/torch-ios) - [Torch](http://torch.ch/) port for iOS. Torch is a scientific computing framework with wide support for machine learning algorithms. One of the most popular deep learning frameworks.
@@ -239,8 +239,8 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 
 * **Alejandro** - BrainCore and Caffe for iOS author. [Blog](http://a-coding.com). {% include icon-twitter.html username="aleph7" %}.
 * **Simon Gladman** - Swift and Metal enthusiast and blogger. [Blog](http://flexmonkey.blogspot.com/). {% include icon-twitter.html username="flexmonkey" %}.
-* **Andrej Karpathy** - PhD student at Stanford. ConvNetJS author. [Blog](http://karpathy.github.io/). {% include icon-twitter.html username="karpathy" %}.
-* **Kalvar Lin** - Wrote a set of small machine learning libraries for iOS and Ruby. {% include icon-twitter.html username="ilovekalvar" %}.
+* **Andrej Karpathy** - Research Scientist at OpenAI. ConvNetJS author. [Blog](http://karpathy.github.io/). {% include icon-twitter.html username="karpathy" %}.
+* **Kalvar Lin** - Implemented a set of small machine learning libraries for iOS and Ruby. {% include icon-twitter.html username="ilovekalvar" %}.
 * **Memkite team** - Memkite is a Deep Learning framework for iOS that can be used to support Artificial Intelligence (AI) in apps. {% include icon-twitter.html username="memkite" %}.
 	* **Torbjørn Morland** {% include icon-twitter.html username="torbmorland" %}.
 	* **Amund Tveit** {% include icon-twitter.html username="atveit" %}.
