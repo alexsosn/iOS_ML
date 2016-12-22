@@ -2,9 +2,7 @@
 
 ## Tools and resources to create really smart iOS applications.
 
-**Last Update: December 1, 2016.**
-
-[Link to a blog post](http://alexsosn.github.io/ml/2015/11/05/iOS-ML.html)
+**Last Update: December 22, 2016.**
 
 Curated list of resources for iOS developers in following topics: 
 
@@ -28,7 +26,6 @@ This list consists mainly of libraries written in Objective-C, Swift, C, C++, Ja
 * ["Natural Language Processing with Python"](http://www.nltk.org/book/) - free online book.
 * [Heterogeneous Parallel Programming](https://www.coursera.org/course/hetero) course.
 * Immersive Linear Algebra [interactive book](http://immersivemath.com/ila/index.html) by J. Ström, K. Åström, and T. Akenine-Möller.
-* [Videos](http://videolectures.net/deeplearning2015_montreal/) from Deep Learning Summer School, Montreal 2015.
 * [Deep Learning for Perception](https://computing.ece.vt.edu/~f15ece6504/) by Virginia Tech, Electrical and Computer Engineering, Fall 2015: ECE 6504
 * [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) - An intro to Bayesian methods and probabilistic programming from a computation/understanding-first, mathematics-second point of view. 
 * [CAP 5415 - Computer Vision](http://crcv.ucf.edu/courses/CAP5415/Fall2014/index.php) by UCF
@@ -36,6 +33,9 @@ This list consists mainly of libraries written in Objective-C, Swift, C, C++, Ja
 * [Machine Learning: 2014-2015 Course materials](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/) by Oxford
 * [Stanford CS class CS231n: Convolutional Neural Networks for Visual Recognition.](http://cs231n.stanford.edu/)
 * [Deep Learning for Natural Language Processing \(without Magic\)](http://nlp.stanford.edu/courses/NAACL2013/)
+* [Videos](http://videolectures.net/deeplearning2015_montreal/) from Deep Learning Summer School, Montreal 2015.
+* [Deep Learning Summer School, Montreal 2016](http://videolectures.net/deeplearning2016_montreal/)
+* ["Deep learning"](http://www.deeplearningbook.org/) - the book by Ian Goodfellow and Yoshua Bengio and Aaron Courville
 
 ## Web APIs
 
@@ -83,6 +83,9 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 * [Swift-AI](https://github.com/collinhundley/Swift-AI) - 3-layer NN.
 * [EERegression](https://github.com/erkekin/EERegression/) -  General purpose multivaritate and quadratic Regression library for Swift 2.1 
 * [SwiftSimpleNeuralNetwork](https://github.com/davecom/SwiftSimpleNeuralNetwork) - Feed forward and back propagation.
+* [STEM](https://github.com/abeschneider/stem) - Swift Tensor Engine for Machine-learning
+	* [Documentation](http://stem.readthedocs.io/en/latest/) 
+* [multilinear-math](https://github.com/vincentherrmann/multilinear-math) - Swift library for tensor operations, machine learning and artificial intelligence
 
 * **Kalvar Lin's libraries**
 	* [ios-BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - 3-layer neural network + back propagation.
@@ -105,6 +108,7 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [iOS port](https://github.com/aleph7/caffe)
 	* C++ examples: [Classifying ImageNet](http://caffe.berkeleyvision.org/gathered/examples/cpp_classification.html), [Extracting Features](http://caffe.berkeleyvision.org/gathered/examples/feature_extraction.html)
 	* [Caffe iOS sample](https://github.com/noradaiko/caffe-ios-sample)
+* [Caffe2](https://github.com/caffe2/caffe2) - a cross-platform framework made with expression, speed, and modularity in mind.
 * [Deep Belief SDK](https://github.com/jetpacapp/DeepBeliefSDK) -  The SDK for Jetpac's iOS Deep Belief image recognition framework
 * [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models by [Andrej Karpathy](https://twitter.com/karpathy). [GitHub](https://github.com/karpathy/convnetjs)
 	* [ConvNetSwift](https://github.com/alexsosn/ConvNetSwift) - Swift port [work in progress].
@@ -114,6 +118,14 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 * [DeepLearningKit](http://deeplearningkit.org/) - Open Source Deep Learning Framework from Memkite for Apple's tvOS, iOS and OS X.
 * [BNNS](https://developer.apple.com/reference/accelerate/1912851-bnns) - Apple Basic neural network subroutines (BNNS) is a collection of functions that you use to implement and run neural networks, using previously obtained training data.
 	* [BNNS usage examples](https://github.com/shu223/iOS-10-Sampler) in iOS 10 sampler.
+* [mxnet](http://mxnet.readthedocs.org/en/latest/) - MXNet is a deep learning framework designed for both efficiency and flexibility.
+	* [Deploying mxnet to smartphone](https://mxnet.readthedocs.org/en/latest/tutorial/smart_device.html)
+* [TensorFlow](http://www.tensorflow.org/) - an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.
+	* [iOS examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples)
+* [DeepLearningKit](http://deeplearningkit.org/) - Open Source Deep Learning Framework from Memkite for Apple's tvOS, iOS and OS X.
+* [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) - header only, dependency-free deep learning framework in C++11
+	* [iOS example](https://github.com/tiny-dnn/tiny-dnn/tree/d4fff53fa0d01f59eb162de2ec32c652a1f6f467/examples/ios) 
+* [NNPACK](https://github.com/Maratyszcza/NNPACK) - Acceleration package for neural networks on multi-core CPUs. Prisma [uses](http://prisma-ai.com/libraries.html) this library in the mobile app.
 
 
 ## AI
@@ -170,8 +182,10 @@ An Objective-C implementation of Twitter's text processing library. The library 
 
 ## General Math
 * [Surge](https://github.com/mattt/Surge) from Mattt
+* [Upsurge](https://github.com/aleph7/Upsurge) - tensors, matrices, Accelerate support
 * [YCMatrix](https://github.com/yconst/YCMatrix) - A flexible Matrix library for Objective-C and Swift (OS X / iOS)
 * [Eigen](http://eigen.tuxfamily.org/) - A high-level C++ library of template headers for linear algebra, matrix and vector operations, numerical solvers and related algorithms. [MPL2]
+
 
 ## GPGPU
 
@@ -206,6 +220,7 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [GPUImage](https://github.com/BradLarson/GPUImage) is a GPU-accelerated image processing library.
 
 ## Data Visualization
+* [Charts](https://github.com/danielgindi/Charts) - The Swift port of the MPAndroidChart.
 * [iOS-Charts](https://github.com/danielgindi/ios-charts)
 * [Core Plot](https://github.com/core-plot/core-plot)
 * [Awesome iOS charts](https://github.com/sxyx2008/awesome-ios-chart)
@@ -225,6 +240,10 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 # Opensource Applications
 * [DeepDreamer](https://github.com/johndpope/deepdreamer) - Deep Dream application
 * [DeepDreamApp](https://github.com/johndpope/DeepDreamApp) - Deep Dream Cordova app.
+* [Swift implementation of Joel Grus's "Data Science from Scratch"](https://github.com/graceavery/LearningMachineLearning)
+* [Texture Networks](https://github.com/DmitryUlyanov/texture_nets), Lua implementation
+* [Feedforward style transfer](https://github.com/jcjohnson/fast-neural-style), Lua implementation
+* [TensorFlow implementation of Neural Style](https://github.com/cysmith/neural-style-tf)
 
 # Other Lists
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
@@ -234,14 +253,19 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [Speech and language processing](https://github.com/edobashira/speech-language-processing)
 * [The Rise of Chat Bots:](https://stanfy.com/blog/the-rise-of-chat-bots-useful-links-articles-libraries-and-platforms/)  Useful Links, Articles, Libraries and Platforms by Pavlo Bashmakov.
 
+# Articles
+* [Intelligence in Mobile Applications](https://medium.com/@sadmansamee/intelligence-in-mobile-applications-ca3be3c0e773#.lgk2gt6ik)
+* [(sp)iPhone: Decoding Vibrations From Nearby Keyboards
+Using Mobile Phone Accelerometers](http://www.cc.gatech.edu/~traynor/papers/traynor-ccs11.pdf)
+
 # People to follow in iOS machine learning and related topics
 \(In alphabet order\).
 
-* **Alejandro** - BrainCore and Caffe for iOS author. [Blog](http://a-coding.com). {% include icon-twitter.html username="aleph7" %}.
-* **Simon Gladman** - Swift and Metal enthusiast and blogger. [Blog](http://flexmonkey.blogspot.com/). {% include icon-twitter.html username="flexmonkey" %}.
-* **Andrej Karpathy** - Research Scientist at OpenAI. ConvNetJS author. [Blog](http://karpathy.github.io/). {% include icon-twitter.html username="karpathy" %}.
-* **Kalvar Lin** - Implemented a set of small machine learning libraries for iOS and Ruby. {% include icon-twitter.html username="ilovekalvar" %}.
-* **Memkite team** - Memkite is a Deep Learning framework for iOS that can be used to support Artificial Intelligence (AI) in apps. {% include icon-twitter.html username="memkite" %}.
-	* **Torbjørn Morland** {% include icon-twitter.html username="torbmorland" %}.
-	* **Amund Tveit** {% include icon-twitter.html username="atveit" %}.
+* **Alejandro** - BrainCore and Caffe for iOS author. [Blog](http://a-coding.com). {% include icon-twitter.html username="aleph7" %}
+* **Simon Gladman** - Swift and Metal enthusiast and blogger. [Blog](http://flexmonkey.blogspot.com/). {% include icon-twitter.html username="flexmonkey" %}
+* **Andrej Karpathy** - Research Scientist at OpenAI. ConvNetJS author. [Blog](http://karpathy.github.io/). {% include icon-twitter.html username="karpathy" %}
+* **Kalvar Lin** - Implemented a set of small machine learning libraries for iOS and Ruby. {% include icon-twitter.html username="ilovekalvar" %}
+* **Memkite team** - Memkite is a Deep Learning framework for iOS that can be used to support Artificial Intelligence (AI) in apps. {% include icon-twitter.html username="memkite" %}
+	* **Torbjørn Morland** {% include icon-twitter.html username="torbmorland" %}
+	* **Amund Tveit** {% include icon-twitter.html username="atveit" %}
 
