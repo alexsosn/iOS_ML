@@ -2,9 +2,7 @@
 
 ## Tools and resources to create really smart iOS applications.
 
-**Last Update: Dec 28, 2015.**
-
-[![Join the chat at https://gitter.im/alexsosn/iOS_ML](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexsosn/iOS_ML?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+**Last Update: December 22, 2016.**
 
 Curated list of resources for iOS developers in following topics: 
 
@@ -16,8 +14,8 @@ Curated list of resources for iOS developers in following topics:
 - Data Visualization,
 - Bioinformatics
 
-Most of the de-facto standard tools from domains listed above are written in iOS-unfiendly languages (Python/Java/R/Matlab) so find something appropriate for your iOS application may be a difficult task.
-This list consists mainly of native libraries written in Objective-C, Swift and ports of C, C++, JavaScript libraries or libs which can be easily ported to iOS. Also links to some relevant web APIs, blog posts, videos and learning materials included.
+Most of the de-facto standard tools in domains listed above are written in iOS-unfriendly languages (Python/Java/R/Matlab) so find something appropriate for your iOS application may be a challenging task.
+This list consists mainly of libraries written in Objective-C, Swift, C, C++, JavaScript and some other languages if they can be easily ported to iOS. Also links to some relevant web APIs, blog posts, videos and learning materials included.
 
 **Pull-requests are welcome [here](https://github.com/alexsosn/iOS_ML)!**
 
@@ -28,7 +26,6 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * ["Natural Language Processing with Python"](http://www.nltk.org/book/) - free online book.
 * [Heterogeneous Parallel Programming](https://www.coursera.org/course/hetero) course.
 * Immersive Linear Algebra [interactive book](http://immersivemath.com/ila/index.html) by J. Ström, K. Åström, and T. Akenine-Möller.
-* [Videos](http://videolectures.net/deeplearning2015_montreal/) from Deep Learning Summer School, Montreal 2015.
 * [Deep Learning for Perception](https://computing.ece.vt.edu/~f15ece6504/) by Virginia Tech, Electrical and Computer Engineering, Fall 2015: ECE 6504
 * [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) - An intro to Bayesian methods and probabilistic programming from a computation/understanding-first, mathematics-second point of view. 
 * [CAP 5415 - Computer Vision](http://crcv.ucf.edu/courses/CAP5415/Fall2014/index.php) by UCF
@@ -36,6 +33,9 @@ This list consists mainly of native libraries written in Objective-C, Swift and 
 * [Machine Learning: 2014-2015 Course materials](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/) by Oxford
 * [Stanford CS class CS231n: Convolutional Neural Networks for Visual Recognition.](http://cs231n.stanford.edu/)
 * [Deep Learning for Natural Language Processing \(without Magic\)](http://nlp.stanford.edu/courses/NAACL2013/)
+* [Videos](http://videolectures.net/deeplearning2015_montreal/) from Deep Learning Summer School, Montreal 2015.
+* [Deep Learning Summer School, Montreal 2016](http://videolectures.net/deeplearning2016_montreal/)
+* ["Deep learning"](http://www.deeplearningbook.org/) - the book by Ian Goodfellow and Yoshua Bengio and Aaron Courville
 
 ## Web APIs
 
@@ -82,17 +82,24 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 * [BrainCore](https://github.com/aleph7/BrainCore) - simple but fast neural network framework written in Swift. It uses Upsurge and the underlying Accelerate framework to be as fast as possible.
 * [Swift-AI](https://github.com/collinhundley/Swift-AI) - 3-layer NN.
 * [EERegression](https://github.com/erkekin/EERegression/) -  General purpose multivaritate and quadratic Regression library for Swift 2.1 
+* [SwiftSimpleNeuralNetwork](https://github.com/davecom/SwiftSimpleNeuralNetwork) - Feed forward and back propagation.
+* [STEM](https://github.com/abeschneider/stem) - Swift Tensor Engine for Machine-learning
+	* [Documentation](http://stem.readthedocs.io/en/latest/) 
+* [multilinear-math](https://github.com/vincentherrmann/multilinear-math) - Swift library for tensor operations, machine learning and artificial intelligence
 
 * **Kalvar Lin's libraries**
-	* [ios-BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - 3 layers NN + Back Propagation.
-	* [ios-Multi-Perceptron-NeuralNetwork / KRANN](https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork) - Multi-perceptrons neural NN based on Back Propagation NN.
-	* [ios-KRHebbian-Algorithm](https://github.com/Kalvar/ios-KRHebbian-Algorithm)
-	* [ios-KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - K-Means clustering and classification.
-	* [ios-KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - Fuzzy C-Means fuzzy clustering / classification algorithm.
-	* [ios-KRGreyTheory](https://github.com/Kalvar/ios-KRGreyTheory) - Grey Theory implementation \([this one?](http://researchinformation.co.uk/grey/IntroGreySysTheory.pdf)\).
+	* [ios-BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - 3-layer neural network + back propagation.
+	* [ios-Multi-Perceptron-NeuralNetwork](https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork) - Multi-perceptron neural network based on back propagation NN.
+	* [ios-KRDelta](https://github.com/Kalvar/ios-KRDelta) - [Delta Learning method](https://en.wikipedia.org/wiki/Delta_rule)
+	* [ios-KRHebbian-Algorithm](https://github.com/Kalvar/ios-KRHebbian-Algorithm) - [Hebbian Theory](https://en.wikipedia.org/wiki/Hebbian_theory)
+	* [ios-KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - [K-Means](https://en.wikipedia.org/wiki/K-means_clustering) clustering method.
+	* [ios-KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - [Fuzzy C-Means](https://en.wikipedia.org/wiki/Fuzzy_clustering), the fuzzy clustering algorithm.
+	* [ios-KRGreyTheory](https://github.com/Kalvar/ios-KRGreyTheory) - [Grey Theory](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.678.3477&rep=rep1&type=pdf) / [Grey system theory-based models in time series prediction](http://www.mecha.ee.boun.edu.tr/Prof.%20Dr.%20Okyay%20Kaynak%20Publications/c%20Journal%20Papers(appearing%20in%20SCI%20or%20SCIE%20or%20CompuMath)/62.pdf)
+	* [ios-KRSVM](https://github.com/Kalvar/ios-KRSVM) - Support Vector Machine and SMO.
 	* [ios-KRKNN](https://github.com/Kalvar/ios-KRKNN) - kNN implementation.
-	* [ios-ML-Recommendation-System](https://github.com/Kalvar/ios-ML-Recommendation-System)
-
+	* [ios-KRRBFNN](https://github.com/Kalvar/ios-KRRBFNN) - Radial basis function neural network and OLS.
+	* [ios-KRPerceptron](https://github.com/Kalvar/ios-KRPerceptron) - Perceptron method.
+	* [ios-ML-Recommendation-System](https://github.com/Kalvar/ios-ML-Recommendation-System) - demo of a book recommendation system, built using ios-BPN-NeuralNetwork. 
 
 ### Deep Learning
 * [Torch-iOS](https://github.com/clementfarabet/torch-ios) - [Torch](http://torch.ch/) port for iOS. Torch is a scientific computing framework with wide support for machine learning algorithms. One of the most popular deep learning frameworks.
@@ -101,13 +108,24 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [iOS port](https://github.com/aleph7/caffe)
 	* C++ examples: [Classifying ImageNet](http://caffe.berkeleyvision.org/gathered/examples/cpp_classification.html), [Extracting Features](http://caffe.berkeleyvision.org/gathered/examples/feature_extraction.html)
 	* [Caffe iOS sample](https://github.com/noradaiko/caffe-ios-sample)
+* [Caffe2](https://github.com/caffe2/caffe2) - a cross-platform framework made with expression, speed, and modularity in mind.
 * [Deep Belief SDK](https://github.com/jetpacapp/DeepBeliefSDK) -  The SDK for Jetpac's iOS Deep Belief image recognition framework
 * [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models by [Andrej Karpathy](https://twitter.com/karpathy). [GitHub](https://github.com/karpathy/convnetjs)
 	* [ConvNetSwift](https://github.com/alexsosn/ConvNetSwift) - Swift port [work in progress].
-* [mxnet](http://mxnet.readthedocs.org/en/latest/) - MXNet is a deep learning framework designed for both efficiency and flexibility.
-	* [Deploying mxnet to smartphone](https://mxnet.readthedocs.org/en/latest/tutorial/smart_device.html)
+* [MXNet](http://mxnet.readthedocs.org/en/latest/) - MXNet is a deep learning framework designed for both efficiency and flexibility.
+	* [Deploying mxnet to smartphone](https://github.com/dmlc/mxnet/tree/master/amalgamation)
 * [TensorFlow](http://www.tensorflow.org/) - an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API. TensorFlow Will have iOS support in the future.
 * [DeepLearningKit](http://deeplearningkit.org/) - Open Source Deep Learning Framework from Memkite for Apple's tvOS, iOS and OS X.
+* [BNNS](https://developer.apple.com/reference/accelerate/1912851-bnns) - Apple Basic neural network subroutines (BNNS) is a collection of functions that you use to implement and run neural networks, using previously obtained training data.
+	* [BNNS usage examples](https://github.com/shu223/iOS-10-Sampler) in iOS 10 sampler.
+* [mxnet](http://mxnet.readthedocs.org/en/latest/) - MXNet is a deep learning framework designed for both efficiency and flexibility.
+	* [Deploying mxnet to smartphone](https://mxnet.readthedocs.org/en/latest/tutorial/smart_device.html)
+* [TensorFlow](http://www.tensorflow.org/) - an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.
+	* [iOS examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples)
+* [DeepLearningKit](http://deeplearningkit.org/) - Open Source Deep Learning Framework from Memkite for Apple's tvOS, iOS and OS X.
+* [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) - header only, dependency-free deep learning framework in C++11
+	* [iOS example](https://github.com/tiny-dnn/tiny-dnn/tree/d4fff53fa0d01f59eb162de2ec32c652a1f6f467/examples/ios) 
+* [NNPACK](https://github.com/Maratyszcza/NNPACK) - Acceleration package for neural networks on multi-core CPUs. Prisma [uses](http://prisma-ai.com/libraries.html) this library in the mobile app.
 
 
 ## AI
@@ -118,7 +136,7 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 * [dlib](http://dlib.net/) is a library which has many useful tools including machine learning.
 * [MicroPather](http://www.grinninglizard.com/MicroPather/) is a path finder and A* solver (astar or a-star) written in platform independent C++ that can be easily integrated into existing code.
 * Here is a [list](http://www.ogre3d.org/tikiwiki/List+Of+Libraries#Artificial_intelligence) of some AI libraries suggested on OGRE3D website. Seems they are mostly written in C++.
-* [GameplayKit Programming Guide](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/GameplayKit_Guide/Minmax.html#//apple_ref/doc/uid/TP40015172-CH2-SW1)
+* [GameplayKit Programming Guide](https://developer.apple.com/library/content/documentation/General/Conceptual/GameplayKit_Guide/)
 
 
 ## Natural Language Processing
@@ -137,6 +155,9 @@ An Objective-C implementation of Twitter's text processing library. The library 
 * [MVSpeechSynthesizer](https://github.com/vimalmurugan89/MVSpeechSynthesizer)
 * [OpenEars™: free speech recognition and speech synthesis for the iPhone](http://www.politepix.com/openears/) - OpenEars™ makes it simple for you to add offline speech recognition and synthesized speech/TTS to your iPhone app quickly and easily. It lets everyone get the great results of using advanced speech UI concepts like statistical language models and finite state grammars in their app, but with no more effort than creating an NSArray or NSDictionary. 
 	* [Tutorial (Russian)](http://habrahabr.ru/post/237589/)
+* [Kaldi-iOS framework](http://keenresearch.com/) - on-device speech recognition using deep learning.
+	* [Proof of concept app](https://github.com/keenresearch/kaldi-ios-poc)
+
 
 ## Computer Vision
 * [**Vuforia** Framework](https://developer.vuforia.com/downloads/sdk)
@@ -147,23 +168,6 @@ An Objective-C implementation of Twitter's text processing library. The library 
 ) 
 	* [OpenCVSwiftStitch](https://github.com/foundry/OpenCVSwiftStitch)
 	* [Tutorial: using and building openCV on iOS devices](http://maniacdev.com/2011/07/tutorial-using-and-building-opencv-open-computer-vision-on-ios-devices)
-	* ML algorithms:
-	 * Normal Bayes Classifier
-	 * K-Nearest Neighbour Classifier  
-	 * Support Vector Machines  
-	 * Expectation - Maximisation     
-	 * Decision Tree 
-	 * Random Trees Classifier 
-	 * Extremely randomised trees Classifier  
-	 * Boosted tree classifier
-	 * Gradient Boosted Trees     
-	 * Multi-Layer Perceptrons
-	* CV:
-	 * Haar-like Object Detection  
-	 * Latent SVM Object Detection 
-	 * HOG (Histogram-of-Oriented-Gradients) Descriptor and Object Detector
-	 * [Data Matrix detection](https://en.wikipedia.org/wiki/Data_Matrix) 
-	 * LINE template matching algorithm
 
 * [trackingjs](http://trackingjs.com/) - Object tracking in JS
 
@@ -178,8 +182,10 @@ An Objective-C implementation of Twitter's text processing library. The library 
 
 ## General Math
 * [Surge](https://github.com/mattt/Surge) from Mattt
+* [Upsurge](https://github.com/aleph7/Upsurge) - tensors, matrices, Accelerate support
 * [YCMatrix](https://github.com/yconst/YCMatrix) - A flexible Matrix library for Objective-C and Swift (OS X / iOS)
 * [Eigen](http://eigen.tuxfamily.org/) - A high-level C++ library of template headers for linear algebra, matrix and vector operations, numerical solvers and related algorithms. [MPL2]
+
 
 ## GPGPU
 
@@ -214,6 +220,7 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [GPUImage](https://github.com/BradLarson/GPUImage) is a GPU-accelerated image processing library.
 
 ## Data Visualization
+* [Charts](https://github.com/danielgindi/Charts) - The Swift port of the MPAndroidChart.
 * [iOS-Charts](https://github.com/danielgindi/ios-charts)
 * [Core Plot](https://github.com/core-plot/core-plot)
 * [Awesome iOS charts](https://github.com/sxyx2008/awesome-ios-chart)
@@ -233,6 +240,10 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 # Opensource Applications
 * [DeepDreamer](https://github.com/johndpope/deepdreamer) - Deep Dream application
 * [DeepDreamApp](https://github.com/johndpope/DeepDreamApp) - Deep Dream Cordova app.
+* [Swift implementation of Joel Grus's "Data Science from Scratch"](https://github.com/graceavery/LearningMachineLearning)
+* [Texture Networks](https://github.com/DmitryUlyanov/texture_nets), Lua implementation
+* [Feedforward style transfer](https://github.com/jcjohnson/fast-neural-style), Lua implementation
+* [TensorFlow implementation of Neural Style](https://github.com/cysmith/neural-style-tf)
 
 # Other Lists
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
@@ -242,14 +253,19 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [Speech and language processing](https://github.com/edobashira/speech-language-processing)
 * [The Rise of Chat Bots:](https://stanfy.com/blog/the-rise-of-chat-bots-useful-links-articles-libraries-and-platforms/)  Useful Links, Articles, Libraries and Platforms by Pavlo Bashmakov.
 
+# Articles
+* [Intelligence in Mobile Applications](https://medium.com/@sadmansamee/intelligence-in-mobile-applications-ca3be3c0e773#.lgk2gt6ik)
+* [(sp)iPhone: Decoding Vibrations From Nearby Keyboards
+Using Mobile Phone Accelerometers](http://www.cc.gatech.edu/~traynor/papers/traynor-ccs11.pdf)
+
 # People to follow in iOS machine learning and related topics
 \(In alphabet order\).
 
-* **Alejandro** - BrainCore and Caffe for iOS author. [Blog](http://a-coding.com). [@aleph7](https://twitter.com/aleph7).
-* **Simon Gladman** - Swift and Metal enthusiast and blogger. [Blog](http://flexmonkey.blogspot.com/). [@flexmonkey](https://twitter.com/flexmonkey).
-* **Andrej Karpathy** - PhD student at Stanford. ConvNetJS author. [Blog](http://karpathy.github.io/). [@karpathy](https://twitter.com/karpathy)
-* **Kalvar Lin** - wrote a set of small machine learning libraries for iOS. [@ilovekalvar](https://twitter.com/ilovekalvar).
-* **Memkite team** - Memkite is a Deep Learning framework for iOS that can be used to support Artificial Intelligence (AI) in apps. [@memkite](https://twitter.com/memkite).
-	* **Torbjørn Morland** [@torbmorland](https://twitter.com/torbmorland).
-	* **Amund Tveit** [@atveit](https://twitter.com/atveit)
+* **Alejandro** - BrainCore and Caffe for iOS author. [Blog](http://a-coding.com). {% include icon-twitter.html username="aleph7" %}
+* **Simon Gladman** - Swift and Metal enthusiast and blogger. [Blog](http://flexmonkey.blogspot.com/). {% include icon-twitter.html username="flexmonkey" %}
+* **Andrej Karpathy** - Research Scientist at OpenAI. ConvNetJS author. [Blog](http://karpathy.github.io/). {% include icon-twitter.html username="karpathy" %}
+* **Kalvar Lin** - Implemented a set of small machine learning libraries for iOS and Ruby. {% include icon-twitter.html username="ilovekalvar" %}
+* **Memkite team** - Memkite is a Deep Learning framework for iOS that can be used to support Artificial Intelligence (AI) in apps. {% include icon-twitter.html username="memkite" %}
+	* **Torbjørn Morland** {% include icon-twitter.html username="torbmorland" %}
+	* **Amund Tveit** {% include icon-twitter.html username="atveit" %}
 
