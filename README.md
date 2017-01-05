@@ -4,8 +4,6 @@
 
 **Last Update: January 1, 2017.**
 
-**The most recent version of this article can be found on [my blog](alexsosn.github.io/ml/2015/11/05/iOS-ML.html).**
-
 Curated list of resources for iOS developers in following topics: 
 
 - Machine Learning, 
