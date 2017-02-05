@@ -2,7 +2,7 @@
 
 ## Tools and resources to create really smart iOS applications.
 
-**Last Update: January 1, 2017.**
+**Last Update: January 29, 2017.**
 
 Curated list of resources for iOS developers in following topics: 
 
@@ -61,6 +61,7 @@ This list consists mainly of libraries written in Objective-C, Swift, C, C++, Ja
 * [**MetaMind**](https://www.metamind.io/) - deep learning web api for image captioning.
 * [Api.AI](https://api.ai/) - Build intelligent speech interfaces
 for apps, devices, and web
+* [**CloudSight.ai**](https://cloudsight.ai/) - deep learning web API for fine grained object detection or whole screen description, including natural language object captions. [Ruby](https://github.com/cloudsight/cloudsight-ruby), [Python](https://github.com/cloudsight/cloudsight-python), [Objective-C](https://github.com/cloudsight/cloudsight-objc), and [Go](https://github.com/cloudsight/cloudsight-go) API clients are available.
 
 
 ## General-Purpose Machine Learning Libraries
