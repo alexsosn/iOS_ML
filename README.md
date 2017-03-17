@@ -2,7 +2,7 @@
 
 ## Tools and resources to create really smart iOS applications.
 
-**Last Update: January 29, 2017.**
+**Last Update: March 17, 2017.**
 
 Curated list of resources for iOS developers in following topics: 
 
@@ -61,7 +61,7 @@ This list consists mainly of libraries written in Objective-C, Swift, C, C++, Ja
 * [**MetaMind**](https://www.metamind.io/) - deep learning web api for image captioning.
 * [Api.AI](https://api.ai/) - Build intelligent speech interfaces
 for apps, devices, and web
-* [**CloudSight.ai**](https://cloudsight.ai/) - deep learning web API for fine grained object detection or whole screen description, including natural language object captions. [Ruby](https://github.com/cloudsight/cloudsight-ruby), [Python](https://github.com/cloudsight/cloudsight-python), [Objective-C](https://github.com/cloudsight/cloudsight-objc), and [Go](https://github.com/cloudsight/cloudsight-go) API clients are available.
+* [**CloudSight.ai**](https://cloudsight.ai/) - deep learning web API for fine grained object detection or whole screen description, including natural language object captions. [Objective-C](https://github.com/cloudsight/cloudsight-objc) API client is available.
 
 
 ## General-Purpose Machine Learning Libraries
@@ -88,6 +88,7 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 * [multilinear-math](https://github.com/vincentherrmann/multilinear-math) - Swift library for tensor operations, machine learning and artificial intelligence
 * [MLKit](https://github.com/Somnibyte/MLKit) - regressions, cross-validation, data splitting.
 * [dlib](http://dlib.net/) is a C++ framework which contains 30+ machine learning algorithms and different useful additions. It's relatively easy to port it to iOS: you just need to get rid of GUI and http-related source files.
+* [Mendel](https://github.com/saniul/Mendel) - Genetic algorithms in Swift.
 
 * **Kalvar Lin's libraries**
 	* [ios-BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - 3-layer neural network + back propagation.
@@ -125,12 +126,9 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [iOS example](https://github.com/tiny-dnn/tiny-dnn/tree/d4fff53fa0d01f59eb162de2ec32c652a1f6f467/examples/ios) 
 * [NNPACK](https://github.com/Maratyszcza/NNPACK) - Acceleration package for neural networks on multi-core CPUs. Prisma [uses](http://prisma-ai.com/libraries.html) this library in the mobile app.
 * [BrainCore](https://github.com/aleph7/BrainCore) - simple but fast neural network framework written in Swift. It uses Metal framework to be as fast as possible. ReLU, LSTM, L2 ...
+* [Espresso](https://github.com/codinfox/espresso) - A minimal high performance parallel neural network framework running on iOS
 
-
-## AI
-* [Mendel](https://github.com/saniul/Mendel) - Genetic algorithms in Swift.
-
-### Game AI
+## Game AI
 * [Introduction to AI Programming for Games](http://www.raywenderlich.com/24824/introduction-to-ai-programming-for-games)
 * [dlib](http://dlib.net/) is a library which has many useful tools including machine learning.
 * [MicroPather](http://www.grinninglizard.com/MicroPather/) is a path finder and A* solver (astar or a-star) written in platform independent C++ that can be easily integrated into existing code.
@@ -167,6 +165,10 @@ An Objective-C implementation of Twitter's text processing library. The library 
 * [trackingjs](http://trackingjs.com/) – Object tracking in JS
 * [OpenFace](https://github.com/TadasBaltrusaitis/OpenFace) – a state-of-the art open source tool intended for facial landmark detection, head pose estimation, facial action unit recognition, and eye-gaze estimation.
 	* [iOS port](https://github.com/FaceAR/OpenFaceIOS)
+* [ccv](http://libccv.org) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library
+	* [iOS demo app](https://github.com/liuliu/klaus)
+* [OpenFace](https://github.com/TadasBaltrusaitis/OpenFace) – a state-of-the art open source tool intended for facial landmark detection, head pose estimation, facial action unit recognition, and eye-gaze estimation.
+	* [iOS demo](https://github.com/FaceAR/OpenFaceIOS)
 
 ### Text Recognition (OCR)
 * **Tesseract**
@@ -182,6 +184,14 @@ An Objective-C implementation of Twitter's text processing library. The library 
 * [Upsurge](https://github.com/aleph7/Upsurge) - tensors, matrices, Accelerate support
 * [YCMatrix](https://github.com/yconst/YCMatrix) - A flexible Matrix library for Objective-C and Swift (OS X / iOS)
 * [Eigen](http://eigen.tuxfamily.org/) - A high-level C++ library of template headers for linear algebra, matrix and vector operations, numerical solvers and related algorithms. [MPL2]
+* [SigmaSwiftStatistics](https://github.com/evgenyneu/SigmaSwiftStatistics) - A collection of functions for statistical calculation written in Swift.
+* [RandKit](https://github.com/aidangomez/RandKit) - Swift framework for random numbers & distributions.
+
+## Optimization
+
+* [fmincg-c](https://github.com/gautambhatrcb/fmincg-c) - Conjugate gradient implementation in C
+* [libLBFGS](https://github.com/chokkan/liblbfgs) - a C library of Limited-memory Broyden-Fletcher-Goldfarb-Shanno (L-BFGS)
+
 
 ## Feature extraction
 * [IntuneFeatures](https://github.com/venturemedia/intune-features) framework contains code to generate features from audio files and feature labels from the respective MIDI files.
@@ -252,6 +262,8 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [SwiftOCR](https://github.com/garnele007/SwiftOCR)
 * [WhatsThis](https://github.com/pppoe/WhatsThis-iOS)
 * [enVision](https://github.com/IDLabs-Gate/enVision)
+* [ios_camera_object_detection](https://github.com/yjmade/ios_camera_object_detection) - Realtime mobile visualize based Object Detection based on TensorFlow and YOLO model
+* [TensorFlow MNIST iOS demo](https://github.com/mattrajca/MNIST) - Getting Started with Deep MNIST and TensorFlow on iOS
 
 
 # Other Lists
@@ -278,6 +290,7 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [The “hello world” of neural networks](http://matthijshollemans.com/2016/08/24/neural-network-hello-world/) - Swift and BNNS
 * [Convolutional neural networks on the iPhone with VGGNet](http://matthijshollemans.com/2016/08/30/vggnet-convolutional-neural-network-iphone/)
 * [How to Quantize Neural Networks with TensorFlow](https://petewarden.com/2016/05/03/how-to-quantize-neural-networks-with-tensorflow/)
+* [Presentation on squeezing DNNs for mobile](https://www.slideshare.net/mobile/anirudhkoul/squeezing-deep-learning-into-mobile-phones)
 
 ## Information security and ML
 
