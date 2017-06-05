@@ -1,16 +1,32 @@
 # Machine Learning for iOS 
 
-**Last Update: May 2, 2017.**
+**Last Update: June 5, 2017.**
 
 Curated list of resources for iOS developers in following topics: 
 
-- Machine Learning
-- Artificial Intelligence
-- Natural Language Processing (NLP)
-- Computer Vision
-- General-Purpose GPU Computing (GPGPU)
-- Data Visualization
-- Other related stuff
+- [Machine Learning Libraries](#gpmll)
+- [Deep Learning Libraries](#dll)
+	- [Deep Learning: Model Compression](#dlmc)
+- [Computer Vision](#cv)
+- [Natural Language Processing](#nlp)
+- [Speech Recognition (TTS) and Generation (STT)](#tts)
+- [Text Recognition (OCR)](#ocr)
+- [Other AI](#ai)
+- [Machine Learning Web APIs](#web)
+- [Opensource ML Applications](#mlapps)
+- [Game AI](#gameai)
+- Other related staff
+	- [Linear algebra](#la)
+	- [Statistics, random numbers](#stat)
+	- [Mathematical optimization](#mo)
+	- [Feature extraction](#fe)
+	- [Data Visualization](#dv)
+	- [Bioinformatics (kinda)](#bio)
+	- [Big Data (not really)](#bd)
+- [iOS ML Blogs](#blogs)
+- [GPU Computing Blogs](#gpublogs)
+- [Learn Machine Learning](#learn)
+- [Other Lists](#lists)
 
 Most of the de-facto standard tools in domains listed above are written in iOS-unfriendly languages (Python/Java/R/Matlab) so finding something appropriate for your iOS application may be a challenging task.
 
@@ -18,9 +34,12 @@ This list consists mainly of libraries written in Objective-C, Swift, C, C++, Ja
 
 Resources are sorted alphabetically or randomly. The order doesn't reflect my personal preferences or anything else. Some of the resources are awesome, some are great, some are fun, and some can serve as an inspiration.
 
-**Pull-requests are welcome [here](https://github.com/alexsosn/iOS_ML)!**
+Have fun!
 
-# General-Purpose Machine Learning Libraries
+**Pull-requests are welcome [here](https://github.com/alexsosn/iOS_ML)**.
+
+# <a name="gpmll"/>General-Purpose Machine Learning Libraries
+
 
 * [FANN](https://cocoapods.org/pods/FANN) - Fast Artifical Neural Network library; an implementation of neural networks.
 * [lbimproved](https://github.com/lemire/lbimproved) - DTW + kNN in C
@@ -60,19 +79,24 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [ios-KRPerceptron](https://github.com/Kalvar/ios-KRPerceptron) - Perceptron method.
 	* [ios-ML-Recommendation-System](https://github.com/Kalvar/ios-ML-Recommendation-System) - demo of a book recommendation system, built using ios-BPN-NeuralNetwork. 
 
-# Deep Learning Libraries
+# <a name="dll"/>Deep Learning Libraries
+
 
 * [Bender](https://github.com/xmartlabs/Bender) - Framework for building fast NNs. Supports TensorFlow models. It uses Metal under the hood.
 * [Birdbrain](https://github.com/jordenhill/Birdbrain) - RNNs and FF NNs on top of Metal and Accelerate. Not ready for production.
 * [BNNS](https://developer.apple.com/reference/accelerate/1912851-bnns) - Apple Basic neural network subroutines (BNNS) is a collection of functions that you use to implement and run neural networks, using previously obtained training data.
 	* [BNNS usage examples](https://github.com/shu223/iOS-10-Sampler) in iOS 10 sampler.
+	* [An example](https://github.com/bignerdranch/bnns-cocoa-example) of a neural network trained by tensorflow and executed using BNNS
 * [BrainCore](https://github.com/aleph7/BrainCore) - simple but fast neural network framework written in Swift. It uses Metal framework to be as fast as possible. ReLU, LSTM, L2 ...
 * [Caffe](http://caffe.berkeleyvision.org) - A deep learning framework developed with cleanliness, readability, and speed in mind.
 [GitHub](https://github.com/BVLC/caffe). [BSD]
 	* [iOS port](https://github.com/aleph7/caffe)
+	* [caffe-mobile](https://github.com/solrex/caffe-mobile) - another iOS port.
 	* C++ examples: [Classifying ImageNet](http://caffe.berkeleyvision.org/gathered/examples/cpp_classification.html), [Extracting Features](http://caffe.berkeleyvision.org/gathered/examples/feature_extraction.html)
 	* [Caffe iOS sample](https://github.com/noradaiko/caffe-ios-sample)
 * [Caffe2](https://caffe2.ai/) - a cross-platform framework made with expression, speed, and modularity in mind.
+	* [Cocoa Pod](https://github.com/RobertBiehl/caffe2-ios) 
+	* [iOS demo app](https://github.com/KleinYuan/Caffe2-iOS)
 * [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models by [Andrej Karpathy](https://twitter.com/karpathy). [GitHub](https://github.com/karpathy/convnetjs)
 	* [ConvNetSwift](https://github.com/alexsosn/ConvNetSwift) - Swift port [work in progress].
 * [Deep Belief SDK](https://github.com/jetpacapp/DeepBeliefSDK) -  The SDK for Jetpac's iOS Deep Belief image recognition framework
@@ -83,6 +107,7 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [Converter for Torch models](https://github.com/woffle/torch2ios)
 * [MetalPerformanceShaders](https://developer.apple.com/reference/metalperformanceshaders) - CNNs on GPU from Apple.
 	* [MetalCNNWeights](https://github.com/kakugawa/MetalCNNWeights) - a Python script to convert Inception v3 for MPS.
+	* [MPSCNNfeeder](https://github.com/kazoo-kmt/MPSCNNfeeder) - Keras to MPS models conversion.
 * [MXNet](http://mxnet.readthedocs.org/en/latest/) - MXNet is a deep learning framework designed for both efficiency and flexibility.
 	* [Deploying mxnet to smartphone](https://github.com/dmlc/mxnet/tree/master/amalgamation)
 * [NNPACK](https://github.com/Maratyszcza/NNPACK) - Acceleration package for neural networks on multi-core CPUs. Prisma [uses](http://prisma-ai.com/libraries.html) this library in the mobile app.
@@ -96,7 +121,15 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [Torch4iOS](https://github.com/jhondge/torch4ios)
 	* [Torch-iOS](https://github.com/clementfarabet/torch-ios)
 
-# Computer Vision
+### <a name="dlmc"/>Deep Learning: Model Compression
+
+
+* TensorFlow implementation of [knowledge distilling](https://github.com/chengshengchan/model_compression) method
+* [MobileNet-Caffe](https://github.com/shicai/MobileNet-Caffe) - Caffe Implementation of Google's MobileNets
+
+
+# <a name="cv"/>Computer Vision
+
 
 * [ccv](http://libccv.org) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library
 	* [iOS demo app](https://github.com/liuliu/klaus)
@@ -110,7 +143,8 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [iOS demo](https://github.com/FaceAR/OpenFaceIOS)
 * [trackingjs](http://trackingjs.com/) – Object tracking in JS
 
-# Natural Language Processing
+# <a name="nlp"/>Natural Language Processing
+
 
 * [CoreLinguistics](https://github.com/rxwei/CoreLinguistics) - POS tagging (HMM), ngrams, Naive Bayes, IBM alignment models.
 * [GloVe](https://github.com/rxwei/GloVe-swift) Swift package. Vector words representations.
@@ -121,7 +155,8 @@ An Objective-C implementation of Twitter's text processing library. The library 
 * [Verbal expressions for Swift](https://github.com/VerbalExpressions/SwiftVerbalExpressions), like regexps for humans.
 * [Word2Vec](https://code.google.com/p/word2vec/) - Original C implementation of Word2Vec Deep Learning algorithm. Works on iPhone like a charm.
 
-# Speech Recognition (TTS) and Generation (STT)
+# <a name="tts"/>Speech Recognition (TTS) and Generation (STT)
+
 
 * [Kaldi-iOS framework](http://keenresearch.com/) - on-device speech recognition using deep learning.
 	* [Proof of concept app](https://github.com/keenresearch/kaldi-ios-poc)
@@ -130,7 +165,8 @@ An Objective-C implementation of Twitter's text processing library. The library 
 	* [Tutorial (Russian)](http://habrahabr.ru/post/237589/)
 * [TLSphinx](https://github.com/tryolabs/TLSphinx), [Tutorial](http://blog.tryolabs.com/2015/06/15/tlsphinx-automatic-speech-recognition-asr-in-swift/)
 
-# Text Recognition (OCR)
+# <a name="ocr"/>Text Recognition (OCR)
+
 
 * [ocrad.js](https://github.com/antimatter15/ocrad.js) - JS OCR
 * **Tesseract**
@@ -140,7 +176,16 @@ An Objective-C implementation of Twitter's text processing library. The library 
 	* [Tesseract-OCR-iOS](https://github.com/gali8/Tesseract-OCR-iOS)
 	* [OCR-iOS-Example](https://github.com/robmathews/OCR-iOS-Example)
 
-# Machine Learning Web APIs
+# <a name="ai"/>Other AI
+
+
+* [Axiomatic](https://github.com/JadenGeller/Axiomatic) - Swift unification framework for logic programming.
+* [Build Your Own Lisp In Swift](https://github.com/hollance/BuildYourOwnLispInSwift)
+* [Logician](https://github.com/mdiep/Logician) - Logic programming in Swift
+* [Swiftlog](https://github.com/JadenGeller/Swiftlog) - A simple Prolog-like language implemented entirely in Swift.
+
+# <a name="web"/>Machine Learning Web APIs
+
 
 * [**IBM** Watson](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/) - Enable Cognitive Computing Features In Your App Using IBM Watson's Language, Vision, Speech and Data APIs.
 	* [Introducing the (beta) IBM Watson iOS SDK](https://developer.ibm.com/swift/2015/12/18/introducing-the-new-watson-sdk-for-ios-beta/)
@@ -166,7 +211,8 @@ An Objective-C implementation of Twitter's text processing library. The library 
 for apps, devices, and web
 * [**CloudSight.ai**](https://cloudsight.ai/) - deep learning web API for fine grained object detection or whole screen description, including natural language object captions. [Objective-C](https://github.com/cloudsight/cloudsight-objc) API client is available.
 
-# Opensource ML Applications
+# <a name="mlapps"/>Opensource ML Applications
+
 
 ### Deep Learning
 
@@ -186,6 +232,7 @@ for apps, devices, and web
 * [mnist-bnns](https://github.com/paiv/mnist-bnns) - TensorFlow MNIST demo port to BNNS
 * [Benchmark of BNNS vs. MPS](https://github.com/hollance/BNNS-vs-MPSCNN)
 * [VGGNet on Metal](https://github.com/hollance/VGGNet-Metal)
+* A [Sudoku Solver](https://github.com/waitingcheung/deep-sudoku-solver) that leverages TensorFlow and iOS BNNS for deep learning.
 
 ### Traditional Computer Vision
 
@@ -202,7 +249,8 @@ for apps, devices, and web
 * [Swift implementation of Joel Grus's "Data Science from Scratch"](https://github.com/graceavery/LearningMachineLearning)
 * [Neural Network built in Apple Playground using Swift](https://github.com/Luubra/EmojiIntelligence)
 
-# Game AI
+# <a name="gameai"/>Game AI
+
 
 * [Introduction to AI Programming for Games](http://www.raywenderlich.com/24824/introduction-to-ai-programming-for-games)
 * [dlib](http://dlib.net/) is a library which has many useful tools including machine learning.
@@ -212,35 +260,45 @@ for apps, devices, and web
 
 # Other related staff
 
-### Linear algebra
+### <a name="la"/>Linear algebra
+
 
 * [Accelerate-in-Swift](https://github.com/hyperjeff/Accelerate-in-Swift) - Swift example codes for the Accelerate.framework
 * [cuda-swift](https://github.com/rxwei/cuda-swift) - Swift binding to CUDA. Not iOS, but still interesting.
+* [Dimensional](https://github.com/JadenGeller/Dimensional) - Swift matrices with friendly semantics and a familiar interface.
 * [Eigen](http://eigen.tuxfamily.org/) - A high-level C++ library of template headers for linear algebra, matrix and vector operations, numerical solvers and related algorithms. [MPL2]
 * [Matrix](https://github.com/hollance/Matrix) - convenient matrix type with different types of subscripts, custom operators and predefined matrices. A fork of Surge.
+* [NDArray](https://github.com/t-ae/ndarray) - Float library for Swift, accelerated with Accelerate Framework.
+* [Swift-MathEagle](https://github.com/rugheid/Swift-MathEagle) - A general math framework to make using math easy. Currently supports function solving and optimisation, matrix and vector algebra, complex numbers, big int, big frac, big rational, graphs and general handy extensions and functions.
+* [SwiftNum](https://github.com/donald-pinckney/SwiftNum) - linear algebra, fft, gradient descent, conjugate GD, plotting.
 * [Surge](https://github.com/mattt/Surge) from Mattt
 * [Upsurge](https://github.com/aleph7/Upsurge) - generic tensors, matrices on top of Accelerate. A fork of Surge.
 * [YCMatrix](https://github.com/yconst/YCMatrix) - A flexible Matrix library for Objective-C and Swift (OS X / iOS)
 
-### Statistics, random numbers
+### <a name="stat"/>Statistics, random numbers
+
 
 * [SigmaSwiftStatistics](https://github.com/evgenyneu/SigmaSwiftStatistics) - A collection of functions for statistical calculation written in Swift.
 * [SORandom](https://github.com/SebastianOsinski/SORandom) - Collection of functions for generating psuedorandom variables from various distributions
 * [RandKit](https://github.com/aidangomez/RandKit) - Swift framework for random numbers & distributions.
 
 
-### Mathematical optimization
+### <a name="mo"/>Mathematical optimization
+
 
 * [fmincg-c](https://github.com/gautambhatrcb/fmincg-c) - Conjugate gradient implementation in C
 * [libLBFGS](https://github.com/chokkan/liblbfgs) - a C library of Limited-memory Broyden-Fletcher-Goldfarb-Shanno (L-BFGS)
+* [SwiftOptimizer](https://github.com/haginile/SwiftOptimizer) - QuantLib Swift port.
 
-### Feature extraction
+### <a name="fe"/>Feature extraction
+
 
 * [IntuneFeatures](https://github.com/venturemedia/intune-features) framework contains code to generate features from audio files and feature labels from the respective MIDI files.
 * [matchbox](https://github.com/hfink/matchbox) - Mel-Frequency-Cepstral-Coefficients and Dynamic-Time-Warping for iOS/OSX. **Warning: the library was updated last time when iOS 4 was still hot.**
 * [LibXtract](https://github.com/jamiebullock/LibXtract) is a simple, portable, lightweight library of audio feature extraction functions.
 
-### Data Visualization
+### <a name="dv"/>Data Visualization
+
 
 * [Charts](https://github.com/danielgindi/Charts) - The Swift port of the MPAndroidChart.
 * [iOS-Charts](https://github.com/danielgindi/ios-charts)
@@ -251,17 +309,25 @@ for apps, devices, and web
 	* [VTK in action](http://www.vtk.org/vtk-in-action/)
 * [D3.js iOS binding](https://github.com/lee-leonardo/iOS-D3) 
 
-### Bioinformatics (kinda)
+### <a name="bio"/>Bioinformatics (kinda)
+
 
 * [BioJS](http://biojs.net/) - a set of tools for bioinformatics in the browser. BioJS builds a infrastructure, guidelines and tools to avoid the reinvention of the wheel in life sciences. Community builds modules than can be reused by anyone.
 * [BioCocoa](http://www.bioinformatics.org/biococoa/wiki/pmwiki.php) - BioCocoa is an open source OpenStep (GNUstep/Cocoa) framework for bioinformatics written in Objective-C. [Dead project].
 * [iBio](https://github.com/Lizhen0909/iBio) - A Bioinformatics App for iPhone.
 
-### Big Data (not really)
+### <a name="bd"/>Big Data (not really)
+
 
 * [HDF5Kit](https://github.com/aleph7/HDF5Kit) - This is a Swift wrapper for the HDF5 file format. HDF5 is used in the scientific comunity for managing large volumes of data. The objective is to make it easy to read and write HDF5 files from Swift, including playgrounds.
 
-# iOS ML Blogs
+### <a name="ip"/>IPython + Swift
+
+
+* [iSwift](https://github.com/KelvinJin/iSwift) - Swift kernel for IPython notebook.
+
+# <a name="blogs"/>iOS ML Blogs
+
 
 ### Regular mobile ML
 
@@ -285,7 +351,9 @@ for apps, devices, and web
 * [Presentation on squeezing DNNs for mobile](https://www.slideshare.net/mobile/anirudhkoul/squeezing-deep-learning-into-mobile-phones)
 * [Curated list of papers on deep learning models compression and acceleration](https://handong1587.github.io/deep_learning/2015/10/09/acceleration-model-compression.html)
 
-# GPU Computing Blogs
+# <a name="gpublogs"/>GPU Computing Blogs
+
+
 * [OpenCL for iOS](https://github.com/linusyang/opencl-test-ios) - just a test.
 * Exploring GPGPU on iOS. 
 	* [Article](http://ciechanowski.me/blog/2014/01/05/exploring_gpgpu_on_ios/) 
@@ -298,6 +366,7 @@ for apps, devices, and web
 * [OpenCV on iOS GPU usage](http://stackoverflow.com/questions/10704916/opencv-on-ios-gpu-usage) - SO discussion.
 
 ### Metal
+
 * Simon's Gladman \(aka flexmonkey\) [blog](http://flexmonkey.blogspot.com/)
 	* [Talk on iOS GPU programming](https://realm.io/news/altconf-simon-gladman-ios-gpu-programming-with-swift-metal/) with Swift and Metal at Realm Altconf.
 	* [The Supercomputer In Your Pocket:
@@ -311,14 +380,9 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [Metal by Example blog](http://metalbyexample.com/)
 * [objc-io article on Metal](https://www.objc.io/issues/18-games/metal/)
 
-# iOS ML Papers
+# <a name="learn"/>Learn Machine Learning
 
-// TODO
 
-* [(sp)iPhone: Decoding Vibrations From Nearby Keyboards
-Using Mobile Phone Accelerometers](http://www.cc.gatech.edu/~traynor/papers/traynor-ccs11.pdf)
-
-# Where to learn about machine learning and related topics in general
 * [Courserra course](https://www.coursera.org/learn/machine-learning/home/info) on machine learning from [Andrew Ng](https://twitter.com/AndrewYNg).
 * [Machine learning playlist on Youtube](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA).
 * Free online interactive book ["Neural Networks and Deep Learning"](http://neuralnetworksanddeeplearning.com/).
@@ -336,7 +400,9 @@ Using Mobile Phone Accelerometers](http://www.cc.gatech.edu/~traynor/papers/tray
 * [Deep Learning Summer School, Montreal 2016](http://videolectures.net/deeplearning2016_montreal/)
 * ["Deep learning"](http://www.deeplearningbook.org/) - the book by Ian Goodfellow and Yoshua Bengio and Aaron Courville
 
-# Other Lists
+# <a name="lists"/>Other Lists
+
+
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
 * [Machine Learning Courses](https://github.com/prakhar1989/awesome-courses#machine-learning)
 * [Awesome Data Science](https://github.com/okulbilisim/awesome-datascience)
