@@ -4,6 +4,7 @@
 
 Curated list of resources for iOS developers in following topics: 
 
+- [Apple Machine Learning](#appleml)
 - [Machine Learning Libraries](#gpmll)
 - [Deep Learning Libraries](#dll)
 	- [Deep Learning: Model Compression](#dlmc)
@@ -37,6 +38,13 @@ Resources are sorted alphabetically or randomly. The order doesn't reflect my pe
 Have fun!
 
 **Pull-requests are welcome [here](https://github.com/alexsosn/iOS_ML)**.
+
+# <a name="appleml"/>Apple CoreML
+[Machine learning](https://developer.apple.com/machine-learning/) by Apple.
+
+> [CoreML](https://developer.apple.com/documentation/coreml) lets you integrate a broad variety of machine learning model types into your app. In addition to supporting extensive deep learning with over 30 layer types, it also supports standard models such as tree ensembles, SVMs, and generalized linear models.
+
+Including [Vision API](https://developer.apple.com/documentation/vision) and [Natural Language API](https://developer.apple.com/documentation/foundation/nslinguistictagger).
 
 # <a name="gpmll"/>General-Purpose Machine Learning Libraries
 
