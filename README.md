@@ -1,9 +1,10 @@
 # Machine Learning for iOS 
 
-**Last Update: June 5, 2017.**
+**Last Update: June 10, 2017.**
 
 Curated list of resources for iOS developers in following topics: 
 
+- [Core ML](#coreml)
 - [Machine Learning Libraries](#gpmll)
 - [Deep Learning Libraries](#dll)
 	- [Deep Learning: Model Compression](#dlmc)
@@ -37,6 +38,19 @@ Resources are sorted alphabetically or randomly. The order doesn't reflect my pe
 Have fun!
 
 **Pull-requests are welcome [here](https://github.com/alexsosn/iOS_ML)**.
+
+# <a name="coreml"/>Core ML
+
+* [coremltools](https://pypi.python.org/pypi/coremltools) is a Python package. It contains converters from some popular machine learning libraries to the Apple format.
+* [Core ML](https://developer.apple.com/documentation/coreml) is an Apple framework to run inference on device. It is highly optimized to Apple hardware.
+
+Currently CoreML is compatible (partially) with the following machine learning packages:
+
+- [Caffe](http://caffe.berkeleyvision.org)
+- [Keras](https://keras.io/)
+- [libSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/)
+- [scikit-learn](http://scikit-learn.org/)
+- [XGBoost](https://xgboost.readthedocs.io/en/latest/)
 
 # <a name="gpmll"/>General-Purpose Machine Learning Libraries
 
@@ -142,6 +156,7 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [iOS port](https://github.com/FaceAR/OpenFaceIOS)
 	* [iOS demo](https://github.com/FaceAR/OpenFaceIOS)
 * [trackingjs](http://trackingjs.com/) – Object tracking in JS
+* [Vision](https://developer.apple.com/documentation/vision) is an Apple framework for computer vision.
 
 # <a name="nlp"/>Natural Language Processing
 
