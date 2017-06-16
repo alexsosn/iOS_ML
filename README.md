@@ -131,6 +131,7 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [another example](https://github.com/hollance/TensorFlow-iOS-Example)
 * [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) - header only, dependency-free deep learning framework in C++11.
 	* [iOS example](https://github.com/tiny-dnn/tiny-dnn/tree/d4fff53fa0d01f59eb162de2ec32c652a1f6f467/examples/ios) 
+	* [Perfect-TensorFlow](https://github.com/PerfectlySoft/Perfect-TensorFlow) TensorFlow Swift Library.
 * [Torch](http://torch.ch/) is a scientific computing framework with wide support for machine learning algorithms.
 	* [Torch4iOS](https://github.com/jhondge/torch4ios)
 	* [Torch-iOS](https://github.com/clementfarabet/torch-ios)
