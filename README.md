@@ -129,7 +129,7 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 * [TensorFlow](http://www.tensorflow.org/) - an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.
 	* [iOS examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples)
 	* [another example](https://github.com/hollance/TensorFlow-iOS-Example)
-	* [Perfect-TensorFlow](https://github.com/PerfectlySoft/Perfect-TensorFlow) - TensorFlow binding for [Perfect](http://perfect.org/) (server-side Swift framework). Includes oly C TF API.
+	* [Perfect-TensorFlow](https://github.com/PerfectlySoft/Perfect-TensorFlow) - TensorFlow binding for [Perfect](http://perfect.org/) (server-side Swift framework). Includes only C TF API.
 * [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) - header only, dependency-free deep learning framework in C++11.
 	* [iOS example](https://github.com/tiny-dnn/tiny-dnn/tree/d4fff53fa0d01f59eb162de2ec32c652a1f6f467/examples/ios) 
 * [Torch](http://torch.ch/) is a scientific computing framework with wide support for machine learning algorithms.
