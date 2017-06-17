@@ -1,6 +1,6 @@
 # Machine Learning for iOS 
 
-**Last Update: June 10, 2017.**
+**Last Update: June 17, 2017.**
 
 Curated list of resources for iOS developers in following topics: 
 
