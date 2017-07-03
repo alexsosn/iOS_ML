@@ -249,6 +249,7 @@ for apps, devices, and web
 * [Benchmark of BNNS vs. MPS](https://github.com/hollance/BNNS-vs-MPSCNN)
 * [VGGNet on Metal](https://github.com/hollance/VGGNet-Metal)
 * A [Sudoku Solver](https://github.com/waitingcheung/deep-sudoku-solver) that leverages TensorFlow and iOS BNNS for deep learning.
+* [HED CoreML Implementation](https://github.com/s1ddok/HED-CoreML) is a demo with tutorial on how to use Holistically-Nested Edge Detection on iOS with CoreML and Swift
 
 ### Traditional Computer Vision
 
