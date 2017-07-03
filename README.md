@@ -43,6 +43,7 @@ Have fun!
 
 * [coremltools](https://pypi.python.org/pypi/coremltools) is a Python package. It contains converters from some popular machine learning libraries to the Apple format.
 * [Core ML](https://developer.apple.com/documentation/coreml) is an Apple framework to run inference on device. It is highly optimized to Apple hardware.
+* [HED CoreML Implementation](https://github.com/s1ddok/HED-CoreML) is a demo with tutorial on how to use Holistically-Nested Edge Detection on iOS with CoreML and Swift
 
 Currently CoreML is compatible (partially) with the following machine learning packages:
 
