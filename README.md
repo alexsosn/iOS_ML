@@ -401,6 +401,7 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 
 
 * [Coursera course](https://www.coursera.org/learn/machine-learning/home/info) on machine learning from [Andrew Ng](https://twitter.com/AndrewYNg).
+* [Coursera Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) by [Andrew Ng](https://twitter.com/AndrewYNg) and his new project [deeplearning.ai](https://www.deeplearning.ai).
 * [Machine learning playlist on Youtube](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA).
 * Free online interactive book ["Neural Networks and Deep Learning"](http://neuralnetworksanddeeplearning.com/).
 * ["Natural Language Processing with Python"](http://www.nltk.org/book/) - free online book.
