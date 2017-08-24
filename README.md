@@ -52,6 +52,8 @@ Currently CoreML is compatible (partially) with the following machine learning p
 - [scikit-learn](http://scikit-learn.org/)
 - [XGBoost](https://xgboost.readthedocs.io/en/latest/)
 
+There are many curated lists of pre-trained neural networks in Core ML format: [\[1\]](https://github.com/SwiftBrain/awesome-CoreML-models), [\[2\]](https://github.com/cocoa-ai/ModelZoo), [\[3\]](https://github.com/likedan/Awesome-CoreML-Models).
+
 # <a name="gpmll"/>General-Purpose Machine Learning Libraries
 
 
