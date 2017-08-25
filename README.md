@@ -1,6 +1,6 @@
 # Machine Learning for iOS 
 
-**Last Update: August 24, 2017.**
+**Last Update: August 25, 2017.**
 
 Curated list of resources for iOS developers in following topics: 
 
@@ -25,6 +25,7 @@ Curated list of resources for iOS developers in following topics:
 	- [Bioinformatics (kinda)](#bio)
 	- [Big Data (not really)](#bd)
 - [iOS ML Blogs](#blogs)
+- [Mobile ML books](#books)
 - [GPU Computing Blogs](#gpublogs)
 - [Learn Machine Learning](#learn)
 - [Other Lists](#lists)
@@ -399,18 +400,31 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [Metal by Example blog](http://metalbyexample.com/)
 * [objc-io article on Metal](https://www.objc.io/issues/18-games/metal/)
 
+# <a name="books"/>Mobile ML Books
+
+* <b>Building Mobile Applications with TensorFlow</b> by Pete Warden. [Book page](http://www.oreilly.com/data/free/building-mobile-applications-with-tensorflow.csp). <b>[Free download](http://www.oreilly.com/data/free/building-mobile-applications-with-tensorflow.csp?download=true)</b>
+
 # <a name="learn"/>Learn Machine Learning
 
+<i>Please note that in this section, I'm not trying to collect another list of ALL machine learning study resources, but only composing a list of things that I found useful.</i>
 
-* [Coursera course](https://www.coursera.org/learn/machine-learning/home/info) on machine learning from [Andrew Ng](https://twitter.com/AndrewYNg).
-* [Coursera Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) by [Andrew Ng](https://twitter.com/AndrewYNg) and his new project [deeplearning.ai](https://www.deeplearning.ai).
+* <b>[Academic Torrents](http://academictorrents.com/browse.php?cat=7)</b>. Sometimes awesome courses or datasets got deleted from their sites. But this doesn't mean, that they are lost.
+* [Arxiv Sanity Preserver](http://www.arxiv-sanity.com/) - a tool to keep pace with the ML research progress.
+
+## Free Books
+
+* Immersive Linear Algebra [interactive book](http://immersivemath.com/ila/index.html) by J. Ström, K. Åström, and T. Akenine-Möller.
+* ["Natural Language Processing with Python"](http://www.nltk.org/book/) - free online book.
+* [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) - An intro to Bayesian methods and probabilistic programming from a computation/understanding-first, mathematics-second point of view. 
+* ["Deep learning"](http://www.deeplearningbook.org/) - the book by Ian Goodfellow and Yoshua Bengio and Aaron Courville
+
+## Free Courses
+
+* [Original Machine Learning Coursera course](https://www.coursera.org/learn/machine-learning/home/info) by Andrew Ng.
 * [Machine learning playlist on Youtube](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA).
 * Free online interactive book ["Neural Networks and Deep Learning"](http://neuralnetworksanddeeplearning.com/).
-* ["Natural Language Processing with Python"](http://www.nltk.org/book/) - free online book.
 * [Heterogeneous Parallel Programming](https://www.coursera.org/course/hetero) course.
-* Immersive Linear Algebra [interactive book](http://immersivemath.com/ila/index.html) by J. Ström, K. Åström, and T. Akenine-Möller.
 * [Deep Learning for Perception](https://computing.ece.vt.edu/~f15ece6504/) by Virginia Tech, Electrical and Computer Engineering, Fall 2015: ECE 6504
-* [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) - An intro to Bayesian methods and probabilistic programming from a computation/understanding-first, mathematics-second point of view. 
 * [CAP 5415 - Computer Vision](http://crcv.ucf.edu/courses/CAP5415/Fall2014/index.php) by UCF
 * [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/syllabus.html) by Stanford
 * [Machine Learning: 2014-2015 Course materials](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/) by Oxford
@@ -418,7 +432,7 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [Deep Learning for Natural Language Processing \(without Magic\)](http://nlp.stanford.edu/courses/NAACL2013/)
 * [Videos](http://videolectures.net/deeplearning2015_montreal/) from Deep Learning Summer School, Montreal 2015.
 * [Deep Learning Summer School, Montreal 2016](http://videolectures.net/deeplearning2016_montreal/)
-* ["Deep learning"](http://www.deeplearningbook.org/) - the book by Ian Goodfellow and Yoshua Bengio and Aaron Courville
+
 
 # <a name="lists"/>Other Lists
 
