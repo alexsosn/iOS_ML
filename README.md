@@ -62,32 +62,188 @@ Core ML currently doesn't support training models, but still, you can replace mo
 
 # <a name="gpmll"/>General-Purpose Machine Learning Libraries
 
-* [FANN](https://cocoapods.org/pods/FANN) - Fast Artifical Neural Network library; an implementation of neural networks.
-* [lbimproved](https://github.com/lemire/lbimproved) - DTW + kNN in C
-* **Shark** - provides libraries for the design of adaptive systems, including methods for linear and nonlinear optimization (e.g., evolutionary and gradient-based algorithms), kernel-based algorithms and neural networks, and other machine learning techniques. [CocoaPods](https://cocoapods.org/pods/Shark-SDK). [Official site](http://image.diku.dk/shark/sphinx_pages/build/html/index.html)
-* [YCML](http://yconst.com/software/ycml/) - A Machine Learning framework for Objective-C and Swift (OS X / iOS). 
-The following algorithms are currently available: Gradient Descent Backpropagation, Resilient Backpropagation (RProp), Extreme Learning Machines (ELM), Forward Selection using Orthogonal Least Squares (for RBF Net), also with the PRESS statistic, Binary Restricted Boltzmann Machines (CD & PCD, Untested!). YCML also contains some optimization algorithms as support for deriving predictive models, although they can be used for any kind of problem: Gradient Descent (Single-Objective, Unconstrained), RProp Gradient Descent (Single-Objective, Unconstrained), NSGA-II (Multi-Objective, Constrained).
-	* [Github](https://github.com/yconst/ycml/). 
-* [Recommender](https://github.com/GHamrouni/Recommender) - A C library for product recommendations/suggestions using collaborative filtering (CF).
-* [MAChineLearning](https://github.com/gianlucabertani/MAChineLearning) - An Objective-C multilayer perceptron library, with full support for training through backpropagation. Implemented using vDSP and vecLib, it's 20 times faster than its Java equivalent. Includes sample code for use from Swift.
-* [multilinear-math](https://github.com/vincentherrmann/multilinear-math) - Swift library for tensor operations, machine learning and artificial intelligence
-* [MLKit](https://github.com/Somnibyte/MLKit) - regressions, cross-validation, data splitting.
-* [dlib](http://dlib.net/) is a C++ framework which contains 30+ machine learning algorithms and different useful additions. It's relatively easy to port it to iOS: you just need to get rid of GUI and http-related source files.
-* [Mendel](https://github.com/saniul/Mendel) - Genetic algorithms in Swift.
-
-* Kalvar Lin's libraries
-	* [ios-BPN-NeuralNetwork](https://github.com/Kalvar/ios-BPN-NeuralNetwork) - 3-layer neural network + back propagation.
-	* [ios-Multi-Perceptron-NeuralNetwork](https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork) - Multi-perceptron neural network based on back propagation NN.
-	* [ios-KRDelta](https://github.com/Kalvar/ios-KRDelta) - [Delta Learning method](https://en.wikipedia.org/wiki/Delta_rule)
-	* [ios-KRHebbian-Algorithm](https://github.com/Kalvar/ios-KRHebbian-Algorithm) - [Hebbian Theory](https://en.wikipedia.org/wiki/Hebbian_theory)
-	* [ios-KRKmeans-Algorithm](https://github.com/Kalvar/ios-KRKmeans-Algorithm) - [K-Means](https://en.wikipedia.org/wiki/K-means_clustering) clustering method.
-	* [ios-KRFuzzyCMeans-Algorithm](https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm) - [Fuzzy C-Means](https://en.wikipedia.org/wiki/Fuzzy_clustering), the fuzzy clustering algorithm.
-	* [ios-KRGreyTheory](https://github.com/Kalvar/ios-KRGreyTheory) - [Grey Theory](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.678.3477&rep=rep1&type=pdf) / [Grey system theory-based models in time series prediction](http://www.mecha.ee.boun.edu.tr/Prof.%20Dr.%20Okyay%20Kaynak%20Publications/c%20Journal%20Papers(appearing%20in%20SCI%20or%20SCIE%20or%20CompuMath)/62.pdf)
-	* [ios-KRSVM](https://github.com/Kalvar/ios-KRSVM) - Support Vector Machine and SMO.
-	* [ios-KRKNN](https://github.com/Kalvar/ios-KRKNN) - kNN implementation.
-	* [ios-KRRBFNN](https://github.com/Kalvar/ios-KRRBFNN) - Radial basis function neural network and OLS.
-	* [ios-KRPerceptron](https://github.com/Kalvar/ios-KRPerceptron) - Perceptron method.
-	* [ios-ML-Recommendation-System](https://github.com/Kalvar/ios-ML-Recommendation-System) - demo of a book recommendation system, built using ios-BPN-NeuralNetwork. 
+<table>
+  <tr>
+    <th>Library</th>
+    <th>Algorithms</th> 
+    <th>Language</th> 
+    <th>License</th>
+    <th>Code</th>
+    <th>Dependency manager</th>
+  </tr>
+    <tr>
+    <td><a href="https://github.com/KevinCoble/AIToolbox">AIToolbox</a></td>
+    <td>
+<ul>
+<li>Graphs/Trees</li><ul>
+    <li>Depth-first search</li>
+    <li>Breadth-first search</li>
+    <li>Hill-climb search</li>
+    <li>Beam Search</li>
+    <li>Optimal Path search</li></ul>
+<li>Alpha-Beta (game tree)</li>
+<li>Genetic Algorithms</li>
+<li>Constraint Propogation</li>
+<li>Linear Regression</li>
+<li>Non-Linear Regression</li><ul>
+    <li>parameter-delta</li>
+    <li>Gradient-Descent</li>
+    <li>Gauss-Newton</li></ul>
+<li>Logistic Regression</li>
+<li>Neural Networks</li><ul>
+    <li>multiple layers, several non-linearity models</li>
+    <li>on-line and batch training</li>
+    <li>feed-forward or simple recurrent layers can be mixed in one network</li>
+    <li>LSTM network layer implemented - needs more testing</li>
+    <li>gradient check routines</li></ul>
+<li>Support Vector Machine</li>
+<li>K-Means</li>
+<li>Principal Component Analysis</li>
+<li>Markov Decision Process</li><ul>
+    <li>Monte-Carlo (every-visit, and first-visit)</li>
+    <li>SARSA</li></ul>
+<li>Single and Multivariate Gaussians</li>
+<li>Mixture Of Gaussians</li>
+<li>Model validation</li>
+<li>Deep-Network</li><ul>
+    <li>Convolution layers</li>
+    <li>Pooling layers</li>
+    <li>Fully-connected NN layers</li></ul>
+</ul>
+</td> 
+    <td>Swift</td> 
+    <td>Apache 2.0</td>
+    <td><a href="https://github.com/KevinCoble/AIToolbox">GitHub</a> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td><a href="http://dlib.net/"><img width=100 src="http://dlib.net/dlib-logo.png"><br>dlib</a></td>
+    <td><ul>
+<li>Deep Learning</li><li>Conventional SMO based Support Vector Machines for classification and  regression</li><li>Reduced-rank methods for large-scale classification and regression</li><li>Relevance vector machines for classification and regression</li><li>A Multiclass SVM</li><li>Structural SVM<li>A large-scale SVM-Rank</li><li>An online kernel RLS regression</li><li>An online SVM classification algorithm</li><li>Semidefinite Metric Learning</li><li>An online kernelized centroid estimator/novelty detector and offline support vector one-class classification</li><li>Clustering algorithms: linear or kernel k-means, Chinese Whispers, and Newman clustering</li><li>Radial Basis Function Networks</li><li>Multi layer perceptrons</li></ul>
+</td> 
+    <td>C++</td> 
+    <td>Boost</td>
+    <td><a href="https://github.com/davisking/dlib">GitHub</a></td>
+    <td><a href="https://cocoapods.org/pods/FANN">Cocoa Pods</a></td>
+  </tr>
+  <tr>
+    <td><a href="http://leenissen.dk/fann/wp/">FANN</a></td>
+    <td><ul>
+<li>Multilayer Artificial Neural Network</li>
+<li>Backpropagation (RPROP, Quickprop, Batch, Incremental)</li>
+<li>Evolving topology training</li>
+</ul></td> 
+    <td>C++</td> 
+    <td>GNU LGPL 2.1</td>
+    <td><a href="https://github.com/libfann/fann">GitHub</a></td>
+    <td><a href="https://cocoapods.org/pods/FANN">Cocoa Pods</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/lemire/lbimproved">lbimproved</a></td>
+    <td>k-nearest neighbors and Dynamic Time Warping</td> 
+    <td>C++</td> 
+    <td>Apache 2.0</td>
+    <td><a href="https://github.com/lemire/lbimproved">GitHub</a> </td>
+    <td> </td>
+  </tr>
+    <tr>
+    <td><a href="https://github.com/gianlucabertani/MAChineLearning">MAChineLearning</a></td>
+    <td>
+    <ul><li>Neural Networks</li><ul>
+<li>Activation functions: Linear, ReLU, Step, sigmoid, TanH</li>
+<li>Cost functions: Squared error, Cross entropy</li>
+<li>Backpropagation: Standard, Resilient (a.k.a. RPROP).</li>
+<li>Training by sample or by batch.</li>
+</ul>
+<li>Bag of Words</li>
+<li>Word Vectors</li></ul>
+</td> 
+    <td>Objective-C</td> 
+    <td>BSD 3-clause</td>
+    <td><a href="https://github.com/gianlucabertani/MAChineLearning">GitHub</a> </td>
+    <td> </td>
+  </tr>
+    
+  <tr>
+    <td><a href="https://github.com/Somnibyte/MLKit"><img width=100 src="https://github.com/Somnibyte/MLKit/raw/master/MLKitSmallerLogo.png"><br>MLKit</a></td>
+    <td> Matrix and Vector Operations (uses Upsurge framework)
+ Simple Linear Regression (Allows for 1 feature set)
+ Polynomial Regression (Allows for multiple features)
+ Ridge Regression
+ Multi-Layer Feed Forward Neural Network
+ K-Means Clustering
+ Genetic Algorithms
+ Allows for splitting your data into training, validation, and test sets.
+ K-Fold Cross Validation & Ability to test various L2 penalties for Ridge Regression
+ Single Layer Perceptron, Multi-Layer Perceptron, & Adaline ANN Architectures
+</td> 
+    <td>Swift</td>
+    <td>MIT</td>
+    <td><a href="https://github.com/Somnibyte/MLKit">GitHub</a></td>
+    <td><a href="https://cocoapods.org/pods/MachineLearningKit">Cocoa Pods</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/saniul/Mendel"><img width=100 src="https://github.com/saniul/Mendel/raw/master/logo@2x.png"><br>Mendel</a></td>
+    <td>Evolutionary/genetic algorithms</td> 
+    <td>Swift</td> 
+    <td>?</td>
+    <td><a href="https://github.com/saniul/Mendel">GitHub</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/vincentherrmann/multilinear-math">multilinear-math</a></td>
+    <td>Swift wrappers of many important functions from the Accelerate framework and LAPACK (vector summation, addition, substraction, matrix and elementwise multiplication, division, matrix inverse, pseudo inverse, eigendecomposition, singular value decomposition...), MultidimensionData protocol for elegant handling of multidimensional data of any kind, Clear, compact and powerful syntax for mathematical operations on tensors, Principal component analysis, Multilinear subspace learning algorithms for dimensionality reduction, Linear and logistic regression, Stochastic gradient descent, Feedforward neural networks, Sigmoid, ReLU, Softplus activation functions, Easy regularizations</td> 
+    <td>Swift</td> 
+    <td>Apache 2.0</td>
+    <td><a href="https://github.com/vincentherrmann/multilinear-math">GitHub</a> </td>
+    <td>Swift Package Manager</td>
+  </tr>
+  <tr>
+    <td><a href="http://opencv.org/"><img width=100 src="http://opencv.org/assets/theme/logo.png">OpenCV</a></td>
+    <td>Multi-Layer Perceptrons, Boosted tree classifier, decision tree, Expectation Maximization, K-Nearest Neighbors, Logistic Regression, Bayes classifier, random forest, Support Vector Machines,  Stochastic Gradient Descent SVM classifier, grid search, hierarchical k-means, deep neural networks</td> 
+    <td>C++</td> 
+    <td>3-clause BSD</td>
+    <td><a href="https://github.com/opencv">GitHub</a> </td>
+    <td> <a href="https://cocoapods.org/pods/OpenCV">Cocoa Pods</a></td>
+  </tr>
+  <tr>
+    <td><a href="http://image.diku.dk/shark/sphinx_pages/build/html/index.html"><img width=100 src="http://image.diku.dk/shark/sphinx_pages/build/html/_static/SharkLogo.png"><br>Shark</a></td>
+    <td><b>Supervised:</b> LDA, Fisher–LDA, Linear regression, SVMs, FF NN, RNN, Radial basis function networks, Regularization networks as well as Gaussian processes for regression, Iterative nearest neighbor classification and regression, Decision trees and random forests
+<br><b>Unsupervised:</b> [PCA], Restricted Boltzmann machines, Hierarchical clustering, Data structures for efficient distance-based clustering
+<br><b>Optimization:</b> Evolutionary algorithms, Single-objective optimization (e.g., CMA–ES), Multi-objective optimization, Basic linear algebra and optimization algorithms</td> 
+    <td>C++</td> 
+    <td>GNU LGPL</td>
+    <td><a href="https://github.com/lemire/lbimproved">GitHub</a> </td>
+    <td><a href="https://cocoapods.org/pods/Shark-SDK">Cocoa Pods</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/yconst/YCML"><img width=100 src="https://raw.githubusercontent.com/yconst/YCML/master/Logo.png"><br>YCML</a></td>
+    <td>Gradient Descent Backpropagation, Resilient Backpropagation (RProp), Extreme Learning Machines (ELM), Forward Selection using Orthogonal Least Squares (for RBF Net), also with the PRESS statistic, Binary Restricted Boltzmann Machines (CD & PCD) 
+    <br><b>Optimization algorithms</b>: Gradient Descent (Single-Objective, Unconstrained), RProp Gradient Descent (Single-Objective, Unconstrained), NSGA-II (Multi-Objective, Constrained)</td> 
+    <td>Objective-C</td> 
+    <td>GNU GPL 3.0</td>
+    <td><a href="https://github.com/yconst/ycml/">GitHub</a> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/Kalvar"><img src="https://avatars2.githubusercontent.com/u/1835631?v=4&s=460"><br>Kalvar Lin's libraries</a></td>
+    <td>
+    <ul>
+<li><a href="https://github.com/Kalvar/ios-KRHebbian-Algorithm">ios-KRHebbian-Algorithm</a> - <a href="https://en.wikipedia.org/wiki/Hebbian_theory">Hebbian Theory</a></li>
+<li><a href="https://github.com/Kalvar/ios-KRKmeans-Algorithm">ios-KRKmeans-Algorithm</a> - <a href="https://en.wikipedia.org/wiki/K-means_clustering">K-Means</a> clustering method.</li>
+<li><a href="https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm">ios-KRFuzzyCMeans-Algorithm</a> - <a href="https://en.wikipedia.org/wiki/Fuzzy_clustering">Fuzzy C-Means</a>, the fuzzy clustering algorithm.</li>
+<li><a href="https://github.com/Kalvar/ios-KRGreyTheory">ios-KRGreyTheory</a> - <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.678.3477&amp;rep=rep1&amp;type=pdf">Grey Theory</a> / <a href="http://www.mecha.ee.boun.edu.tr/Prof.%20Dr.%20Okyay%20Kaynak%20Publications/c%20Journal%20Papers(appearing%20in%20SCI%20or%20SCIE%20or%20CompuMath)/62.pdf">Grey system theory-based models in time series prediction</a></li>
+<li><a href="https://github.com/Kalvar/ios-KRSVM">ios-KRSVM</a> - Support Vector Machine and SMO.</li>
+<li><a href="https://github.com/Kalvar/ios-KRKNN">ios-KRKNN</a> - kNN implementation.</li>
+<li><a href="https://github.com/Kalvar/ios-KRRBFNN">ios-KRRBFNN</a> - Radial basis function neural network and OLS.</li>
+</ul> 
+</td> 
+    <td>Objective-C</td> 
+    <td>MIT</td>
+    <td><a href="https://github.com/Kalvar">GitHub</a></td>
+    <td></td>
+  </tr>
+</table>
 
 **Multilayer perceptron implementations:**
 
@@ -96,6 +252,10 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 - [MLPNeuralNet](https://github.com/nikolaypavlov/MLPNeuralNet) - Objective-C, Accelerate
 - [Swift-AI](https://github.com/Swift-AI/Swift-AI) - Swift
 - [SwiftSimpleNeuralNetwork](https://github.com/davecom/SwiftSimpleNeuralNetwork) - Swift
+- <a href="https://github.com/Kalvar/ios-BPN-NeuralNetwork">ios-BPN-NeuralNetwork</a> - Objective-C
+- <a href="https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork">ios-Multi-Perceptron-NeuralNetwork</a>- Objective-C
+- <a href="https://github.com/Kalvar/ios-KRDelta">ios-KRDelta</a> - Objective-C
+- [ios-KRPerceptron](https://github.com/Kalvar/ios-KRPerceptron) - Objective-C
 
 # <a name="dll"/>Deep Learning Libraries: 
 
@@ -458,3 +618,12 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [Speech and language processing](https://github.com/edobashira/speech-language-processing)
 * [The Rise of Chat Bots:](https://stanfy.com/blog/the-rise-of-chat-bots-useful-links-articles-libraries-and-platforms/)  Useful Links, Articles, Libraries and Platforms by Pavlo Bashmakov.
 * [Awesome Machine Learning for Cyber Security](https://github.com/jivoi/awesome-ml-for-cybersecurity)
+
+[DTW]: https://en.wikipedia.org/wiki/Dynamic_time_warping
+[ANN]: https://en.wikipedia.org/wiki/Artificial_neural_network
+[FF NN]: https://en.wikipedia.org/wiki/Feedforward_neural_network
+[k-NN]: https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
+[LDA]: https://en.wikipedia.org/wiki/Linear_discriminant_analysis
+[SVM]: https://en.wikipedia.org/wiki/Support_vector_machine
+[RNN]: https://en.wikipedia.org/wiki/Recurrent_neural_network
+[PCA]: https://en.wikipedia.org/wiki/Principal_component_analysis
