@@ -68,19 +68,8 @@ Core ML currently doesn't support training models, but still, you can replace mo
 * [YCML](http://yconst.com/software/ycml/) - A Machine Learning framework for Objective-C and Swift (OS X / iOS). 
 The following algorithms are currently available: Gradient Descent Backpropagation, Resilient Backpropagation (RProp), Extreme Learning Machines (ELM), Forward Selection using Orthogonal Least Squares (for RBF Net), also with the PRESS statistic, Binary Restricted Boltzmann Machines (CD & PCD, Untested!). YCML also contains some optimization algorithms as support for deriving predictive models, although they can be used for any kind of problem: Gradient Descent (Single-Objective, Unconstrained), RProp Gradient Descent (Single-Objective, Unconstrained), NSGA-II (Multi-Objective, Constrained).
 	* [Github](https://github.com/yconst/ycml/). 
-* [Swix](https://github.com/scottsievert/swix) - Swift implementation of NumPy.
-* [Brain](https://github.com/harthur/brain) - Neural networks in JavaScript. Unmaintained.
-* [April-ANN](https://github.com/pakozm/april-ann) - APRIL-ANN toolkit (A Pattern Recognizer In Lua with ANNs). This toolkit incorporates ANN algorithms (as dropout, stacked denoising auto-encoders, convolutional NNs), with other pattern recognition methods as HMMs among others. Additionally, in experimental stage, it is possible to perform automatic differentiation, for advanced ML research. Potentially can be ported for iOS. 
-	* [Official Site](http://pakozm.github.com/april-ann/). 
 * [Recommender](https://github.com/GHamrouni/Recommender) - A C library for product recommendations/suggestions using collaborative filtering (CF).
-* [SNNeuralNet](https://github.com/devongovett/SNNeuralNet) - A neural network library for Objective-C based on brain.js, for iOS and Mac OS X.
-* [MLPNeuralNet](https://github.com/nikolaypavlov/MLPNeuralNet) - Fast multilayer perceptron neural network library for iOS and Mac OS X. MLPNeuralNet predicts new examples by trained neural network. It is built on top of the Apple's Accelerate Framework, using vectorized operations and hardware acceleration if available.
 * [MAChineLearning](https://github.com/gianlucabertani/MAChineLearning) - An Objective-C multilayer perceptron library, with full support for training through backpropagation. Implemented using vDSP and vecLib, it's 20 times faster than its Java equivalent. Includes sample code for use from Swift.
-* [Swift-AI](https://github.com/collinhundley/Swift-AI) - 3-layer NN.
-* [EERegression](https://github.com/erkekin/EERegression/) -  General purpose multivaritate and quadratic Regression library for Swift 2.1 
-* [SwiftSimpleNeuralNetwork](https://github.com/davecom/SwiftSimpleNeuralNetwork) - Feed forward and back propagation.
-* [STEM](https://github.com/abeschneider/stem) - Swift Tensor Engine for Machine-learning
-	* [Documentation](http://stem.readthedocs.io/en/latest/) 
 * [multilinear-math](https://github.com/vincentherrmann/multilinear-math) - Swift library for tensor operations, machine learning and artificial intelligence
 * [MLKit](https://github.com/Somnibyte/MLKit) - regressions, cross-validation, data splitting.
 * [dlib](http://dlib.net/) is a C++ framework which contains 30+ machine learning algorithms and different useful additions. It's relatively easy to port it to iOS: you just need to get rid of GUI and http-related source files.
@@ -100,7 +89,17 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [ios-KRPerceptron](https://github.com/Kalvar/ios-KRPerceptron) - Perceptron method.
 	* [ios-ML-Recommendation-System](https://github.com/Kalvar/ios-ML-Recommendation-System) - demo of a book recommendation system, built using ios-BPN-NeuralNetwork. 
 
-# <a name="dll"/>Deep Learning Libraries: On-Device training and inference
+**Multilayer perceptron implementations:**
+
+- [Brain.js](https://github.com/harthur/brain) - JS
+- [SNNeuralNet](https://github.com/devongovett/SNNeuralNet) - Objective-C port of brain.js
+- [MLPNeuralNet](https://github.com/nikolaypavlov/MLPNeuralNet) - Objective-C, Accelerate
+- [Swift-AI](https://github.com/Swift-AI/Swift-AI) - Swift
+- [SwiftSimpleNeuralNetwork](https://github.com/davecom/SwiftSimpleNeuralNetwork) - Swift
+
+# <a name="dll"/>Deep Learning Libraries: 
+
+### On-Device training and inference
 
 * [Birdbrain](https://github.com/jordenhill/Birdbrain) - RNNs and FF NNs on top of Metal and Accelerate. Not ready for production.
 * [BrainCore](https://github.com/aleph7/BrainCore) - simple but fast neural network framework written in Swift. It uses Metal framework to be as fast as possible. ReLU, LSTM, L2 ...
@@ -151,6 +150,8 @@ These libraries doesn't support training, so you need to pre-train models in som
 	* [MetalCNNWeights](https://github.com/kakugawa/MetalCNNWeights) - a Python script to convert Inception v3 for MPS.
 	* [MPSCNNfeeder](https://github.com/kazoo-kmt/MPSCNNfeeder) - Keras to MPS models conversion.
 * [NNPACK](https://github.com/Maratyszcza/NNPACK) - Acceleration package for neural networks on multi-core CPUs. Prisma [uses](http://prisma-ai.com/libraries.html) this library in the mobile app.
+* [STEM](https://github.com/abeschneider/stem) - Swift Tensor Engine for Machine-learning
+	* [Documentation](http://stem.readthedocs.io/en/latest/) 
 
 ### <a name="dlmc"/>Deep Learning: Model Compression
 
@@ -303,6 +304,7 @@ for apps, devices, and web
 * [NDArray](https://github.com/t-ae/ndarray) - Float library for Swift, accelerated with Accelerate Framework.
 * [Swift-MathEagle](https://github.com/rugheid/Swift-MathEagle) - A general math framework to make using math easy. Currently supports function solving and optimisation, matrix and vector algebra, complex numbers, big int, big frac, big rational, graphs and general handy extensions and functions.
 * [SwiftNum](https://github.com/donald-pinckney/SwiftNum) - linear algebra, fft, gradient descent, conjugate GD, plotting.
+* [Swix](https://github.com/scottsievert/swix) - Swift implementation of NumPy and OpenCV wrapper.
 * [Surge](https://github.com/mattt/Surge) from Mattt
 * [Upsurge](https://github.com/aleph7/Upsurge) - generic tensors, matrices on top of Accelerate. A fork of Surge.
 * [YCMatrix](https://github.com/yconst/YCMatrix) - A flexible Matrix library for Objective-C and Swift (OS X / iOS)
