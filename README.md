@@ -53,12 +53,14 @@ Currently CoreML is compatible (partially) with the following machine learning p
 - [scikit-learn](http://scikit-learn.org/)
 - [XGBoost](https://xgboost.readthedocs.io/en/latest/)
 
+Third-party converters available for:
+- [MXNet](https://github.com/apache/incubator-mxnet/tree/master/tools/coreml)
+
 There are many curated lists of pre-trained neural networks in Core ML format: [\[1\]](https://github.com/SwiftBrain/awesome-CoreML-models), [\[2\]](https://github.com/cocoa-ai/ModelZoo), [\[3\]](https://github.com/likedan/Awesome-CoreML-Models).
 
 Core ML currently doesn't support training models, but still, you can replace model by downloading a new one from a server in runtime. [Here is a demo](https://github.com/zedge/DynamicCoreML) of how to do it. It uses generator part of MNIST GAN as Core ML model.
 
 # <a name="gpmll"/>General-Purpose Machine Learning Libraries
-
 
 * [FANN](https://cocoapods.org/pods/FANN) - Fast Artifical Neural Network library; an implementation of neural networks.
 * [lbimproved](https://github.com/lemire/lbimproved) - DTW + kNN in C
@@ -98,17 +100,11 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [ios-KRPerceptron](https://github.com/Kalvar/ios-KRPerceptron) - Perceptron method.
 	* [ios-ML-Recommendation-System](https://github.com/Kalvar/ios-ML-Recommendation-System) - demo of a book recommendation system, built using ios-BPN-NeuralNetwork. 
 
-# <a name="dll"/>Deep Learning Libraries
+# <a name="dll"/>Deep Learning Libraries: On-Device training and inference
 
-
-* [Bender](https://github.com/xmartlabs/Bender) - Framework for building fast NNs. Supports TensorFlow models. It uses Metal under the hood.
 * [Birdbrain](https://github.com/jordenhill/Birdbrain) - RNNs and FF NNs on top of Metal and Accelerate. Not ready for production.
-* [BNNS](https://developer.apple.com/reference/accelerate/1912851-bnns) - Apple Basic neural network subroutines (BNNS) is a collection of functions that you use to implement and run neural networks, using previously obtained training data.
-	* [BNNS usage examples](https://github.com/shu223/iOS-10-Sampler) in iOS 10 sampler.
-	* [An example](https://github.com/bignerdranch/bnns-cocoa-example) of a neural network trained by tensorflow and executed using BNNS
 * [BrainCore](https://github.com/aleph7/BrainCore) - simple but fast neural network framework written in Swift. It uses Metal framework to be as fast as possible. ReLU, LSTM, L2 ...
-* [Caffe](http://caffe.berkeleyvision.org) - A deep learning framework developed with cleanliness, readability, and speed in mind.
-[GitHub](https://github.com/BVLC/caffe). [BSD]
+* [Caffe](http://caffe.berkeleyvision.org) - A deep learning framework developed with cleanliness, readability, and speed in mind. [GitHub](https://github.com/BVLC/caffe). [BSD]
 	* [iOS port](https://github.com/aleph7/caffe)
 	* [caffe-mobile](https://github.com/solrex/caffe-mobile) - another iOS port.
 	* C++ examples: [Classifying ImageNet](http://caffe.berkeleyvision.org/gathered/examples/cpp_classification.html), [Extracting Features](http://caffe.berkeleyvision.org/gathered/examples/feature_extraction.html)
@@ -119,18 +115,6 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 * [Convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/) - ConvNetJS is a Javascript library for training Deep Learning models by [Andrej Karpathy](https://twitter.com/karpathy). [GitHub](https://github.com/karpathy/convnetjs)
 	* [ConvNetSwift](https://github.com/alexsosn/ConvNetSwift) - Swift port [work in progress].
 * [Deep Belief SDK](https://github.com/jetpacapp/DeepBeliefSDK) -  The SDK for Jetpac's iOS Deep Belief image recognition framework
-* [DeepLearningKit](http://deeplearningkit.org/) - Open Source Deep Learning Framework from Memkite for Apple's tvOS, iOS and OS X.
-* [Espresso](https://github.com/codinfox/espresso) - A minimal high performance parallel neural network framework running on iOS.
-* [Forge](https://github.com/hollance/Forge) - A neural network toolkit for Metal.
-* [KSJNeuralNetwork](https://github.com/woffle/KSJNeuralNetwork) - A Neural Network Inference Library Built atop BNNS and MPS
-	* [Converter for Torch models](https://github.com/woffle/torch2ios)
-* [MetalPerformanceShaders](https://developer.apple.com/reference/metalperformanceshaders) - CNNs on GPU from Apple.
-	* [MetalCNNWeights](https://github.com/kakugawa/MetalCNNWeights) - a Python script to convert Inception v3 for MPS.
-	* [MPSCNNfeeder](https://github.com/kazoo-kmt/MPSCNNfeeder) - Keras to MPS models conversion.
-* [MXNet](http://mxnet.readthedocs.org/en/latest/) - MXNet is a deep learning framework designed for both efficiency and flexibility.
-	* [Deploying mxnet to smartphone](https://github.com/dmlc/mxnet/tree/master/amalgamation)
-* [NNPACK](https://github.com/Maratyszcza/NNPACK) - Acceleration package for neural networks on multi-core CPUs. Prisma [uses](http://prisma-ai.com/libraries.html) this library in the mobile app.
-* [Quantized-CNN](https://github.com/jiaxiang-wu/quantized-cnn) - compressed convolutional neural networks for Mobile Devices
 * [TensorFlow](http://www.tensorflow.org/) - an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.
 	* [iOS examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples)
 	* [another example](https://github.com/hollance/TensorFlow-iOS-Example)
@@ -141,8 +125,34 @@ The following algorithms are currently available: Gradient Descent Backpropagati
 	* [Torch4iOS](https://github.com/jhondge/torch4ios)
 	* [Torch-iOS](https://github.com/clementfarabet/torch-ios)
 
-### <a name="dlmc"/>Deep Learning: Model Compression
+### Deep Learning: Running pre-trained models on device
 
+These libraries doesn't support training, so you need to pre-train models in some ML framework.
+
+* [Bender](https://github.com/xmartlabs/Bender) - Framework for building fast NNs. Supports TensorFlow models. It uses Metal under the hood.
+* [Core ML](#coreml)
+* [DeepLearningKit](http://deeplearningkit.org/) - Open Source Deep Learning Framework from Memkite for Apple's tvOS, iOS and OS X.
+* [Espresso](https://github.com/codinfox/espresso) - A minimal high performance parallel neural network framework running on iOS.
+* [Forge](https://github.com/hollance/Forge) - A neural network toolkit for Metal.
+* [Keras.js](https://transcranial.github.io/keras-js/#/) - run [Keras](https://keras.io/) models in a web view. 
+* [KSJNeuralNetwork](https://github.com/woffle/KSJNeuralNetwork) - A Neural Network Inference Library Built atop BNNS and MPS
+	* [Converter for Torch models](https://github.com/woffle/torch2ios)
+* [MXNet](https://mxnet.incubator.apache.org/) - MXNet is a deep learning framework designed for both efficiency and flexibility.
+	* [Deploying pre-trained mxnet model to a smartphone](https://mxnet.incubator.apache.org/how_to/smart_device.html)
+* [Quantized-CNN](https://github.com/jiaxiang-wu/quantized-cnn) - compressed convolutional neural networks for Mobile Devices
+* [WebDNN](https://mil-tokyo.github.io/webdnn/) - You can run deep learning model in a web view if you want. Three modes: WebGPU acceleration, WebAssembly acceleration and pure JS (on CPU). No training, inference only.
+
+### Deep Learning: Low-level routines libraries
+
+* [BNNS](https://developer.apple.com/reference/accelerate/1912851-bnns) - Apple Basic neural network subroutines (BNNS) is a collection of functions that you use to implement and run neural networks, using previously obtained training data.
+	* [BNNS usage examples](https://github.com/shu223/iOS-10-Sampler) in iOS 10 sampler.
+	* [An example](https://github.com/bignerdranch/bnns-cocoa-example) of a neural network trained by tensorflow and executed using BNNS
+* [MetalPerformanceShaders](https://developer.apple.com/reference/metalperformanceshaders) - CNNs on GPU from Apple.
+	* [MetalCNNWeights](https://github.com/kakugawa/MetalCNNWeights) - a Python script to convert Inception v3 for MPS.
+	* [MPSCNNfeeder](https://github.com/kazoo-kmt/MPSCNNfeeder) - Keras to MPS models conversion.
+* [NNPACK](https://github.com/Maratyszcza/NNPACK) - Acceleration package for neural networks on multi-core CPUs. Prisma [uses](http://prisma-ai.com/libraries.html) this library in the mobile app.
+
+### <a name="dlmc"/>Deep Learning: Model Compression
 
 * TensorFlow implementation of [knowledge distilling](https://github.com/chengshengchan/model_compression) method
 * [MobileNet-Caffe](https://github.com/shicai/MobileNet-Caffe) - Caffe Implementation of Google's MobileNets
