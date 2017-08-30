@@ -55,6 +55,8 @@ Currently CoreML is compatible (partially) with the following machine learning p
 
 There are many curated lists of pre-trained neural networks in Core ML format: [\[1\]](https://github.com/SwiftBrain/awesome-CoreML-models), [\[2\]](https://github.com/cocoa-ai/ModelZoo), [\[3\]](https://github.com/likedan/Awesome-CoreML-Models).
 
+Core ML currently doesn't support training models, but still, you can replace model by downloading a new one from a server in runtime. [Here is a demo](https://github.com/zedge/DynamicCoreML) of how to do it. It uses generator part of MNIST GAN as Core ML model.
+
 # <a name="gpmll"/>General-Purpose Machine Learning Libraries
 
 
