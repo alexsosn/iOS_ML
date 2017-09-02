@@ -105,7 +105,7 @@ Core ML currently doesn't support training models, but still, you can replace mo
 <li>Single and Multivariate Gaussians</li>
 <li>Mixture Of Gaussians</li>
 <li>Model validation</li>
-<li>Deep-Network</li><ul>
+<li>Deep Network</li><ul>
     <li>Convolution layers</li>
     <li>Pooling layers</li>
     <li>Fully-connected NN layers</li></ul>
@@ -119,7 +119,9 @@ Core ML currently doesn't support training models, but still, you can replace mo
   <tr>
     <td><a href="http://dlib.net/"><img width=100 src="http://dlib.net/dlib-logo.png"><br>dlib</a></td>
     <td><ul>
-<li>Deep Learning</li><li>Conventional SMO based Support Vector Machines for classification and  regression</li><li>Reduced-rank methods for large-scale classification and regression</li><li>Relevance vector machines for classification and regression</li><li>A Multiclass SVM</li><li>Structural SVM<li>A large-scale SVM-Rank</li><li>An online kernel RLS regression</li><li>An online SVM classification algorithm</li><li>Semidefinite Metric Learning</li><li>An online kernelized centroid estimator/novelty detector and offline support vector one-class classification</li><li>Clustering algorithms: linear or kernel k-means, Chinese Whispers, and Newman clustering</li><li>Radial Basis Function Networks</li><li>Multi layer perceptrons</li></ul>
+<li>Deep Learning</li><li>Support Vector Machines</li>
+<li>Reduced-rank methods for large-scale classification and regression</li>
+<li>Relevance vector machines for classification and regression</li><li>A Multiclass SVM</li><li>Structural SVM<li>A large-scale SVM-Rank</li><li>An online kernel RLS regression</li><li>An online SVM classification algorithm</li><li>Semidefinite Metric Learning</li><li>An online kernelized centroid estimator/novelty detector and offline support vector one-class classification</li><li>Clustering algorithms: linear or kernel k-means, Chinese Whispers, and Newman clustering</li><li>Radial Basis Function Networks</li><li>Multi layer perceptrons</li></ul>
 </td> 
     <td>C++</td> 
     <td>Boost</td>
@@ -317,6 +319,7 @@ These libraries doesn't support training, so you need to pre-train models in som
 
 * TensorFlow implementation of [knowledge distilling](https://github.com/chengshengchan/model_compression) method
 * [MobileNet-Caffe](https://github.com/shicai/MobileNet-Caffe) - Caffe Implementation of Google's MobileNets
+* [keras-surgeon](https://github.com/BenWhetton/keras-surgeon) - Pruning for trained Keras models.
 
 
 # <a name="cv"/>Computer Vision
@@ -525,14 +528,16 @@ for apps, devices, and web
 
 ### Regular mobile ML
 
-* **[Pete Warden's blog](https://petewarden.com/)**
-	* [How to Quantize Neural Networks with TensorFlow](https://petewarden.com/2016/05/03/how-to-quantize-neural-networks-with-tensorflow/)
 * **[The "Machine, think!" blog](http://machinethink.net/blog/) by Matthijs Hollemans**
 	* [The “hello world” of neural networks](http://matthijshollemans.com/2016/08/24/neural-network-hello-world/) - Swift and BNNS
 	* [Convolutional neural networks on the iPhone with VGGNet](http://matthijshollemans.com/2016/08/30/vggnet-convolutional-neural-network-iphone/)
+* **[Pete Warden's blog](https://petewarden.com/)**
+	* [How to Quantize Neural Networks with TensorFlow](https://petewarden.com/2016/05/03/how-to-quantize-neural-networks-with-tensorflow/)
 
 ### Accidental mobile ML
 
+* **[Google research blog](https://research.googleblog.com)**
+* **[Apple Machine Learning Journal](https://machinelearning.apple.com/)**
 * **[Invasive Code](https://www.invasivecode.com/weblog/) blog**
 	* [Machine Learning for iOS](https://www.invasivecode.com/weblog/machine-learning-swift-ios/)
 	* [Convolutional Neural Networks in iOS 10 and macOS](https://www.invasivecode.com/weblog/convolutional-neural-networks-ios-10-macos-sierra/)
