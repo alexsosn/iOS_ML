@@ -1,6 +1,6 @@
 # Machine Learning for iOS 
 
-**Last Update: August 30, 2017.**
+**Last Update: September 2, 2017.**
 
 Curated list of resources for iOS developers in following topics: 
 
@@ -151,15 +151,17 @@ Core ML currently doesn't support training models, but still, you can replace mo
     <tr>
     <td><a href="https://github.com/gianlucabertani/MAChineLearning">MAChineLearning</a></td>
     <td>
-    <ul><li>Neural Networks</li><ul>
-<li>Activation functions: Linear, ReLU, Step, sigmoid, TanH</li>
-<li>Cost functions: Squared error, Cross entropy</li>
-<li>Backpropagation: Standard, Resilient (a.k.a. RPROP).</li>
-<li>Training by sample or by batch.</li>
-</ul>
-<li>Bag of Words</li>
-<li>Word Vectors</li></ul>
-</td> 
+    <ul>
+    <li>Neural Networks</li>
+    <ul>
+    <li>Activation functions: Linear, ReLU, Step, sigmoid, TanH</li>
+    <li>Cost functions: Squared error, Cross entropy</li>
+    <li>Backpropagation: Standard, Resilient (a.k.a. RPROP).</li>
+    <li>Training by sample or by batch.</li>
+    </ul>
+    <li>Bag of Words</li>
+    <li>Word Vectors</li></ul>
+    </td> 
     <td>Objective-C</td> 
     <td>BSD 3-clause</td>
     <td><a href="https://github.com/gianlucabertani/MAChineLearning">GitHub</a> </td>
@@ -168,16 +170,13 @@ Core ML currently doesn't support training models, but still, you can replace mo
     
   <tr>
     <td><a href="https://github.com/Somnibyte/MLKit"><img width=100 src="https://github.com/Somnibyte/MLKit/raw/master/MLKitSmallerLogo.png"><br>MLKit</a></td>
-    <td> Matrix and Vector Operations (uses Upsurge framework)
- Simple Linear Regression (Allows for 1 feature set)
- Polynomial Regression (Allows for multiple features)
- Ridge Regression
- Multi-Layer Feed Forward Neural Network
- K-Means Clustering
- Genetic Algorithms
- Allows for splitting your data into training, validation, and test sets.
- K-Fold Cross Validation & Ability to test various L2 penalties for Ridge Regression
- Single Layer Perceptron, Multi-Layer Perceptron, & Adaline ANN Architectures
+    <td> 
+    <ul>
+    <li>Linear Regression: simple, ridge, polynomial</li>
+    <li>Multi-Layer Perceptron, & Adaline ANN Architectures</li>
+    <li>K-Means Clustering</li>
+    <li>Genetic Algorithms</li>
+    </ul>
 </td> 
     <td>Swift</td>
     <td>MIT</td>
@@ -194,7 +193,20 @@ Core ML currently doesn't support training models, but still, you can replace mo
   </tr>
   <tr>
     <td><a href="https://github.com/vincentherrmann/multilinear-math">multilinear-math</a></td>
-    <td>Swift wrappers of many important functions from the Accelerate framework and LAPACK (vector summation, addition, substraction, matrix and elementwise multiplication, division, matrix inverse, pseudo inverse, eigendecomposition, singular value decomposition...), MultidimensionData protocol for elegant handling of multidimensional data of any kind, Clear, compact and powerful syntax for mathematical operations on tensors, Principal component analysis, Multilinear subspace learning algorithms for dimensionality reduction, Linear and logistic regression, Stochastic gradient descent, Feedforward neural networks, Sigmoid, ReLU, Softplus activation functions, Easy regularizations</td> 
+    <td><ul>
+    <li>Linear algebra and tensors</li>
+    <li>Principal component analysis</li>
+    <li>Multilinear subspace learning algorithms for dimensionality reduction</li>
+    <li>Linear and logistic regression</li>
+    <li>Stochastic gradient descent</li>
+    <li>Feedforward neural networks</li>
+    <ul>
+    <li>Sigmoid</li>
+    <li>ReLU</li>
+    <li>Softplus activation functions</li>
+    </ul>
+    </ul>
+    </td> 
     <td>Swift</td> 
     <td>Apache 2.0</td>
     <td><a href="https://github.com/vincentherrmann/multilinear-math">GitHub</a> </td>
@@ -202,7 +214,23 @@ Core ML currently doesn't support training models, but still, you can replace mo
   </tr>
   <tr>
     <td><a href="http://opencv.org/"><img width=100 src="http://opencv.org/assets/theme/logo.png">OpenCV</a></td>
-    <td>Multi-Layer Perceptrons, Boosted tree classifier, decision tree, Expectation Maximization, K-Nearest Neighbors, Logistic Regression, Bayes classifier, random forest, Support Vector Machines,  Stochastic Gradient Descent SVM classifier, grid search, hierarchical k-means, deep neural networks</td> 
+    <td>
+    <ul>
+    <li>Multi-Layer Perceptrons</li> 
+    <li>Boosted tree classifier</li> 
+    <li>decision tree</li> 
+    <li>Expectation Maximization</li> 
+    <li>K-Nearest Neighbors</li> 
+    <li>Logistic Regression</li> 
+    <li>Bayes classifier</li> 
+    <li>Random forest</li> 
+    <li>Support Vector Machines</li>  
+    <li>Stochastic Gradient Descent SVM classifier</li> 
+    <li>Grid search</li> 
+    <li>Hierarchical k-means</li> 
+    <li>Deep neural networks</li>
+    </ul>
+    </td> 
     <td>C++</td> 
     <td>3-clause BSD</td>
     <td><a href="https://github.com/opencv">GitHub</a> </td>
@@ -210,9 +238,38 @@ Core ML currently doesn't support training models, but still, you can replace mo
   </tr>
   <tr>
     <td><a href="http://image.diku.dk/shark/sphinx_pages/build/html/index.html"><img width=100 src="http://image.diku.dk/shark/sphinx_pages/build/html/_static/SharkLogo.png"><br>Shark</a></td>
-    <td><b>Supervised:</b> LDA, Fisher–LDA, Linear regression, SVMs, FF NN, RNN, Radial basis function networks, Regularization networks as well as Gaussian processes for regression, Iterative nearest neighbor classification and regression, Decision trees and random forests
-<br><b>Unsupervised:</b> [PCA], Restricted Boltzmann machines, Hierarchical clustering, Data structures for efficient distance-based clustering
-<br><b>Optimization:</b> Evolutionary algorithms, Single-objective optimization (e.g., CMA–ES), Multi-objective optimization, Basic linear algebra and optimization algorithms</td> 
+    <td>
+    <ul>
+    <li><b>Supervised:</b> 
+    <ul>
+    <li>Linear discriminant analysis (LDA)</li>
+    <li>Fisher–LDA</li>
+    <li>Linear regression</li>
+    <li>SVMs</li>
+    <li>FF NN</li>
+    <li>RNN</li>
+    <li>Radial basis function networks</li>
+    <li>Regularization networks</li>
+    <li>Gaussian processes for regression</li>
+    <li>Iterative nearest neighbor classification and regression</li>
+    <li>Decision trees</li>
+    <li>Random forest</li>
+    </ul>
+    <li><b>Unsupervised:</b> 
+    <ul>
+    <li>PCA</li>
+    <li>Restricted Boltzmann machines</li>
+    <li>Hierarchical clustering</li>
+    <li>Data structures for efficient distance-based clustering</li>
+</ul>
+    <li><b>Optimization:</b> </li>
+    <ul>
+    <li>Evolutionary algorithms</li> 
+    <li>Single-objective optimization (e.g., CMA–ES)</li>
+    <li>Multi-objective optimization</li>
+    <li>Basic linear algebra and optimization algorithms</li>
+    </ul>
+    </td> 
     <td>C++</td> 
     <td>GNU LGPL</td>
     <td><a href="https://github.com/lemire/lbimproved">GitHub</a> </td>
@@ -220,8 +277,21 @@ Core ML currently doesn't support training models, but still, you can replace mo
   </tr>
   <tr>
     <td><a href="https://github.com/yconst/YCML"><img width=100 src="https://raw.githubusercontent.com/yconst/YCML/master/Logo.png"><br>YCML</a></td>
-    <td>Gradient Descent Backpropagation, Resilient Backpropagation (RProp), Extreme Learning Machines (ELM), Forward Selection using Orthogonal Least Squares (for RBF Net), also with the PRESS statistic, Binary Restricted Boltzmann Machines (CD & PCD) 
-    <br><b>Optimization algorithms</b>: Gradient Descent (Single-Objective, Unconstrained), RProp Gradient Descent (Single-Objective, Unconstrained), NSGA-II (Multi-Objective, Constrained)</td> 
+    <td>
+    <ul>
+    <li>Gradient Descent Backpropagation</li> 
+    <li>Resilient Backpropagation (RProp)</li> 
+    <li>Extreme Learning Machines (ELM)</li> 
+    <li>Forward Selection using Orthogonal Least Squares (for RBF Net), also with the PRESS statistic</li> 
+    <li>Binary Restricted Boltzmann Machines (CD & PCD)</li>
+    <li><b>Optimization algorithms</b>: 
+    <ul>
+    <li>Gradient Descent (Single-Objective, Unconstrained)</li> 
+    <li>RProp Gradient Descent (Single-Objective, Unconstrained)</li> 
+    <li>NSGA-II (Multi-Objective, Constrained)</li>
+    </ul>
+    </ul>
+    </td> 
     <td>Objective-C</td> 
     <td>GNU GPL 3.0</td>
     <td><a href="https://github.com/yconst/ycml/">GitHub</a> </td>
@@ -624,11 +694,3 @@ Metal & Swift](https://realm.io/news/swift-summit-simon-gladman-metal/) - a vide
 * [The Rise of Chat Bots:](https://stanfy.com/blog/the-rise-of-chat-bots-useful-links-articles-libraries-and-platforms/)  Useful Links, Articles, Libraries and Platforms by Pavlo Bashmakov.
 * [Awesome Machine Learning for Cyber Security](https://github.com/jivoi/awesome-ml-for-cybersecurity)
 
-[DTW]: https://en.wikipedia.org/wiki/Dynamic_time_warping
-[ANN]: https://en.wikipedia.org/wiki/Artificial_neural_network
-[FF NN]: https://en.wikipedia.org/wiki/Feedforward_neural_network
-[k-NN]: https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
-[LDA]: https://en.wikipedia.org/wiki/Linear_discriminant_analysis
-[SVM]: https://en.wikipedia.org/wiki/Support_vector_machine
-[RNN]: https://en.wikipedia.org/wiki/Recurrent_neural_network
-[PCA]: https://en.wikipedia.org/wiki/Principal_component_analysis
