@@ -1,6 +1,6 @@
 # Machine Learning for iOS 
 
-**Last Update: September 2, 2017.**
+**Last Update: September 7, 2017.**
 
 Curated list of resources for iOS developers in following topics: 
 
@@ -55,6 +55,7 @@ Currently CoreML is compatible (partially) with the following machine learning p
 
 Third-party converters available for:
 - [MXNet](https://github.com/apache/incubator-mxnet/tree/master/tools/coreml)
+- [Torch7](https://github.com/prisma-ai/torch2coreml)
 
 There are many curated lists of pre-trained neural networks in Core ML format: [\[1\]](https://github.com/SwiftBrain/awesome-CoreML-models), [\[2\]](https://github.com/cocoa-ai/ModelZoo), [\[3\]](https://github.com/likedan/Awesome-CoreML-Models).
 
