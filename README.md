@@ -1,6 +1,6 @@
 # Machine Learning for iOS 
 
-**Last Update: September 7, 2017.**
+**Last Update: January 12, 2018.**
 
 Curated list of resources for iOS developers in following topics: 
 
@@ -30,9 +30,9 @@ Curated list of resources for iOS developers in following topics:
 - [Learn Machine Learning](#learn)
 - [Other Lists](#lists)
 
-Most of the de-facto standard tools in domains listed above are written in iOS-unfriendly languages (Python/Java/R/Matlab) so finding something appropriate for your iOS application may be a challenging task.
+Most of the de-facto standard tools in AI-related domains are written in iOS-unfriendly languages (Python/Java/R/Matlab) so finding something appropriate for your iOS application may be a challenging task.
 
-This list consists mainly of libraries written in Objective-C, Swift, C, C++, JavaScript and some other languages if they can be easily ported to iOS. Also, links to some relevant web APIs, blog posts, videos and learning materials included.
+This list consists mainly of libraries written in Objective-C, Swift, C, C++, JavaScript and some other languages that can be easily ported to iOS. Also, I included links to some relevant web APIs, blog posts, videos and learning materials.
 
 Resources are sorted alphabetically or randomly. The order doesn't reflect my personal preferences or anything else. Some of the resources are awesome, some are great, some are fun, and some can serve as an inspiration.
 
@@ -45,7 +45,7 @@ Have fun!
 * [coremltools](https://pypi.python.org/pypi/coremltools) is a Python package. It contains converters from some popular machine learning libraries to the Apple format.
 * [Core ML](https://developer.apple.com/documentation/coreml) is an Apple framework to run inference on device. It is highly optimized to Apple hardware.
 
-Currently CoreML is compatible (partially) with the following machine learning packages:
+Currently CoreML is compatible (partially) with the following machine learning packages via [coremltools python package](https://apple.github.io/coremltools/):
 
 - [Caffe](http://caffe.berkeleyvision.org)
 - [Keras](https://keras.io/)
@@ -53,9 +53,13 @@ Currently CoreML is compatible (partially) with the following machine learning p
 - [scikit-learn](http://scikit-learn.org/)
 - [XGBoost](https://xgboost.readthedocs.io/en/latest/)
 
-Third-party converters available for:
+Third-party converters to [CoreML format](https://apple.github.io/coremltools/coremlspecification/) are also available for some models from:
+
+- [Turicreate](https://github.com/apple/turicreate)
+- [TensorFlow](https://github.com/tf-coreml/tf-coreml)
 - [MXNet](https://github.com/apache/incubator-mxnet/tree/master/tools/coreml)
 - [Torch7](https://github.com/prisma-ai/torch2coreml)
+- [CatBoost](https://tech.yandex.com/catboost/doc/dg/features/export-model-to-core-ml-docpage/)
 
 There are many curated lists of pre-trained neural networks in Core ML format: [\[1\]](https://github.com/SwiftBrain/awesome-CoreML-models), [\[2\]](https://github.com/cocoa-ai/ModelZoo), [\[3\]](https://github.com/likedan/Awesome-CoreML-Models).
 
