@@ -1,10 +1,11 @@
 # Machine Learning for iOS 
 
-**Last Update: January 12, 2018.**
+**Last Update: July 30, 2018.**
 
 Curated list of resources for iOS developers in following topics: 
 
 - [Core ML](#coreml)
+- [ML Kit](#mlkit)
 - [Machine Learning Libraries](#gpmll)
 - [Deep Learning Libraries](#dll)
     - [Deep Learning: Model Compression](#dlmc)
@@ -64,6 +65,18 @@ Third-party converters to [CoreML format](https://apple.github.io/coremltools/co
 There are many curated lists of pre-trained neural networks in Core ML format: [\[1\]](https://github.com/SwiftBrain/awesome-CoreML-models), [\[2\]](https://github.com/cocoa-ai/ModelZoo), [\[3\]](https://github.com/likedan/Awesome-CoreML-Models).
 
 Core ML currently doesn't support training models, but still, you can replace model by downloading a new one from a server in runtime. [Here is a demo](https://github.com/zedge/DynamicCoreML) of how to do it. It uses generator part of MNIST GAN as Core ML model.
+
+# <a name="mlkit"/>ML Kit
+
+[ML Kit for Firebase](https://firebase.google.com/docs/ml-kit/) offers on-device and cloud-based machine learning APIs for app developers. It comes with a set of ready-to-use APIs for common mobile use cases:
+- [Text recognition](https://firebase.google.com/docs/ml-kit/recognize-text)
+- [Face detection](https://firebase.google.com/docs/ml-kit/detect-faces)
+- [Barcode scanning](https://firebase.google.com/docs/ml-kit/read-barcodes)
+- [Image labeling](https://firebase.google.com/docs/ml-kit/label-images)
+- [Landmark recognition](https://firebase.google.com/docs/ml-kit/recognize-landmarks)
+
+For more specific needs, ML Kit supports custom TensorFlow Lite models. Models are uploaded via the Firebase console to be served to end-user devices. You can then use the ML Kit SDK as the API layer to run inferences on your model. You can also take advantage of other Firebase features such as Remote Config, Analytics, and A/B testing to experiment and iterate on models.
+- [Custom model inference](https://firebase.google.com/docs/ml-kit/use-custom-models)
 
 # <a name="gpmll"/>General-Purpose Machine Learning Libraries
 <p></p>
